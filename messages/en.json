@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "title": "MedStudyakademie z.s. | Integration of foreigners and healthcare workers in the Czech Republic",
+    "description": "Nonprofit MedStudyakademie helps foreigners, healthcare workers and their families integrate into Czech society. Education, counselling and support — free of charge."
+  },
+  "nav": {
+    "about": "About us",
+    "activities": "What we do",
+    "audience": "Who we serve",
+    "contact": "Contact",
+    "services": "Our services",
+    "contactUs": "Contact us"
+  },
+  "hero": {
+    "title": "Integration. Education. Support.",
+    "subtitle": "We help foreigners, healthcare workers and their families integrate into Czech society. Free of charge.",
+    "ctaServices": "Our services",
+    "ctaContact": "Contact us"
+  },
+  "about": {
+    "title": "Who we are",
+    "paragraphs": [
+      "We are the nonprofit association MedStudyakademie z.s., founded with one goal: to help those in difficult life situations find their path in the Czech Republic.",
+      "Our team consists of professionals and volunteers who know from personal experience what it means to start life in a new country. We work with foreigners, healthcare workers and other groups who need support during integration.",
+      "All our services — educational programmes, counselling and cultural events — are provided free of charge."
+    ]
+  },
+  "activities": {
+    "title": "What we do",
+    "items": [
+      {
+        "title": "Educational programmes",
+        "description": "We organise Czech language courses, preparatory programmes for university admission and educational events for foreigners in the Czech Republic."
+      },
+      {
+        "title": "Support for healthcare workers",
+        "description": "We help Ukrainian doctors, dentists and nurses complete the approval process and integrate into the Czech healthcare system."
+      },
+      {
+        "title": "Social and cultural activities",
+        "description": "We host cultural events, community meetings and social initiatives that help foreigners feel part of Czech society."
+      },
+      {
+        "title": "Counselling",
+        "description": "We provide individual advice on documents, legalisation, employment and adapting to life in the Czech Republic."
+      },
+      {
+        "title": "Partnerships and projects",
+        "description": "We cooperate with public institutions, universities and NGOs on social integration and exclusion prevention projects."
+      },
+      {
+        "title": "Additional support",
+        "description": "We help with housing searches, paperwork and organise meetings with lawyers, psychologists and other specialists."
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "1000+", "label": "Successful students" },
+      { "value": "2094", "label": "Ukrainian healthcare workers in the Czech Republic since 2022" },
+      { "value": "9 months", "label": "From zero to B2" },
+      { "value": "3", "label": "Languages of support" }
+    ]
+  },
+  "audience": {
+    "title": "Who we work for",
+    "groups": [
+      {
+        "title": "University applicants",
+        "description": "Young people from Ukraine and other countries who want to study at Czech universities and earn a European degree."
+      },
+      {
+        "title": "Healthcare workers",
+        "description": "Doctors, dentists, pharmacists and nurses who want to work officially in their profession in the Czech Republic."
+      },
+      {
+        "title": "Foreigners and their families",
+        "description": "People who have moved to the Czech Republic and need support adapting — from language to documents."
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partners and cooperation",
+    "text": "We are open to cooperation with public authorities, educational institutions, corporate partners and other NGOs. If you would like to support our work or implement a joint project — get in touch.",
+    "cta": "Become a partner"
+  },
+  "volunteer": {
+    "title": "Become a volunteer",
+    "text": "Our organisation runs thanks to volunteers. If you want to help people and speak Czech, Ukrainian or other languages — we would love to welcome you to the team.",
+    "cta": "I want to help"
+  },
+  "contact": {
+    "title": "Contact us",
+    "infoTitle": "Contact details",
+    "socialTitle": "Social media",
+    "email": "info@medstudy.cz",
+    "website": "medstudy.cz",
+    "social": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "telegram": "Telegram"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Sending failed. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Please enter your name",
+      "emailInvalid": "Please enter a valid email",
+      "phoneRequired": "Please enter your phone number",
+      "subjectRequired": "Please enter a subject",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "footer": {
+    "orgName": "MedStudyakademie z.s.",
+    "orgType": "Spolek (nonprofit association)",
+    "country": "Czech Republic",
+    "legalNote": "Activities are carried out in accordance with Czech law and ethical standards.",
+    "privacy": "Zásady ochrany osobních údajů",
+    "annualReports": "Výroční zprávy",
+    "googleWorkspaceVerification": "MedStudyakademie z.s. is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
+    "copyright": "© {year} MedStudyakademie z.s. All rights reserved."
+  },
+  "placeholders": {
+    "privacy": {
+      "title": "Privacy policy",
+      "body": "This page is being prepared. The full privacy policy will be published here soon.",
+      "back": "Back to home"
+    },
+    "reports": {
+      "title": "Annual reports",
+      "body": "This page is being prepared. Annual reports will be published here soon.",
+      "back": "Back to home"
+    }
+  },
+  "localeLabels": {
+    "cz": "Čeština",
+    "ua": "Українська",
+    "ru": "Русский",
+    "en": "English"
+  }
+}

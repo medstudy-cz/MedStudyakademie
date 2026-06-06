@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "title": "MedStudyakademie z.s. | Integrace cizinců a zdravotníků v České republice",
+    "description": "Nezisková organizace MedStudyakademie pomáhá cizincům, zdravotníkům a jejich rodinám integrovat se do české společnosti. Vzdělávání, poradenství a podpora zdarma."
+  },
+  "nav": {
+    "about": "O nás",
+    "activities": "Činnosti",
+    "audience": "Pro koho",
+    "contact": "Kontakt",
+    "services": "Naše služby",
+    "contactUs": "Kontaktujte nás"
+  },
+  "hero": {
+    "title": "Integrace. Vzdělávání. Podpora.",
+    "subtitle": "Pomáháme cizincům, zdravotníkům a jejich rodinám začlenit se do české společnosti. Bezplatně.",
+    "ctaServices": "Naše služby",
+    "ctaContact": "Kontaktujte nás"
+  },
+  "about": {
+    "title": "Kdo jsme?",
+    "paragraphs": [
+      "Jsme neziskový spolek MedStudyakademie z.s., který byl založen s jediným cílem: pomoci těm, kteří se ocitli ve složité životní situaci, najít svou cestu v České republice.",
+      "Náš tým tvoří odborníci a dobrovolníci, kteří z vlastní zkušenosti vědí, jaké to je začínat život v nové zemi. Pracujeme s cizinci, zdravotníky a dalšími skupinami, které potřebují podporu v procesu integrace.",
+      "Veškeré naše služby — vzdělávací programy, poradenství, kulturní akce — jsou poskytovány zdarma."
+    ]
+  },
+  "activities": {
+    "title": "Co děláme",
+    "items": [
+      {
+        "title": "Vzdělávací programy",
+        "description": "Organizujeme kurzy češtiny, přípravné programy pro přijetí na vysoké školy a vzdělávací akce pro cizince v ČR."
+      },
+      {
+        "title": "Podpora zdravotníků",
+        "description": "Pomáháme ukrajinským lékařům, zubařům a zdravotním sestrám projít procesem aprobace a integrovat se do českého zdravotního systému."
+      },
+      {
+        "title": "Sociální a kulturní aktivity",
+        "description": "Pořádáme kulturní akce, komunitní setkání a sociální iniciativy, které pomáhají cizincům cítit se součástí české společnosti."
+      },
+      {
+        "title": "Poradenství",
+        "description": "Poskytujeme individuální poradenství v otázkách dokumentů, legalizace, zaměstnání a adaptace na život v ČR."
+      },
+      {
+        "title": "Spolupráce a projekty",
+        "description": "Spolupracujeme se státními institucemi, univerzitami a NNO na projektech sociální integrace a prevence vyloučení."
+      },
+      {
+        "title": "Další podpůrné činnosti",
+        "description": "Pomáháme s hledáním bydlení, vyřizováním dokumentů a organizujeme setkání s právníky, psychology a dalšími odborníky."
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "1000+", "label": "Úspěšných studentů" },
+      { "value": "2094", "label": "Ukrajinských zdravotníků v ČR od roku 2022" },
+      { "value": "9 měsíců", "label": "Od nuly do B2" },
+      { "value": "3", "label": "Jazyky podpory" }
+    ]
+  },
+  "audience": {
+    "title": "Pro koho pracujeme",
+    "groups": [
+      {
+        "title": "Uchazeči o studium",
+        "description": "Mladí lidé z Ukrajiny a dalších zemí, kteří chtějí studovat na českých vysokých školách a získat evropský diplom."
+      },
+      {
+        "title": "Zdravotníci",
+        "description": "Lékaři, zubní lékaři, farmaceuti a zdravotní sestry, kteří chtějí oficiálně pracovat ve svém oboru v České republice."
+      },
+      {
+        "title": "Cizinci a jejich rodiny",
+        "description": "Lidé, kteří se přestěhovali do Česka a potřebují podporu při adaptaci — od jazyka po dokumenty."
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partneři a spolupráce",
+    "text": "Jsme otevřeni spolupráci se státními orgány, vzdělávacími institucemi, firemními partnery a dalšími NNO. Pokud chcete podpořit naši činnost nebo realizovat společný projekt — kontaktujte nás.",
+    "cta": "Stát se partnerem"
+  },
+  "volunteer": {
+    "title": "Staňte se dobrovolníkem",
+    "text": "Naše organizace funguje díky dobrovolníkům. Pokud máte chuť pomáhat lidem a ovládáte češtinu, ukrajinštinu nebo jiné jazyky — rádi vás přivítáme v týmu.",
+    "cta": "Chci pomoci"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "infoTitle": "Kontaktní údaje",
+    "socialTitle": "Sociální sítě",
+    "email": "info@medstudy.cz",
+    "website": "medstudy.cz",
+    "social": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "telegram": "Telegram"
+    },
+    "form": {
+      "name": "Jméno",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "subject": "Téma",
+      "message": "Zpráva",
+      "submit": "Odeslat",
+      "submitting": "Odesílání…",
+      "success": "Děkujeme! Vaše zpráva byla odeslána.",
+      "error": "Odeslání se nezdařilo. Zkuste to prosím znovu."
+    },
+    "validation": {
+      "nameRequired": "Zadejte prosím jméno",
+      "emailInvalid": "Zadejte platný e-mail",
+      "phoneRequired": "Zadejte prosím telefon",
+      "subjectRequired": "Zadejte prosím téma",
+      "messageMin": "Zpráva musí mít alespoň 10 znaků"
+    }
+  },
+  "footer": {
+    "orgName": "MedStudyakademie z.s.",
+    "orgType": "Spolek (neziskové sdružení)",
+    "country": "Česká republika",
+    "legalNote": "Činnost probíhá v souladu s právními předpisy ČR a etickými standardy.",
+    "privacy": "Zásady ochrany osobních údajů",
+    "annualReports": "Výroční zprávy",
+    "googleWorkspaceVerification": "MedStudyakademie z.s. je registrovaný neziskový spolek v České republice poskytující bezplatné vzdělávací a integrační služby cizincům a zdravotníkům.",
+    "copyright": "© {year} MedStudyakademie z.s. Všechna práva vyhrazena."
+  },
+  "placeholders": {
+    "privacy": {
+      "title": "Zásady ochrany osobních údajů",
+      "body": "Tato stránka se připravuje. Brzy zde najdete úplné znění zásad ochrany osobních údajů.",
+      "back": "Zpět na hlavní stránku"
+    },
+    "reports": {
+      "title": "Výroční zprávy",
+      "body": "Tato stránka se připravuje. Brzy zde zveřejníme výroční zprávy spolku.",
+      "back": "Zpět na hlavní stránku"
+    }
+  },
+  "localeLabels": {
+    "cz": "Čeština",
+    "ua": "Українська",
+    "ru": "Русский",
+    "en": "English"
+  }
+}
