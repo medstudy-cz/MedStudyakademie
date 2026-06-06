@@ -20,13 +20,13 @@ export function Footer() {
 
           <div className="flex flex-col gap-3 text-sm">
             <Link
-              href="/privacy"
+              href="/"
               className="font-medium text-primary hover:underline"
             >
               {t("privacy")}
             </Link>
             <Link
-              href="/reports"
+              href="/"
               className="font-medium text-primary hover:underline"
             >
               {t("annualReports")}
