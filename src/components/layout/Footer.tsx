@@ -1,5 +1,10 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import {
+  LEGAL_ADDRESS,
+  LEGAL_COMPANY_NAME,
+  LEGAL_ICO,
+} from "@/lib/legal";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -8,7 +13,7 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-2 text-sm text-slate-600">
             <p className="text-base font-semibold text-slate-900">
               {t("orgName")}
@@ -18,7 +23,30 @@ export function Footer() {
             <p className="pt-2">{t("legalNote")}</p>
           </div>
 
-          <div className="flex flex-col gap-3 text-sm">
+          <dl className="space-y-4 text-sm text-slate-600">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                {t("legalCompanyName")}
+              </dt>
+              <dd className="mt-1 font-medium text-slate-800">
+                {LEGAL_COMPANY_NAME}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                {t("legalAddress")}
+              </dt>
+              <dd className="mt-1 leading-relaxed">{LEGAL_ADDRESS}</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                {t("legalIco")}
+              </dt>
+              <dd className="mt-1 font-medium text-slate-800">{LEGAL_ICO}</dd>
+            </div>
+          </dl>
+
+          <div className="flex flex-col gap-3 text-sm md:items-start lg:items-end">
             <Link
               href="/"
               className="font-medium text-primary hover:underline"
