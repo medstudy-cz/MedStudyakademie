@@ -74,7 +74,7 @@ export function buildBitrixLeadFields(
       `Locale: ${localeTag}`,
     ].join("\n\n"),
     SOURCE_ID: "WEB",
-    SOURCE_DESCRIPTION: `MedStudy Akademie landing (${localeTag})`,
+    SOURCE_DESCRIPTION: `MedStudyacademy landing (${localeTag})`,
     UTM_SOURCE: u.source ?? "",
     UTM_MEDIUM: u.medium ?? "",
     UTM_CAMPAIGN: u.campaign ?? "",

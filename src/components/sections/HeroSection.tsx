@@ -36,7 +36,7 @@ export function HeroSection() {
               variants={staggerItem}
               className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary"
             >
-              MedStudyakademie z.s.
+              MedStudyacademy z.s.
             </motion.p>
             <motion.h1
               variants={staggerItem}

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "MedStudyakademie z.s. | Integration of foreigners and healthcare workers in the Czech Republic",
-    "description": "Nonprofit MedStudyakademie helps foreigners, healthcare workers and their families integrate into Czech society. Education, counselling and support — free of charge."
+    "title": "MedStudyacademy z.s. | Integration of foreigners and healthcare workers in the Czech Republic",
+    "description": "Nonprofit MedStudyacademy helps foreigners, healthcare workers and their families integrate into Czech society. Education, counselling and support — free of charge."
   },
   "nav": {
     "about": "About us",
@@ -20,7 +20,7 @@
   "about": {
     "title": "Who we are",
     "paragraphs": [
-      "We are the nonprofit association MedStudyakademie z.s., founded with one goal: to help those in difficult life situations find their path in the Czech Republic.",
+      "We are the nonprofit association MedStudyacademy z.s., founded with one goal: to help those in difficult life situations find their path in the Czech Republic.",
       "Our team consists of professionals and volunteers who know from personal experience what it means to start life in a new country. We work with foreigners, healthcare workers and other groups who need support during integration.",
       "All our services — educational programmes, counselling and cultural events — are provided free of charge."
     ]
@@ -93,7 +93,8 @@
     "title": "Contact us",
     "infoTitle": "Contact details",
     "socialTitle": "Social media",
-    "email": "info@medstudy.cz",
+    "email": "admin@edu-medstudy.cz",
+    "phone": "+420 774 258 018",
     "website": "medstudy.cz",
     "social": {
       "instagram": "Instagram",
@@ -121,7 +122,7 @@
     }
   },
   "footer": {
-    "orgName": "MedStudyakademie z.s.",
+    "orgName": "MedStudyacademy z.s.",
     "orgType": "Spolek (nonprofit association)",
     "country": "Czech Republic",
     "legalNote": "Activities are carried out in accordance with Czech law and ethical standards.",
@@ -130,8 +131,8 @@
     "legalIco": "Company ID (IČO)",
     "privacy": "Privacy policy",
     "annualReports": "Annual reports",
-    "googleWorkspaceVerification": "MedStudyakademie z.s. is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
-    "copyright": "© {year} MedStudyakademie z.s. All rights reserved."
+    "googleWorkspaceVerification": "MedStudyacademy z.s. is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
+    "copyright": "© {year} MedStudyacademy z.s. All rights reserved."
   },
   "placeholders": {
     "privacy": {

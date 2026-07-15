@@ -1,9 +1,11 @@
 import { Suspense } from "react";
 import { useTranslations } from "next-intl";
-import { Mail, Globe, Share2, Music2, Play, Send } from "lucide-react";
+import { Mail, Phone, Globe, Share2, Music2, Play, Send } from "lucide-react";
 import { ScrollReveal } from "@/components/shared/ScrollReveal";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { ContactForm } from "./ContactForm";
+
+const CONTACT_PHONE_TEL = "+420774258018";
 
 const socialLinks = [
   { key: "instagram" as const, icon: Share2, href: "https://www.instagram.com/medstudy.cz/" },
@@ -45,6 +47,17 @@ export function ContactSection() {
                         <Mail className="h-5 w-5" aria-hidden />
                       </span>
                       <span className="font-medium">{t("email")}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`tel:${CONTACT_PHONE_TEL}`}
+                      className="flex items-center gap-3 text-slate-700 transition-colors hover:text-primary"
+                    >
+                      <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <Phone className="h-5 w-5" aria-hidden />
+                      </span>
+                      <span className="font-medium">{t("phone")}</span>
                     </a>
                   </li>
                   <li>

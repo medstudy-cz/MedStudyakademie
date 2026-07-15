@@ -15,7 +15,7 @@ export function Logo({ className, showWordmark = true }: LogoProps) {
     >
       <Image
         src="/logo.png"
-        alt="MedStudyakademie z.s."
+        alt="MedStudyacademy z.s."
         width={64}
         height={64}
         className="h-11 w-11 shrink-0 rounded-lg object-contain sm:h-14 sm:w-14 lg:h-16 lg:w-16"
@@ -23,7 +23,7 @@ export function Logo({ className, showWordmark = true }: LogoProps) {
       />
       {showWordmark && (
         <span className="whitespace-nowrap text-base font-bold leading-tight text-primary sm:text-lg lg:text-xl">
-          MedStudyakademie z.s.
+          MedStudyacademy z.s.
         </span>
       )}
     </Link>
