@@ -48,6 +48,12 @@ export function Footer() {
 
           <div className="flex flex-col gap-3 text-sm md:items-start lg:items-end">
             <Link
+              href="/blog"
+              className="font-medium text-primary hover:underline"
+            >
+              Blog
+            </Link>
+            <Link
               href="/"
               className="font-medium text-primary hover:underline"
             >

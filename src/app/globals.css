@@ -26,3 +26,13 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.blog-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.blog-content h2,
+.blog-content h3 {
+  font-family: inherit;
+}

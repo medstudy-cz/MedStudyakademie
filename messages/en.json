@@ -7,6 +7,7 @@
     "about": "About us",
     "activities": "What we do",
     "audience": "Who we serve",
+    "blog": "Blog",
     "contact": "Contact",
     "services": "Our services",
     "contactUs": "Contact us"
@@ -151,5 +152,19 @@
     "ua": "Українська",
     "ru": "Русский",
     "en": "English"
+  },
+  "blog": {
+    "title": "Blog & Helpful Articles",
+    "subtitle": "Up-to-date insights on integration, Czech language learning and living in the Czech Republic",
+    "searchPlaceholder": "Search articles...",
+    "readMore": "Read article",
+    "empty": "No articles published in this language yet. Check back soon for new content!",
+    "tableOfContents": "Table of Contents",
+    "share": "Share",
+    "similarArticles": "More articles",
+    "backToBlog": "All blog posts",
+    "ctaTitle": "Need personalized consultation?",
+    "ctaDescription": "Get in touch with us and our coordinators will assist you with integration and education free of charge.",
+    "ctaButton": "Get Consultation"
   }
 }

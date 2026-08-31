@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Logo } from "./Logo";
 import { buttonVariants } from "@/components/ui/button";
@@ -11,10 +12,11 @@ import { smoothEase } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "#about", key: "about" as const },
-  { href: "#activities", key: "activities" as const },
-  { href: "#audience", key: "audience" as const },
-  { href: "#contact", key: "contact" as const },
+  { href: "/#about", key: "about" as const, isExternal: false },
+  { href: "/#activities", key: "activities" as const, isExternal: false },
+  { href: "/#audience", key: "audience" as const, isExternal: false },
+  { href: "/blog", key: "blog" as const, isExternal: false },
+  { href: "/#contact", key: "contact" as const, isExternal: false },
 ];
 
 export function Header() {
@@ -44,21 +46,21 @@ export function Header() {
             aria-label="Main"
           >
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.key}
-                href={item.href}
+                href={item.href as any}
                 className="transition-colors duration-300 hover:text-primary"
               >
                 {t(item.key)}
-              </a>
+              </Link>
             ))}
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
             <LanguageSwitcher />
-            <a href="#contact" className={buttonVariants({ size: "sm" })}>
+            <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
               {t("contactUs")}
-            </a>
+            </Link>
           </div>
 
           <button
@@ -106,9 +108,8 @@ export function Header() {
               aria-label="Mobile"
             >
               {navItems.map((item, index) => (
-                <motion.a
+                <motion.div
                   key={item.key}
-                  href={item.href}
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{
@@ -116,11 +117,15 @@ export function Header() {
                     ease: smoothEase,
                     delay: 0.08 + index * 0.06,
                   }}
-                  className="rounded-xl px-4 py-4 text-xl font-semibold text-slate-800 transition-colors hover:bg-sky-50 hover:text-primary"
-                  onClick={() => setOpen(false)}
                 >
-                  {t(item.key)}
-                </motion.a>
+                  <Link
+                    href={item.href as any}
+                    className="block rounded-xl px-4 py-4 text-xl font-semibold text-slate-800 transition-colors hover:bg-sky-50 hover:text-primary"
+                    onClick={() => setOpen(false)}
+                  >
+                    {t(item.key)}
+                  </Link>
+                </motion.div>
               ))}
             </motion.nav>
 
@@ -136,13 +141,13 @@ export function Header() {
                 className="w-full"
                 onLocaleChange={() => setOpen(false)}
               />
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className={cn(buttonVariants({ size: "lg" }), "w-full")}
                 onClick={() => setOpen(false)}
               >
                 {t("contactUs")}
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         )}
