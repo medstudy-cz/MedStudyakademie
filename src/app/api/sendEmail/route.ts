@@ -6,6 +6,13 @@ const ADMIN_EMAIL =
 
 export async function POST(req: NextRequest) {
   try {
+    if (!process.env.SENDGRID_API_KEY?.trim()) {
+      return NextResponse.json(
+        { error: "SENDGRID_API_KEY is not set" },
+        { status: 500 },
+      );
+    }
+
     const body = await req.json();
     const { name, email, phone, subject, html } = body;
 
@@ -37,7 +44,11 @@ export async function POST(req: NextRequest) {
 
     if (!clientSent) {
       return NextResponse.json(
-        { error: "Failed to send email" },
+        {
+          error: "Failed to send email",
+          hint: "Check SENDGRID_API_KEY and that EMAIL_FROM is a verified sender in SendGrid",
+          from: process.env.EMAIL_FROM?.trim() || "noreply@medstudy.cz",
+        },
         { status: 500 },
       );
     }

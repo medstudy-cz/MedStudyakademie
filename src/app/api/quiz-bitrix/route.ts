@@ -3,11 +3,20 @@ import Bitrix from "@2bad/bitrix";
 
 /** Normalize Bitrix webhook base URL (no method suffix). */
 function normalizeWebhookUrl(raw: string): string {
-  const trimmed = raw.trim();
+  let trimmed = raw.trim().replace(/^["']|["']$/g, "");
   if (!trimmed) return "";
   return trimmed
     .replace(/crm\.lead\.add(\.json)?\/?$/i, "")
     .replace(/\/?$/, "/");
+}
+
+function isValidHttpUrl(value: string): boolean {
+  try {
+    const u = new URL(value);
+    return u.protocol === "http:" || u.protocol === "https:";
+  } catch {
+    return false;
+  }
 }
 
 /** Quiz lead → Bitrix via SEND_LEADS_QUIZ (separate from akademie SEND_LEADS). */
@@ -17,6 +26,17 @@ export async function POST(req: Request) {
     if (!webhookUrl) {
       return NextResponse.json(
         { success: false, error: "Bitrix is not configured (SEND_LEADS_QUIZ)" },
+        { status: 500 },
+      );
+    }
+
+    if (!isValidHttpUrl(webhookUrl)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "SEND_LEADS_QUIZ is not a valid URL. Use Bitrix incoming webhook base, e.g. https://xxx.bitrix24.com/rest/1/xxxxx/",
+        },
         { status: 500 },
       );
     }
@@ -31,7 +51,8 @@ export async function POST(req: Request) {
       HAS_PHONE: "Y",
       PHONE: [{ VALUE_TYPE: "WORK", VALUE: body.phone }],
       COMMENTS: body.answers || "",
-      SOURCE_ID: body.source_id ?? "WEB",
+      // Bitrix expects string source ids; keep quiz portal id as string
+      SOURCE_ID: String(body.source_id ?? "WEB"),
       UTM_SOURCE: body.utm?.source || "",
       UTM_MEDIUM: body.utm?.medium || "",
       UTM_CAMPAIGN: body.utm?.campaign || "",

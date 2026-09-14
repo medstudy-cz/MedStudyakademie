@@ -78,6 +78,7 @@ export async function sendEmail({
     console.error("[email] sendEmail failed:", {
       to: recipients,
       subject,
+      from: FROM_EMAIL(),
       error: err?.response?.body || err?.message || err,
     });
     return false;
