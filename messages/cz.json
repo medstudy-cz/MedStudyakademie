@@ -16,7 +16,8 @@
     "title": "Integrace. Vzdělávání. Podpora.",
     "subtitle": "Pomáháme cizincům, zdravotníkům a jejich rodinám začlenit se do české společnosti. Bezplatně.",
     "ctaServices": "Naše služby",
-    "ctaContact": "Kontaktujte nás"
+    "ctaContact": "Kontaktujte nás",
+    "ctaQuiz": "Absolvovat test"
   },
   "about": {
     "title": "Kdo jsme?",
@@ -57,10 +58,22 @@
   },
   "stats": {
     "items": [
-      { "value": "1000+", "label": "Úspěšných studentů" },
-      { "value": "2094", "label": "Ukrajinských zdravotníků v ČR od roku 2022" },
-      { "value": "9 měsíců", "label": "Od nuly do B2" },
-      { "value": "3", "label": "Jazyky podpory" }
+      {
+        "value": "1000+",
+        "label": "Úspěšných studentů"
+      },
+      {
+        "value": "2094",
+        "label": "Ukrajinských zdravotníků v ČR od roku 2022"
+      },
+      {
+        "value": "9 měsíců",
+        "label": "Od nuly do B2"
+      },
+      {
+        "value": "3",
+        "label": "Jazyky podpory"
+      }
     ]
   },
   "audience": {
@@ -166,5 +179,76 @@
     "ctaTitle": "Potřebujete individuální konzultaci?",
     "ctaDescription": "Zanechte nám zprávu a naši koordinátoři vám bezplatně poradí s integrací a vzděláváním.",
     "ctaButton": "Získat konzultaci"
+  },
+  "StartScreen": {
+    "title": "Vyberte si vysněnou profesi a univerzitu v Česku — za 5 minut",
+    "description": "Odpovězte na 7 jednoduchých otázek a získejte výběr oborů a univerzit, které se k vám hodí. Více než 1000 uchazečů už našlo svou cestu s naším AI testem.",
+    "button": "Zahájit test",
+    "footer": "AI a naši konzultanti už pomohli stovkám studentů dostat se na rozpočet v Česku.",
+    "feature1": "Zdarma",
+    "feature2": "Jen 5 minut",
+    "feature3": "Doporučení od expertů"
+  },
+  "RoleSelection": {
+    "title": "Kdo teď prochází testem?",
+    "student": "Jsem žák/student",
+    "parent": "Jsem rodič"
+  },
+  "EducationLevelSelection": {
+    "student": {
+      "title": "Jaká je vaše současná úroveň vzdělání?",
+      "options": {
+        "grade_11": "Po 11. třídě",
+        "bachelor": "Bakalář"
+      }
+    },
+    "parent": {
+      "title": "Vybiráte pro dítě?",
+      "options": {
+        "all": "Chci vybrat univerzitu pro dítě"
+      }
+    }
+  },
+  "PersonalizationScreen": {
+    "loading": "Připravujeme pro vás osobní test..."
+  },
+  "LeadCaptureForm": {
+    "title": "Test dokončen!",
+    "subtitle": "Váš AI report je skoro hotový. Získejte výběr oborů a fakult právě pro vás.",
+    "subject": "Váš personalizovaný report",
+    "preview": {
+      "title": "Váš směr",
+      "description": "Podle odpovědí vám sedí humanitní směr. Pomůže to vybrat vhodné obory a univerzity.",
+      "schoolsTitle": "Doporučené typy škol",
+      "schools1": "Humanitní gymnázium",
+      "schools2": "Pedagogická škola",
+      "schools3": "Lyceum společenských věd",
+      "note": "Tip: na konzultaci vybereme konkrétní školy a vysvětlíme termíny podání."
+    },
+    "previewLabel": "Kompletní report pošleme na e-mail",
+    "listItem1": "Co a kde studovat v Česku",
+    "listItem2": "3 univerzity + 6 fakult",
+    "listItem3": "Kroky na nejbližší 2 týdny",
+    "privacyNote": "Data jsou chráněna. Bez spamu. Odhlášení na 1 klik.",
+    "form": {
+      "nameLabel": "Vaše jméno",
+      "phoneLabel": "Telefonní číslo",
+      "phoneError": "Zadejte platné telefonní číslo",
+      "emailLabel": "E-mail pro výsledky",
+      "submit": "Získat report e-mailem",
+      "sending": "Odesílání..."
+    }
+  },
+  "ThankYouScreen": {
+    "title": "Děkujeme!",
+    "message1": "Vaše osobní doporučení už jsou na cestě! Zkontrolujte e-mail, který jste uvedli.",
+    "message2": "Mezitím se můžete podívat na naše programy na ",
+    "linkText": "hlavním webu"
+  },
+  "QuizScreen": {
+    "placeholder": "Vaše odpověď...",
+    "buttonNext": "Další",
+    "progress": "Otázka {current} z {total}",
+    "multiSelectHint": "Můžete vybrat více možností"
   }
 }

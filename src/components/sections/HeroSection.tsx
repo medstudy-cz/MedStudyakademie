@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation";
 import {
   staggerContainer,
   staggerItem,
@@ -55,9 +56,25 @@ export function HeroSection() {
               variants={staggerItem}
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
             >
+              <motion.div
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.25, ease: smoothEase }}
+                className="w-full sm:w-auto"
+              >
+                <Link
+                  href="/quiz"
+                  className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+                >
+                  {t("ctaQuiz")}
+                </Link>
+              </motion.div>
               <motion.a
                 href="#activities"
-                className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "lg" }),
+                  "w-full sm:w-auto",
+                )}
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.25, ease: smoothEase }}

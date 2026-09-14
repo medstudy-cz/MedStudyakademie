@@ -36,3 +36,13 @@ html {
 .blog-content h3 {
   font-family: inherit;
 }
+
+/* Quiz feature layout helpers */
+.quiz-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 42rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

@@ -16,7 +16,8 @@
     "title": "Integration. Education. Support.",
     "subtitle": "We help foreigners, healthcare workers and their families integrate into Czech society. Free of charge.",
     "ctaServices": "Our services",
-    "ctaContact": "Contact us"
+    "ctaContact": "Contact us",
+    "ctaQuiz": "Take the test"
   },
   "about": {
     "title": "Who we are",
@@ -57,10 +58,22 @@
   },
   "stats": {
     "items": [
-      { "value": "1000+", "label": "Successful students" },
-      { "value": "2094", "label": "Ukrainian healthcare workers in the Czech Republic since 2022" },
-      { "value": "9 months", "label": "From zero to B2" },
-      { "value": "3", "label": "Languages of support" }
+      {
+        "value": "1000+",
+        "label": "Successful students"
+      },
+      {
+        "value": "2094",
+        "label": "Ukrainian healthcare workers in the Czech Republic since 2022"
+      },
+      {
+        "value": "9 months",
+        "label": "From zero to B2"
+      },
+      {
+        "value": "3",
+        "label": "Languages of support"
+      }
     ]
   },
   "audience": {
@@ -166,5 +179,77 @@
     "ctaTitle": "Need personalized consultation?",
     "ctaDescription": "Get in touch with us and our coordinators will assist you with integration and education free of charge.",
     "ctaButton": "Get Consultation"
+  },
+  "StartScreen": {
+    "title": "Choose your dream profession and university in the Czech Republic — in 5 minutes",
+    "description": "Answer 7 simple questions and get a selection of specialties and universities that suit you best. Over 1000 applicants have already found their path with our AI test.",
+    "button": "Start Test",
+    "footer": "AI and our consultants have already helped hundreds of students enroll on a budget in the Czech Republic.",
+    "feature1": "Free",
+    "feature2": "Only 5 minutes",
+    "feature3": "Expert recommendations"
+  },
+  "RoleSelection": {
+    "title": "Who is taking the test now?",
+    "student": "I am a student",
+    "parent": "I am a parent"
+  },
+  "EducationLevelSelection": {
+    "student": {
+      "title": "What is your current level of education?",
+      "options": {
+        "grade_11": "After 11th grade",
+        "bachelor": "Bachelor's degree"
+      }
+    },
+    "parent": {
+      "title": "Are you choosing for your child?",
+      "options": {
+        "all": "I want to choose a university for my child"
+      }
+    }
+  },
+  "PersonalizationScreen": {
+    "loading": "Preparing your personalized test..."
+  },
+  "LeadCaptureForm": {
+    "title": "Test completed!",
+    "subtitle": "Your AI report is almost ready. Get a selection of specialties and faculties just for you.",
+    "subject": "Your personalized report",
+    "preview": {
+      "title": "Your direction",
+      "description": "Based on your answers, the Humanities track suits you best. This will help you choose matching majors and universities.",
+      "schoolsTitle": "Recommended school types",
+      "schools1": "Humanities Gymnasium",
+      "schools2": "Pedagogical School",
+      "schools3": "Social Sciences Lyceum",
+      "note": "Tip: during consultation, we will suggest specific schools and explain application deadlines."
+    },
+    "previewLabel": "We will send the full report to your email",
+    "listItem1": "What and where to study in Czechia",
+    "listItem2": "3 universities + 6 faculties",
+    "listItem3": "Steps for the next 2 weeks",
+    "privacyNote": "Your data is protected. No spam. You can unsubscribe in one click.",
+    "form": {
+      "nameLabel": "Your name",
+      "phoneLabel": "Phone number",
+      "phoneError": "Please enter a valid phone number",
+      "emailLabel": "Email to receive results",
+      "submit": "Get the report by email",
+      "sending": "Sending..."
+    }
+  },
+  "ThankYouScreen": {
+    "emoji": "🎉",
+    "title": "Thank you!",
+    "message1": "Your personalized recommendations are on their way! Check the email you provided.",
+    "message2": "While you wait, you can explore our programs on  ",
+    "linkText": "the main website"
+  },
+  "QuizScreen": {
+    "placeholder": "Your answer...",
+    "buttonNext": "Next",
+    "progress": "Question {current} of {total}",
+    "multiSelectHint": "You can select multiple options"
   }
 }
