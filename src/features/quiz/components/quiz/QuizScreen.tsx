@@ -5,9 +5,28 @@ import { ProgressBar } from "../ui/ProgressBar";
 import { Button } from "../ui/Button";
 import { useQuiz } from "@/features/quiz/context/QuizContext";
 import { useLocale, useTranslations } from "next-intl";
-import type { Option } from "@/features/quiz/dictionaries/quizDictionary";
+import type { Option, Question } from "@/features/quiz/dictionaries/quizDictionary";
 import { trackEvent } from "@/features/quiz/utils/analytics";
 import { sendEventToServer } from "@/features/quiz/utils/sendEvent";
+
+function resolveQuestionList(
+  questions: ReturnType<typeof useQuiz>["questions"],
+  role: string | null,
+  level: string | null,
+): Question[] {
+  if (!questions || !role) return [];
+  const roleQuestions = (
+    questions as unknown as Record<string, Record<string, Question[] | undefined>>
+  )[role];
+  if (!roleQuestions) return [];
+  if (level && Array.isArray(roleQuestions[level]) && roleQuestions[level]!.length) {
+    return roleQuestions[level]!;
+  }
+  if (Array.isArray(roleQuestions.all) && roleQuestions.all.length) {
+    return roleQuestions.all;
+  }
+  return [];
+}
 
 export function QuizScreen() {
   const {
@@ -28,27 +47,7 @@ export function QuizScreen() {
   const t = useTranslations("QuizScreen");
   const locale = useLocale() || "ua";
 
-  const roleQuestions = questions?.[role as keyof typeof questions] || {};
-  let questionList: any[] = [];
-
-  // Добавлено логирование для отладки
-  console.log('🔍 Debug QuizScreen:', {
-    role,
-    level,
-    questions,
-    roleQuestions,
-    hasLevel: level && (roleQuestions as Record<string, any>)[level],
-    levelData: level ? (roleQuestions as Record<string, any>)[level] : null
-  });
-
-  if (level && (roleQuestions as Record<string, any>)[level]) {
-    questionList = (roleQuestions as Record<string, any>)[level];
-  } else if ((roleQuestions as Record<string, any>)["all"]) {
-    questionList = (roleQuestions as Record<string, any>)["all"];
-  }
-
-  console.log('📋 Question list:', questionList, 'length:', questionList.length);
-
+  const questionList = resolveQuestionList(questions, role, level);
   const current = questionList[currentIndex];
 
   useEffect(() => {
@@ -64,44 +63,11 @@ export function QuizScreen() {
 
   const toggleMultiSelectOption = (opt: string) => {
     setSelectedOptions((prev) =>
-      prev.includes(opt) ? prev.filter((item) => item !== opt) : [...prev, opt]
+      prev.includes(opt) ? prev.filter((item) => item !== opt) : [...prev, opt],
     );
   };
 
-  const handleAnswer = async (opt: any) => {
-    if (!current) return;
-
-    const answerValue = Array.isArray(opt)
-      ? opt.join("; ")
-      : typeof opt === "string"
-        ? opt
-        : String(opt);
-    const questionId = `${currentIndex + 1}`;
-
-    const updatedAnswers = [
-      ...answers,
-      { question: current.question, answer: answerValue },
-    ];
-
-    setAnswers(updatedAnswers);
-
-    const payload = {
-      step: "quiz_step_complete",
-      step_number: questionId,
-      question_text: current.question,
-      answer: answerValue,
-    };
-
-    trackEvent("quiz_step_complete", payload);
-    await sendEventToServer(payload);
-
-    if (currentIndex + 1 < questionList.length) {
-      setCurrentIndex(currentIndex + 1);
-      setInputValue("");
-      setSelectedOptions([]);
-      return;
-    }
-
+  const finishQuiz = async (updatedAnswers: { question: string; answer: string }[]) => {
     const reportPromise = (async () => {
       try {
         const res = await fetch("/api/report", {
@@ -112,7 +78,7 @@ export function QuizScreen() {
             role: role!,
             level: level!,
             answers: updatedAnswers,
-            locale: locale as "en" | "ua" | "ru",
+            locale: (locale === "cz" ? "ua" : locale) as "en" | "ua" | "ru",
           }),
         });
         const data = await res.json();
@@ -148,20 +114,56 @@ export function QuizScreen() {
     setStep("form");
   };
 
+  const handleAnswer = async (opt: string | string[]) => {
+    if (!current) return;
+
+    const answerValue = Array.isArray(opt) ? opt.join("; ") : opt;
+
+    const updatedAnswers = [
+      ...answers,
+      { question: current.question, answer: answerValue },
+    ];
+
+    setAnswers(updatedAnswers);
+
+    const payload = {
+      step: "quiz_step_complete",
+      step_number: `${currentIndex + 1}`,
+      question_text: current.question,
+      answer: answerValue,
+    };
+
+    trackEvent("quiz_step_complete", payload);
+    await sendEventToServer(payload);
+
+    const skipTarget = current.skipToIndexOnAnswer?.[answerValue];
+    const nextIndex =
+      typeof skipTarget === "number" ? skipTarget : currentIndex + 1;
+
+    if (nextIndex < questionList.length) {
+      setCurrentIndex(nextIndex);
+      setInputValue("");
+      setSelectedOptions([]);
+      return;
+    }
+
+    await finishQuiz(updatedAnswers);
+  };
+
   if (!current) return null;
+
+  // Progress: count only remaining path roughly by index over total
+  const progressCurrent = Math.min(currentIndex + 1, questionList.length);
 
   return (
     <div className="quiz-container text-[#153060]">
       <div className="flex justify-center">
-        <ProgressBar
-          current={currentIndex + 1}
-          total={questionList.length}
-        />
+        <ProgressBar current={progressCurrent} total={questionList.length} />
       </div>
 
       <p className="text-sm mb-4">
         {t("progress", {
-          current: currentIndex + 1,
+          current: progressCurrent,
           total: questionList.length,
         })}
       </p>
@@ -178,6 +180,7 @@ export function QuizScreen() {
               className="quiz-option"
               onClick={() => handleAnswer(opt)}
             >
+              <span className="mr-2 font-semibold tabular-nums">{i + 1}.</span>
               {opt}
             </AnswerButton>
           ))}

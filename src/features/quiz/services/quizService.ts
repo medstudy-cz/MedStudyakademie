@@ -10,8 +10,8 @@ export type QuizContentLocale = "en" | "ru" | "ua";
 /** UI locale (incl. cz) → quiz content locale */
 export function mapQuizContentLocale(lang: string): QuizContentLocale {
   if (lang === "ru" || lang === "en" || lang === "ua") return lang;
-  // Czech UI: prefer Ukrainian question bank (common for akademie audience), else RU
-  return "ua";
+  // Czech UI: new question bank authored in Russian
+  return "ru";
 }
 
 /** Slug из URL, иначе DEFAULT env, иначе первый активный квиз в Sanity */

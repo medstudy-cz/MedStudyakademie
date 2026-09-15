@@ -70,10 +70,21 @@ export function adaptSanityQuizToQuestionBank(
 ): QuestionBankLanguage {
   const { questions } = quiz
 
+  const grade11 = convertQuestionsList(
+    questions.student_grade_11?.[locale],
+    locale,
+  )
+  const bachelor = convertQuestionsList(
+    questions.student_bachelor?.[locale],
+    locale,
+  )
+
   return {
     student: {
-      grade_11: convertQuestionsList(questions.student_grade_11?.[locale], locale),
-      bachelor: convertQuestionsList(questions.student_bachelor?.[locale], locale),
+      // Prefer combined bank when present; keep legacy levels for Studio quizzes
+      all: grade11.length ? grade11 : bachelor,
+      grade_11: grade11,
+      bachelor,
     },
     parent: {
       all: convertQuestionsList(questions.parent?.[locale], locale),
@@ -93,7 +104,9 @@ export function getSanityAIPrompt(
   const promptKey =
     role === 'parent'
       ? 'parent'
-      : (`student_${level}` as keyof typeof quiz.aiPrompts)
+      : level === 'all' || level === 'grade_11'
+        ? 'student_grade_11'
+        : (`student_${level}` as keyof typeof quiz.aiPrompts)
 
   const rolePrompt = quiz.aiPrompts[promptKey]
   if (!rolePrompt) {

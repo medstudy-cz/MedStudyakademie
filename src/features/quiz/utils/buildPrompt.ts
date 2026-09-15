@@ -26,7 +26,11 @@ export function buildPrompt({
   universityLayer?: UniversityLayer;
 }): string {
   const key: PromptKey =
-    role === "parent" ? "parent" : (`student_${level}` as PromptKey);
+    role === "parent"
+      ? "parent"
+      : level === "all" || level === "grade_11"
+        ? "student_grade_11"
+        : (`student_${level}` as PromptKey);
 
   const reportTemplates = promptsData.reportGeneration;
   const roleTemplate =
