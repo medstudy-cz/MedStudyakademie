@@ -20,11 +20,11 @@ export function StartScreen({
           <span className="text-sm font-semibold">{copy.feature1}</span>
         </div>
         <div className="flex flex-col items-center">
-          <img src="/clockIcon.svg" alt="" className="w-6 h-6 mb-2" />
+          <img src="/quiz/clockIcon.svg" alt="" className="w-6 h-6 mb-2" />
           <span className="text-sm font-semibold">{copy.feature3}</span>
         </div>
         <div className="flex flex-col items-center">
-          <img src="/graduationCap.svg" alt="" className="w-6 h-6 mb-2" />
+          <img src="/quiz/graduationCap.svg" alt="" className="w-6 h-6 mb-2" />
           <span className="text-sm font-semibold">{copy.feature2}</span>
         </div>
       </div>
