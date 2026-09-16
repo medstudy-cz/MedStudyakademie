@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { name, email, phone, subject, html } = body;
+    const { name, email, phone, subject, html, adminAnswersHtml } = body;
 
     if (!name || !email || !html || !subject) {
       return NextResponse.json(
@@ -26,6 +26,21 @@ export async function POST(req: NextRequest) {
     const text = html.replace(/<\/?[^>]+(>|$)/g, "");
     const adminSubject = `${String(name).toUpperCase()} ${phone || ""}`.trim();
 
+    const adminHtml = `
+${typeof adminAnswersHtml === "string" ? adminAnswersHtml : ""}
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;" />
+<section style="font-family:sans-serif;color:#153060;">
+  <h2 style="font-size:18px;margin:0 0 12px;">Письмо, отправленное клиенту</h2>
+  ${html}
+</section>
+`.trim();
+
+    const adminText = `${
+      typeof adminAnswersHtml === "string"
+        ? adminAnswersHtml.replace(/<\/?[^>]+(>|$)/g, "")
+        : ""
+    }\n\n---\nПисьмо клиенту:\n${text}`;
+
     const [clientSent, adminSent] = await Promise.all([
       sendEmail({
         to: email,
@@ -36,8 +51,8 @@ export async function POST(req: NextRequest) {
       sendEmail({
         to: ADMIN_EMAIL,
         subject: adminSubject,
-        html,
-        text,
+        html: adminHtml,
+        text: adminText,
         category: "quiz-admin",
       }),
     ]);

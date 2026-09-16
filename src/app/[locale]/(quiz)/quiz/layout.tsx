@@ -1,4 +1,5 @@
 import { QuizProviderFromRoute } from "@/features/quiz/components/QuizProviderFromRoute";
+import { QuizLeaveGuard } from "@/features/quiz/components/QuizLeaveGuard";
 
 export default function QuizLayout({
   children,
@@ -7,7 +8,8 @@ export default function QuizLayout({
 }) {
   return (
     <QuizProviderFromRoute>
-      <main className="min-h-screen flex-1 bg-[#f6fcff]">{children}</main>
+      <QuizLeaveGuard />
+      <div className="bg-[#f6fcff]">{children}</div>
     </QuizProviderFromRoute>
   );
 }

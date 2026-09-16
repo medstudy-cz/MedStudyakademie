@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import Bitrix from "@2bad/bitrix";
 
 /** Normalize Bitrix webhook base URL (no method suffix). */
 function normalizeWebhookUrl(raw: string): string {
@@ -19,7 +18,10 @@ function isValidHttpUrl(value: string): boolean {
   }
 }
 
-/** Quiz lead → Bitrix via SEND_LEADS_QUIZ (separate from akademie SEND_LEADS). */
+/**
+ * Quiz lead → Bitrix via SEND_LEADS_QUIZ.
+ * Uses JSON POST body (not query string) to avoid 414 Request-URI Too Large.
+ */
 export async function POST(req: Request) {
   try {
     const webhookUrl = normalizeWebhookUrl(process.env.SEND_LEADS_QUIZ ?? "");
@@ -41,9 +43,8 @@ export async function POST(req: Request) {
       );
     }
 
-    const bitrix = Bitrix(webhookUrl);
     const body = await req.json();
-    const leadData: Record<string, unknown> = {
+    const fields: Record<string, unknown> = {
       TITLE: body.title || "Quiz Lead",
       NAME: body.name,
       HAS_EMAIL: "Y",
@@ -51,7 +52,6 @@ export async function POST(req: Request) {
       HAS_PHONE: "Y",
       PHONE: [{ VALUE_TYPE: "WORK", VALUE: body.phone }],
       COMMENTS: body.answers || "",
-      // Bitrix expects string source ids; keep quiz portal id as string
       SOURCE_ID: String(body.source_id ?? "WEB"),
       UTM_SOURCE: body.utm?.source || "",
       UTM_MEDIUM: body.utm?.medium || "",
@@ -60,9 +60,30 @@ export async function POST(req: Request) {
       UTM_TERM: body.utm?.term || "",
     };
 
-    const lead = await bitrix.leads.create(leadData as any);
+    const endpoint = `${webhookUrl}crm.lead.add.json`;
+    const bitrixRes = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ fields }),
+    });
 
-    return NextResponse.json({ success: true, lead });
+    const bitrixJson = await bitrixRes.json().catch(() => null);
+
+    if (!bitrixRes.ok || bitrixJson?.error) {
+      console.error("❌ Bitrix quiz API error:", bitrixJson || bitrixRes.statusText);
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            bitrixJson?.error_description ||
+            bitrixJson?.error ||
+            `Bitrix HTTP ${bitrixRes.status}`,
+        },
+        { status: 500 },
+      );
+    }
+
+    return NextResponse.json({ success: true, lead: bitrixJson });
   } catch (err: any) {
     console.error("❌ Bitrix quiz API error:", err);
     return NextResponse.json(

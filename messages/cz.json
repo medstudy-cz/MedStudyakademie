@@ -250,5 +250,11 @@
     "buttonNext": "Další",
     "progress": "Otázka {current} z {total}",
     "multiSelectHint": "Můžete vybrat více možností"
+  },
+  "QuizLeaveGuard": {
+    "title": "Opustit test?",
+    "message": "Vaše odpovědi se neuloží. Opravdu chcete přejít na jinou stránku?",
+    "cancel": "Zůstat",
+    "confirm": "Ano, odejít"
   }
 }

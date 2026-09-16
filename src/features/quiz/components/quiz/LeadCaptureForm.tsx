@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import { Button } from "../ui/Button";
 import { useTranslations } from "next-intl";
 import { useQuiz } from "@/features/quiz/context/QuizContext";
-import { useLocale } from "next-intl";
 import { getUTMParams } from "@/features/quiz/utils/getUTMParams";
-import { formatAnswers } from "@/features/quiz/utils/formatAnswers";
+import {
+  formatAnswersForBitrix,
+  formatAnswersHtmlForAdmin,
+} from "@/features/quiz/utils/formatAnswers";
 import { trackEvent } from "@/features/quiz/utils/analytics";
 import { sendEventToServer } from "@/features/quiz/utils/sendEvent";
 import { CountrySelector, usePhoneInput } from "react-international-phone";
@@ -23,7 +25,6 @@ export function LeadCaptureForm({
   const [phone, setPhone] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const t = useTranslations("LeadCaptureForm");
-  const locale = useLocale() || "ua";
   const [loading, setLoading] = useState(false);
 
   const phoneInput = usePhoneInput({
@@ -101,6 +102,7 @@ export function LeadCaptureForm({
             phone,
             subject: t("subject"),
             html: finalHtml || "No report generated",
+            adminAnswersHtml: formatAnswersHtmlForAdmin(answers),
           }),
         })
           .then(async (res) => {
@@ -144,12 +146,9 @@ export function LeadCaptureForm({
             phone,
             source_id: 15,
             answers:
-              reportError +
-              emailSendError +
-              formatAnswers(
-                answers,
-                (locale === "cz" ? "ua" : locale) as "en" | "ua" | "ru",
-              ),
+              (reportError ? `REPORT_ERROR: ${reportError}\n` : "") +
+              (emailSendError ? `EMAIL_ERROR: ${emailSendError}\n` : "") +
+              formatAnswersForBitrix(answers),
             utm: getUTMParams(),
           }),
         })

@@ -251,5 +251,11 @@
     "buttonNext": "Next",
     "progress": "Question {current} of {total}",
     "multiSelectHint": "You can select multiple options"
+  },
+  "QuizLeaveGuard": {
+    "title": "Leave the test?",
+    "message": "Your answers will not be saved. Do you really want to go to another page?",
+    "cancel": "Stay",
+    "confirm": "Yes, leave"
   }
 }

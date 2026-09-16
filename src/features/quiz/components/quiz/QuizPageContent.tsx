@@ -1,6 +1,5 @@
 "use client";
 
-import { Navbar } from "@/features/quiz/components/QuizNavbar";
 import { StartScreen } from "@/features/quiz/components/quiz/StartScreen";
 import { RoleSelection } from "@/features/quiz/components/quiz/RoleSelection";
 import { EducationLevelSelection } from "@/features/quiz/components/quiz/EducationLevelSelection";
@@ -20,28 +19,26 @@ export function QuizPageContent() {
   const { step, setStep, role, level, setAnswers, answers, sanityQuiz } = useQuiz();
   const t = useTranslations("StartScreen");
   const locale = useLocale() || "ua";
-  const startCopy = resolveStartScreenCopy(locale, sanityQuiz?.startScreen, (key: StartScreenCopyKey) =>
-    t(key)
+  const startCopy = resolveStartScreenCopy(
+    locale,
+    sanityQuiz?.startScreen,
+    (key: StartScreenCopyKey) => t(key),
   );
 
-  const backgroundClass = clsx(
-    "min-h-screen h-auto flex flex-col",
-    {
-      "bg-[#0babff] bg-[url('/quiz/back.png')] bg-no-repeat bg-bottom bg-[length:150%] sm:bg-[length:100%]":
-        role === "student",
-      "bg-[#ddf7ff]": role === "parent",
-      "bg-[#67dcfe]": !role,
-    }
-  );
+  const backgroundClass = clsx("relative flex min-h-[70vh] h-auto flex-col", {
+    "bg-[#0babff] bg-[url('/quiz/back.png')] bg-no-repeat bg-bottom bg-[length:150%] sm:bg-[length:100%]":
+      role === "student",
+    "bg-[#ddf7ff]": role === "parent",
+    "bg-[#67dcfe]": !role,
+  });
 
   return (
-    <div className={backgroundClass} style={{ minHeight: "100dvh" }}>
+    <div className={backgroundClass}>
       {role === "student" && (
-        <div className="absolute inset-0 h-full w-full pointer-events-none bg-gradient-to-b from-[#0babff] via-[#0babff]/80 to-transparent z-0" />
+        <div className="pointer-events-none absolute inset-0 z-0 h-full w-full bg-gradient-to-b from-[#0babff] via-[#0babff]/80 to-transparent" />
       )}
 
-      <main className="relative z-10 flex-1 flex flex-col">
-        <Navbar />
+      <div className="relative z-10 flex flex-1 flex-col">
         {step === "start" && (
           <div className="relative flex flex-col items-center">
             <h1
@@ -51,20 +48,19 @@ export function QuizPageContent() {
               {startCopy.title}
             </h1>
 
-            <div className="relative w-full max-w-md flex justify-center">
-              <div className="absolute top-1/2 w-[365px] h-[150px] -translate-y-1/2 rounded-full bg-white opacity-60 blur-3xl z-0" />
-
+            <div className="relative flex w-full max-w-md justify-center">
+              <div className="absolute top-1/2 z-0 h-[150px] w-[365px] -translate-y-1/2 rounded-full bg-white opacity-60 blur-3xl" />
               <img
                 src="/quiz/main.png"
                 alt="illustration"
-                className="relative z-10 w-[250px] -mb-20"
+                className="relative z-10 mb-[-5rem] w-[250px]"
               />
             </div>
           </div>
         )}
 
         <div className="flex flex-1 items-center justify-center px-4 py-8">
-          <div className="bg-white p-4 sm:p-10 rounded-3xl shadow-xl w-full max-w-2xl text-center">
+          <div className="w-full max-w-2xl rounded-3xl bg-white p-4 text-center shadow-xl sm:p-10">
             {step === "start" && (
               <StartScreen
                 copy={startCopy}
@@ -84,7 +80,10 @@ export function QuizPageContent() {
                 onSubmit={async (data) => {
                   setAnswers([
                     ...answers,
-                    { question: "Form submitted", answer: JSON.stringify(data) },
+                    {
+                      question: "Form submitted",
+                      answer: JSON.stringify(data),
+                    },
                   ]);
                   setStep("thankyou");
                 }}
@@ -93,7 +92,7 @@ export function QuizPageContent() {
             {step === "thankyou" && <ThankYouScreen />}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
