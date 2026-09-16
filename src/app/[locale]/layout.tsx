@@ -5,7 +5,6 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { routing } from "@/i18n/routing";
 import { LocaleHtmlLang } from "@/components/layout/LocaleHtmlLang";
 import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -56,7 +55,6 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <LocaleHtmlLang />
       <Header />
       <main className="flex-1">{children}</main>
-      <Footer />
     </NextIntlClientProvider>
   );
 }
