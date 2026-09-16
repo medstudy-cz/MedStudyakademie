@@ -1,17 +1,21 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { useQuiz } from "@/features/quiz/context/QuizContext";
 
 function isQuizPath(pathname: string): boolean {
-  // /ru/quiz or /ru/quiz/slug — keep locale prefix
   return /\/quiz(\/|$)/.test(pathname);
 }
 
 function resolveHref(anchor: HTMLAnchorElement): string | null {
   const href = anchor.getAttribute("href");
-  if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+  if (
+    !href ||
+    href.startsWith("#") ||
+    href.startsWith("mailto:") ||
+    href.startsWith("tel:")
+  ) {
     return null;
   }
   try {
@@ -32,10 +36,21 @@ export function QuizLeaveGuard() {
   const { step } = useQuiz();
   const t = useTranslations("QuizLeaveGuard");
   const [pendingHref, setPendingHref] = useState<string | null>(null);
+  /** После «Да, перейти» — не показывать нативный beforeunload */
+  const allowLeaveRef = useRef(false);
+  const onBeforeUnloadRef = useRef<((event: BeforeUnloadEvent) => void) | null>(
+    null,
+  );
 
   const inProgress = step !== "start" && step !== "thankyou";
 
   const navigateTo = useCallback((href: string) => {
+    allowLeaveRef.current = true;
+    const handler = onBeforeUnloadRef.current;
+    if (handler) {
+      window.removeEventListener("beforeunload", handler);
+      onBeforeUnloadRef.current = null;
+    }
     setPendingHref(null);
     window.location.assign(href);
   }, []);
@@ -44,9 +59,12 @@ export function QuizLeaveGuard() {
     if (!inProgress) return;
 
     const onClick = (event: MouseEvent) => {
+      if (allowLeaveRef.current) return;
       if (event.defaultPrevented) return;
       if (event.button !== 0) return;
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        return;
+      }
 
       const target = event.target as Element | null;
       const anchor = target?.closest?.("a") as HTMLAnchorElement | null;
@@ -62,7 +80,6 @@ export function QuizLeaveGuard() {
         /* keep href */
       }
 
-      // Остаёмся внутри квиза (в т.ч. смена языка на /xx/quiz) — без попапа
       if (isQuizPath(pathname)) return;
 
       event.preventDefault();
@@ -78,11 +95,18 @@ export function QuizLeaveGuard() {
     if (!inProgress) return;
 
     const onBeforeUnload = (event: BeforeUnloadEvent) => {
+      if (allowLeaveRef.current) return;
       event.preventDefault();
       event.returnValue = "";
     };
+    onBeforeUnloadRef.current = onBeforeUnload;
     window.addEventListener("beforeunload", onBeforeUnload);
-    return () => window.removeEventListener("beforeunload", onBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", onBeforeUnload);
+      if (onBeforeUnloadRef.current === onBeforeUnload) {
+        onBeforeUnloadRef.current = null;
+      }
+    };
   }, [inProgress]);
 
   if (!pendingHref) return null;
@@ -95,10 +119,10 @@ export function QuizLeaveGuard() {
       aria-labelledby="quiz-leave-title"
     >
       <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl text-[#153060]">
-        <h2 id="quiz-leave-title" className="text-lg font-bold mb-2">
+        <h2 id="quiz-leave-title" className="mb-2 text-lg font-bold">
           {t("title")}
         </h2>
-        <p className="text-sm leading-relaxed mb-6">{t("message")}</p>
+        <p className="mb-6 text-sm leading-relaxed">{t("message")}</p>
         <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
           <button
             type="button"
