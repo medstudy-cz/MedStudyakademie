@@ -1,7 +1,7 @@
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_VERSION = "v1beta";
-const GEMINI_MODEL = "gemini-2.5-flash";
-const GEMINI_FALLBACK_MODEL = "gemini-2.0-flash";
+const GEMINI_MODEL = "gemini-3.6-flash";
+const GEMINI_FALLBACK_MODEL = "gemini-3.5-flash";
 
 function modelUrl(model: string) {
   return `https://generativelanguage.googleapis.com/${GEMINI_API_VERSION}/models/${model}:generateContent`;
