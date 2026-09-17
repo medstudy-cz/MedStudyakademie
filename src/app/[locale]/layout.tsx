@@ -54,7 +54,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     <NextIntlClientProvider messages={messages}>
       <LocaleHtmlLang />
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex flex-1 flex-col">{children}</main>
     </NextIntlClientProvider>
   );
 }

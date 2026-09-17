@@ -25,12 +25,15 @@ export function QuizPageContent() {
     (key: StartScreenCopyKey) => t(key),
   );
 
-  const backgroundClass = clsx("relative flex min-h-[70vh] h-auto flex-col", {
-    "bg-[#0babff] bg-[url('/quiz/back.png')] bg-no-repeat bg-bottom bg-[length:150%] sm:bg-[length:100%]":
-      role === "student",
-    "bg-[#ddf7ff]": role === "parent",
-    "bg-[#67dcfe]": !role,
-  });
+  const backgroundClass = clsx(
+    "relative flex min-h-full flex-1 flex-col",
+    {
+      "bg-[#0babff] bg-[url('/quiz/back.png')] bg-no-repeat bg-bottom bg-[length:150%] sm:bg-[length:100%]":
+        role === "student",
+      "bg-[#ddf7ff]": role === "parent",
+      "bg-[#67dcfe]": !role,
+    },
+  );
 
   return (
     <div className={backgroundClass}>
