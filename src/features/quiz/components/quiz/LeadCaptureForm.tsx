@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../ui/Button";
 import { useTranslations } from "next-intl";
 import { useQuiz } from "@/features/quiz/context/QuizContext";
@@ -19,13 +19,15 @@ export function LeadCaptureForm({
 }: {
   onSubmit: (data: { name: string; email: string; phone: string }) => void;
 }) {
-  const { answers, setStep, role, level, reportPromise, reportHtml, setReportHtml, generateReportHtml } = useQuiz();
+  const { answers, setStep, role, level, reportPromise, reportHtml, setReportHtml } = useQuiz();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const t = useTranslations("LeadCaptureForm");
   const [loading, setLoading] = useState(false);
+  const [loadingPhase, setLoadingPhase] = useState<0 | 1 | 2>(0);
+  const [dotCount, setDotCount] = useState(1);
 
   const phoneInput = usePhoneInput({
     defaultCountry: "ua",
@@ -38,6 +40,37 @@ export function LeadCaptureForm({
     },
   });
 
+  useEffect(() => {
+    if (!loading) {
+      setLoadingPhase(0);
+      setDotCount(1);
+      return;
+    }
+
+    const startedAt = Date.now();
+    const phaseTimer = window.setInterval(() => {
+      const elapsed = Date.now() - startedAt;
+      if (elapsed < 3000) setLoadingPhase(0);
+      else if (elapsed < 6000) setLoadingPhase(1);
+      else setLoadingPhase(2);
+    }, 200);
+
+    const dotsTimer = window.setInterval(() => {
+      setDotCount((n) => (n >= 3 ? 1 : n + 1));
+    }, 500);
+
+    return () => {
+      window.clearInterval(phaseTimer);
+      window.clearInterval(dotsTimer);
+    };
+  }, [loading]);
+
+  const loadingLabel =
+    (loadingPhase === 0
+      ? t("form.loadingBuilding")
+      : loadingPhase === 1
+        ? t("form.loadingPreparing")
+        : t("form.loadingSending")) + ".".repeat(dotCount);
   const previewReport = (
     <div className="preview-content mb-2 text-left text-gray-700 p-4 border rounded-lg bg-gray-50 blur-sm select-none text-sm">
       <h3 className="font-semibold mb-2 text-base">{t("preview.title")}</h3>
@@ -288,7 +321,7 @@ export function LeadCaptureForm({
 
         <div className="flex justify-center">
           <Button type="submit" className="btn btn-primary text-lg px-8 py-3" disabled={loading}>
-            {loading ? t("form.sending") : t("form.submit")}
+            {loading ? loadingLabel : t("form.submit")}
           </Button>
         </div>
       </form>

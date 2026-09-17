@@ -10,9 +10,82 @@ function modelUrl(model: string) {
 function cleanHtml(html: string) {
   return html
     .replace(/^```html\s*/i, "")
-    .replace(/^html\s*/i, "")
+    .replace(/^```\s*/i, "")
     .replace(/```$/i, "")
     .trim();
+}
+
+function hasMarkdownMarkup(text: string): boolean {
+  return /^#{1,3}\s/m.test(text) || /\*\*[^*]+\*\*/.test(text);
+}
+
+function convertMarkdownBody(cleaned: string): string {
+  const lines = cleaned.split(/\r?\n/);
+  const parts: string[] = [];
+  let inList = false;
+
+  const closeList = () => {
+    if (inList) {
+      parts.push("</ul>");
+      inList = false;
+    }
+  };
+
+  const inline = (text: string) =>
+    text
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/__(.+?)__/g, "<strong>$1</strong>");
+
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line) {
+      closeList();
+      continue;
+    }
+
+    const heading = /^(#{1,3})\s+(.+)$/.exec(line);
+    if (heading) {
+      closeList();
+      const level = Math.min(heading[1].length + 1, 3);
+      parts.push(`<h${level}>${inline(heading[2])}</h${level}>`);
+      continue;
+    }
+
+    const bullet = /^[-*•]\s+(.+)$/.exec(line);
+    const numbered = /^\d+[.)]\s+(.+)$/.exec(line);
+    if (bullet || numbered) {
+      if (!inList) {
+        parts.push("<ul>");
+        inList = true;
+      }
+      parts.push(`<li>${inline((bullet || numbered)![1])}</li>`);
+      continue;
+    }
+
+    closeList();
+    parts.push(`<p>${inline(line)}</p>`);
+  }
+  closeList();
+
+  return `<div style="font-family:sans-serif;color:#153060;line-height:1.6;">${parts.join("\n")}</div>`;
+}
+
+/** Fallback: модель иногда отдаёт Markdown — конвертируем в простой HTML для письма. */
+export function markdownishToHtml(input: string): string {
+  const cleaned = cleanHtml(input);
+  if (!hasMarkdownMarkup(cleaned)) {
+    return cleaned;
+  }
+
+  // Preserve trailing HTML CTA blocks the model may already have appended
+  const htmlBlockStart = cleaned.search(/<(div|table)\b/i);
+  if (htmlBlockStart > 0) {
+    const mdPart = cleaned.slice(0, htmlBlockStart).trim();
+    const htmlPart = cleaned.slice(htmlBlockStart).trim();
+    return `${convertMarkdownBody(mdPart)}\n${htmlPart}`;
+  }
+
+  return convertMarkdownBody(cleaned);
 }
 
 /** Layer 1 asked for broader catalog instead of HTML report */
@@ -32,6 +105,9 @@ async function generateWithModel(prompt: string, model: string) {
         parts: [{ text: prompt }],
       },
     ],
+    generationConfig: {
+      temperature: 0.4,
+    },
   };
 
   const res = await fetch(modelUrl(model), {
@@ -48,13 +124,11 @@ async function generateWithModel(prompt: string, model: string) {
   const data = JSON.parse(rawText);
 
   if (!res.ok) {
-    throw new Error(
-      `Gemini API error ${res.status}: ${JSON.stringify(data)}`
-    );
+    throw new Error(`Gemini API error ${res.status}: ${JSON.stringify(data)}`);
   }
 
   const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  return cleanHtml(text);
+  return markdownishToHtml(text);
 }
 
 export async function generateReport(prompt: string) {
@@ -67,7 +141,7 @@ export async function generateReport(prompt: string) {
   } catch (err) {
     console.warn(
       `[Gemini] ${GEMINI_MODEL} failed, retrying with ${GEMINI_FALLBACK_MODEL}`,
-      err
+      err,
     );
     return await generateWithModel(prompt, GEMINI_FALLBACK_MODEL);
   }

@@ -236,7 +236,10 @@
       "phoneError": "Zadejte platné telefonní číslo",
       "emailLabel": "E-mail pro výsledky",
       "submit": "Získat report e-mailem",
-      "sending": "Odesílání..."
+      "sending": "Odesílání...",
+      "loadingBuilding": "Připravujeme kompletní report",
+      "loadingPreparing": "Připravujeme k odeslání",
+      "loadingSending": "Odesíláme report"
     }
   },
   "ThankYouScreen": {

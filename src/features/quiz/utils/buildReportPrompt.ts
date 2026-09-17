@@ -2,13 +2,13 @@ import "server-only";
 import type { Quiz } from "@/features/quiz/sanity/types";
 import type { Answer } from "@/features/quiz/context/QuizContext";
 import type { Locale } from "@/features/quiz/dictionaries/promptsDictionary";
-import { noPlaceholdersInstruction } from "@/features/quiz/dictionaries/promptsDictionary";
+import { noPlaceholdersInstruction, htmlOutputInstruction } from "@/features/quiz/dictionaries/promptsDictionary";
 import { buildPrompt } from "@/features/quiz/utils/buildPrompt";
 import { buildSanityPrompt } from "@/features/quiz/services/buildSanityPrompt";
 import type { UniversityLayer } from "@/features/quiz/utils/formatUniversitiesForPrompt";
 
 function withOutputGuards(prompt: string): string {
-  return `${prompt}\n\n---\n\n${noPlaceholdersInstruction}`;
+  return `${prompt}\n\n---\n\n${htmlOutputInstruction}\n\n${noPlaceholdersInstruction}`;
 }
 
 function hasNonEmptySanityPrompt(

@@ -236,7 +236,10 @@
       "phoneError": "Please enter a valid phone number",
       "emailLabel": "Email to receive results",
       "submit": "Get the report by email",
-      "sending": "Sending..."
+      "sending": "Sending...",
+      "loadingBuilding": "Building your full report",
+      "loadingPreparing": "Preparing to send",
+      "loadingSending": "Sending the report"
     }
   },
   "ThankYouScreen": {

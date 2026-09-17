@@ -236,7 +236,10 @@
       "phoneError": "Введіть коректний номер телефону",
       "emailLabel": "Email для отримання результатів",
       "submit": "Отримати звіт на пошту",
-      "sending": "Відправка..."
+      "sending": "Відправка...",
+      "loadingBuilding": "Формуємо повний звіт",
+      "loadingPreparing": "Готуємо до відправки",
+      "loadingSending": "Відправка звіту"
     }
   },
   "ThankYouScreen": {
