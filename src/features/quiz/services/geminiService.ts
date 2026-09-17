@@ -1,7 +1,11 @@
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_VERSION = "v1beta";
-const GEMINI_MODEL = "gemini-3.6-flash";
-const GEMINI_FALLBACK_MODEL = "gemini-3.5-flash";
+/** Primary first; lite last — often freer under load */
+const GEMINI_MODELS = [
+  "gemini-3.6-flash",
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite",
+] as const;
 
 function modelUrl(model: string) {
   return `https://generativelanguage.googleapis.com/${GEMINI_API_VERSION}/models/${model}:generateContent`;
@@ -121,14 +125,52 @@ async function generateWithModel(prompt: string, model: string) {
   });
 
   const rawText = await res.text();
-  const data = JSON.parse(rawText);
+  let data: any = null;
+  try {
+    data = JSON.parse(rawText);
+  } catch {
+    data = { raw: rawText };
+  }
 
   if (!res.ok) {
-    throw new Error(`Gemini API error ${res.status}: ${JSON.stringify(data)}`);
+    const err = new Error(
+      `Gemini API error ${res.status}: ${JSON.stringify(data)}`,
+    ) as Error & { status?: number };
+    err.status = res.status;
+    throw err;
   }
 
   const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
   return markdownishToHtml(text);
+}
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isRetryable(err: unknown): boolean {
+  const status = (err as { status?: number })?.status;
+  return status === 503 || status === 429 || status === 500;
+}
+
+async function generateWithRetries(prompt: string, model: string) {
+  const attempts = 3;
+  let lastError: unknown;
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      return await generateWithModel(prompt, model);
+    } catch (err) {
+      lastError = err;
+      if (!isRetryable(err) || i === attempts) throw err;
+      const waitMs = 400 * i * i;
+      console.warn(
+        `[Gemini] ${model} attempt ${i}/${attempts} failed (retryable), waiting ${waitMs}ms`,
+        err,
+      );
+      await sleep(waitMs);
+    }
+  }
+  throw lastError;
 }
 
 export async function generateReport(prompt: string) {
@@ -136,13 +178,17 @@ export async function generateReport(prompt: string) {
     throw new Error("GEMINI_API_KEY is not set");
   }
 
-  try {
-    return await generateWithModel(prompt, GEMINI_MODEL);
-  } catch (err) {
-    console.warn(
-      `[Gemini] ${GEMINI_MODEL} failed, retrying with ${GEMINI_FALLBACK_MODEL}`,
-      err,
-    );
-    return await generateWithModel(prompt, GEMINI_FALLBACK_MODEL);
+  let lastError: unknown;
+  for (const model of GEMINI_MODELS) {
+    try {
+      return await generateWithRetries(prompt, model);
+    } catch (err) {
+      lastError = err;
+      console.warn(`[Gemini] ${model} failed, trying next model`, err);
+    }
   }
+
+  throw lastError instanceof Error
+    ? lastError
+    : new Error("All Gemini models failed");
 }
