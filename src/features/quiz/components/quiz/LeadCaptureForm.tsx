@@ -65,12 +65,12 @@ export function LeadCaptureForm({
     };
   }, [loading]);
 
-  const loadingLabel =
-    (loadingPhase === 0
+  const loadingText =
+    loadingPhase === 0
       ? t("form.loadingBuilding")
       : loadingPhase === 1
         ? t("form.loadingPreparing")
-        : t("form.loadingSending")) + ".".repeat(dotCount);
+        : t("form.loadingSending");
   const previewReport = (
     <div className="preview-content mb-2 text-left text-gray-700 p-4 border rounded-lg bg-gray-50 blur-sm select-none text-sm">
       <h3 className="font-semibold mb-2 text-base">{t("preview.title")}</h3>
@@ -321,7 +321,19 @@ export function LeadCaptureForm({
 
         <div className="flex justify-center">
           <Button type="submit" className="btn btn-primary text-lg px-8 py-3" disabled={loading}>
-            {loading ? loadingLabel : t("form.submit")}
+            {loading ? (
+              <span className="inline-flex items-center justify-center">
+                <span>{loadingText}</span>
+                <span
+                  className="inline-block w-[1.5em] text-left tabular-nums"
+                  aria-hidden
+                >
+                  {".".repeat(dotCount)}
+                </span>
+              </span>
+            ) : (
+              t("form.submit")
+            )}
           </Button>
         </div>
       </form>
