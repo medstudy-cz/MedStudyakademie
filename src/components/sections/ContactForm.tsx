@@ -22,7 +22,11 @@ const LOCALE_TO_COUNTRY: Record<string, string> = {
   en: "CZ",
 };
 
-export function ContactForm() {
+type ContactFormProps = {
+  defaultSubject?: string;
+};
+
+export function ContactForm({ defaultSubject = "" }: ContactFormProps) {
   const t = useTranslations("contact.form");
   const tv = useTranslations("contact.validation");
   const locale = useLocale();
@@ -52,7 +56,7 @@ export function ContactForm() {
       name: "",
       email: "",
       phone: "",
-      subject: "",
+      subject: defaultSubject,
       message: "",
     },
   });
@@ -74,7 +78,13 @@ export function ContactForm() {
 
       // Analytics (GTM / Meta / TikTok) — fire only after successful API response
       setStatus("success");
-      reset();
+      reset({
+        name: "",
+        email: "",
+        phone: "",
+        subject: defaultSubject,
+        message: "",
+      });
     } catch {
       setStatus("error");
     }

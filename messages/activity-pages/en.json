@@ -1,0 +1,366 @@
+{
+  "back": "Back to “What we do”",
+  "education": {
+    "metaTitle": "Educational programmes | MedStudyacademy",
+    "metaDescription": "Czech language courses, subject intensives and adaptation modules for successful integration and university admission in Czechia.",
+    "hero": {
+      "title": "Confident Czech and strong education — your key to integration and a career in Czechia",
+      "subtitle": "Real adaptation starts with language confidence and a solid academic base. Open doors to top universities and the professional environment with MedStudyAcademy.",
+      "cta": "Find a course"
+    },
+    "categories": {
+      "title": "Programme categories",
+      "items": [
+        {
+          "title": "Year-long comprehensive courses",
+          "description": "Czech from scratch to C1 with a focus on medical and academic terminology."
+        },
+        {
+          "title": "Subject intensives",
+          "description": "Chemistry, biology, physics and maths for future Czech university students."
+        },
+        {
+          "title": "Short modules",
+          "description": "Adaptation Czech for school pupils and adults — a fast start in a new language environment."
+        }
+      ]
+    },
+    "programs": {
+      "title": "Sample programmes",
+      "items": [
+        {
+          "title": "Czech for medicine: 0 → C1",
+          "format": "Format: in person in Prague / online",
+          "duration": "Duration: 900 academic hours",
+          "intensity": "Intensity: 20–25 hours per week",
+          "groupSize": "Group: up to 12 people",
+          "price": "Price: free",
+          "cta": "Apply"
+        },
+        {
+          "title": "Biology & chemistry intensive",
+          "format": "Format: in person in Prague / online",
+          "duration": "Duration: 120 academic hours",
+          "intensity": "Intensity: 8–10 hours per week",
+          "groupSize": "Group: up to 10 people",
+          "price": "Price: free",
+          "cta": "Apply"
+        },
+        {
+          "title": "Adaptation Czech",
+          "format": "Format: in person in Prague / online",
+          "duration": "Duration: 60 academic hours",
+          "intensity": "Intensity: 6 hours per week",
+          "groupSize": "Group: up to 14 people",
+          "price": "Price: free",
+          "cta": "Apply"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Why people trust us",
+      "items": [
+        "Qualified teachers experienced with international learners",
+        "Focus on speaking practice and overcoming the language barrier",
+        "Medical and academic terminology built into programmes",
+        "Flexible formats: in person in Prague or online"
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Which level can I start from?",
+          "answer": "We offer zero-beginner programmes and modules for those who already speak Czech. We will choose the right format in a consultation."
+        },
+        {
+          "question": "Is learning in person or online?",
+          "answer": "Both formats are available: classes in Prague and online groups. They can be combined by arrangement."
+        },
+        {
+          "question": "When do new groups start?",
+          "answer": "Intakes happen several times a year. Leave a request and a coordinator will share the next dates."
+        }
+      ]
+    },
+    "formTitle": "Find a course",
+    "formSubject": "Educational course enquiry"
+  },
+  "healthcare": {
+    "metaTitle": "Support for healthcare workers | MedStudyacademy",
+    "metaDescription": "Recognition of medical education, approval exams and careers for doctors, nurses and dentists in Czechia.",
+    "hero": {
+      "title": "Medical qualification recognition and a career as a doctor, nurse or dentist in Czechia",
+      "subtitle": "We guide you through every approval step — from diploma recognition to practice in Czech healthcare facilities.",
+      "cta": "Assess my chances"
+    },
+    "timeline": {
+      "title": "Approval path step by step",
+      "items": [
+        {
+          "title": "Diploma recognition",
+          "description": "Nostrification / uznání vzdělání — preparing and submitting documents to recognise your qualification."
+        },
+        {
+          "title": "Approval examination",
+          "description": "Preparation for tests, the practical part and Czech medical language."
+        },
+        {
+          "title": "Mandatory practice (stáž)",
+          "description": "Practice requirements in healthcare facilities and help finding a placement."
+        }
+      ]
+    },
+    "packages": {
+      "title": "What support includes",
+      "items": [
+        {
+          "title": "Document package",
+          "description": "Preparing and checking the full set for recognition and approval."
+        },
+        {
+          "title": "Legal guidance",
+          "description": "Orientation in procedures, deadlines and regulator requirements."
+        },
+        {
+          "title": "Medical terminology",
+          "description": "A specialised Czech medical language course for the exam and clinic work."
+        }
+      ]
+    },
+    "stories": {
+      "title": "Success stories",
+      "items": [
+        {
+          "name": "Anna",
+          "role": "GP, Prague",
+          "quote": "Approval felt impossible. The team helped with documents and language — I now work in a clinic."
+        },
+        {
+          "name": "Oleh",
+          "role": "Dentist, Brno",
+          "quote": "The exam was the hardest part. Preparation and curator support gave me confidence at every step."
+        },
+        {
+          "name": "Maria",
+          "role": "Nurse, Prague",
+          "quote": "Without support I would have stalled at practice. They helped me find a stáž and keep going."
+        }
+      ]
+    },
+    "formTitle": "Get an approval consultation",
+    "formSubject": "Approval consultation"
+  },
+  "events": {
+    "metaTitle": "Social and cultural activities | MedStudyacademy",
+    "metaDescription": "Language clubs, trips and cultural initiatives for the foreigner community in Czechia.",
+    "hero": {
+      "title": "More than studying: make friends, explore Czech culture and feel at home",
+      "subtitle": "We reduce isolation, grow a local community and organise language clubs, trips and cultural meetups.",
+      "cta": "Register"
+    },
+    "purpose": "This section aims to reduce isolation, grow a local community and organise language clubs, trips and cultural initiatives.",
+    "eventTypes": {
+      "title": "Activity types",
+      "items": [
+        {
+          "title": "Conversation clubs",
+          "description": "Kluby konverzace by level — Czech practice through live conversation."
+        },
+        {
+          "title": "Excursions",
+          "description": "Historic places in Prague and Czechia with guides from our community."
+        },
+        {
+          "title": "Workshops and initiatives",
+          "description": "Creative meetups and children’s social initiatives for the whole family."
+        }
+      ]
+    },
+    "events": {
+      "title": "Upcoming events",
+      "items": [
+        {
+          "title": "Conversation club B1+",
+          "date": "Every Wednesday",
+          "time": "18:00",
+          "location": "Prague / online",
+          "price": "Free",
+          "cta": "Register"
+        },
+        {
+          "title": "Tour: Old Town",
+          "date": "Weekends",
+          "time": "11:00",
+          "location": "Prague centre",
+          "price": "Symbolic fee / free",
+          "cta": "Register"
+        },
+        {
+          "title": "Creative family meetup",
+          "date": "Once a month",
+          "time": "15:00",
+          "location": "Prague",
+          "price": "Free",
+          "cta": "Register"
+        }
+      ]
+    },
+    "archive": {
+      "title": "Past events archive",
+      "text": "Photo reports and participant feedback help new community members feel the atmosphere of our events. Follow updates on social media and the blog."
+    },
+    "volunteerBlock": {
+      "title": "Volunteering and partnerships",
+      "text": "Join the life of the organisation: lead clubs, help on trips or propose joint initiatives.",
+      "cta": "Get involved"
+    },
+    "formTitle": "Event registration",
+    "formSubject": "Event registration"
+  },
+  "consulting": {
+    "metaTitle": "Consultations | MedStudyacademy",
+    "metaDescription": "Personal advice on visas, careers, education and social-legal questions in Czechia.",
+    "hero": {
+      "title": "Personal expert consultations on life, study and work in Czechia",
+      "subtitle": "Qualified individual help with bureaucratic, legal, visa and career questions.",
+      "cta": "Book a consultation"
+    },
+    "directions": {
+      "title": "Consultation areas",
+      "items": [
+        {
+          "title": "Visas and documents",
+          "description": "Long-term visa types, residence permits, extensions and document preparation."
+        },
+        {
+          "title": "Employment and career",
+          "description": "Czech-standard CVs, interview prep and labour market analysis."
+        },
+        {
+          "title": "Education consulting",
+          "description": "Choosing a university, school or language course for your goals."
+        },
+        {
+          "title": "Social-legal questions",
+          "description": "Basic legal orientation for adaptation and everyday life."
+        }
+      ]
+    },
+    "formats": {
+      "title": "Formats and duration",
+      "items": [
+        {
+          "label": "Format",
+          "value": "Online (Zoom/Teams) or in person at our Prague office"
+        },
+        {
+          "label": "Session length",
+          "value": "About 45 minutes — enough to work through your request"
+        },
+        {
+          "label": "Price",
+          "value": "Consultations are provided free of charge"
+        },
+        {
+          "label": "Booking",
+          "value": "Choose a topic and time — a coordinator will confirm the slot"
+        }
+      ]
+    },
+    "formTitle": "Book a consultation",
+    "formSubject": "Consultation booking"
+  },
+  "partnership": {
+    "metaTitle": "Partnerships and projects | MedStudyacademy",
+    "metaDescription": "Cooperation with the state, universities, NGOs and employers on foreigner integration in Czechia.",
+    "hero": {
+      "title": "Joining forces with the state and business to help people adapt",
+      "subtitle": "B2B and institutional track: joint projects with authorities, universities, NGOs and employers.",
+      "cta": "Propose cooperation"
+    },
+    "directions": {
+      "title": "Partnership directions",
+      "items": [
+        {
+          "title": "Grant and social projects",
+          "description": "Joint initiatives for foreigner integration and exclusion prevention."
+        },
+        {
+          "title": "Universities and schools",
+          "description": "Cooperation with Czech universities and secondary schools."
+        },
+        {
+          "title": "Employers and agencies",
+          "description": "Cooperation on graduate and specialist employment (including Navigo Práce-style models)."
+        }
+      ]
+    },
+    "audiences": {
+      "title": "Forms of cooperation",
+      "items": [
+        {
+          "title": "For educational institutions",
+          "description": "Joint education programmes, applicant prep and student support."
+        },
+        {
+          "title": "For business",
+          "description": "Hiring partnerships, adaptation of foreign staff and CSR."
+        },
+        {
+          "title": "For public foundations",
+          "description": "Joint grants, volunteer programmes and social initiatives."
+        }
+      ]
+    },
+    "formTitle": "Partner contact",
+    "formSubject": "Partnership proposal",
+    "partnerEmail": "partner@medstudyacademy.cz"
+  },
+  "support": {
+    "metaTitle": "Additional support | MedStudyacademy",
+    "metaDescription": "Housing help, legal and psychological support, and accompaniment to public offices in Czechia.",
+    "hero": {
+      "title": "Practical help with everyday issues in Czechia — from housing to psychological support",
+      "subtitle": "Everyday and humanitarian adaptation help: housing, orientation, psychology and legal guidance.",
+      "cta": "Contact a coordinator"
+    },
+    "helpAreas": {
+      "title": "Areas of help",
+      "items": [
+        {
+          "title": "Housing help",
+          "description": "Recommendations, rental contract checks, student dorms or flat search."
+        },
+        {
+          "title": "Legal help",
+          "description": "Regular open consultations with invited lawyers."
+        },
+        {
+          "title": "Psychological support",
+          "description": "Talks and support groups for relocation and adaptation stress."
+        },
+        {
+          "title": "Office accompaniment",
+          "description": "Interpreter support for visits to authorities (OAMP and others)."
+        }
+      ]
+    },
+    "knowledge": {
+      "title": "Useful materials",
+      "items": [
+        "Checklist of first steps after arriving in Czechia",
+        "Guide to basic documents and deadlines",
+        "Housing search and contract-check instructions",
+        "Orientation for dealing with OAMP and other offices"
+      ]
+    },
+    "messengerCta": {
+      "title": "Contact a coordinator",
+      "text": "Need urgent or planned help? Leave a request — a coordinator will reach you via messenger or phone.",
+      "cta": "Message a coordinator"
+    },
+    "formTitle": "Support request",
+    "formSubject": "Additional support"
+  }
+}

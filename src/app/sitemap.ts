@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { locales } from "@/i18n/routing";
+import { ACTIVITY_SLUGS } from "@/lib/activity-slugs";
 import { sanityFetch } from "@/sanity/lib/client";
 import { ALL_BLOG_SLUGS_QUERY } from "@/sanity/lib/queries";
 
@@ -21,6 +22,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
+    });
+
+    ACTIVITY_SLUGS.forEach((slug) => {
+      routes.push({
+        url: `${BASE_URL}/${locale}/activities/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.8,
+      });
     });
   });
 

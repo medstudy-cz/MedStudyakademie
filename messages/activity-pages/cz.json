@@ -1,0 +1,366 @@
+{
+  "back": "Zpět na sekci „Co děláme“",
+  "education": {
+    "metaTitle": "Vzdělávací programy | MedStudyacademy",
+    "metaDescription": "Kurzy češtiny, intenzivy odborných předmětů a adaptační moduly pro úspěšnou integraci a přijetí na školy v ČR.",
+    "hero": {
+      "title": "Svobodná čeština a kvalitní vzdělání — váš klíč k úspěšné integraci a kariéře v Česku",
+      "subtitle": "Plnohodnotná adaptace začíná jistým ovládáním jazyka a silnou akademickou základnou. Otevřete dveře na nejlepší vysoké školy a do profesního prostředí s MedStudyAcademy.",
+      "cta": "Vybrat kurz"
+    },
+    "categories": {
+      "title": "Kategorie programů",
+      "items": [
+        {
+          "title": "Roční komplexní kurzy",
+          "description": "Čeština od nuly do úrovně C1 s důrazem na lékařskou a akademickou terminologii."
+        },
+        {
+          "title": "Intenzivy odborných předmětů",
+          "description": "Chemie, biologie, fyzika a matematika pro budoucí studenty českých VŠ."
+        },
+        {
+          "title": "Krátkodobé moduly",
+          "description": "Adaptační čeština pro žáky i dospělé — rychlý start v novém jazykovém prostředí."
+        }
+      ]
+    },
+    "programs": {
+      "title": "Příklady programů",
+      "items": [
+        {
+          "title": "Čeština pro medicínu: 0 → C1",
+          "format": "Formát: prezenčně v Praze / online",
+          "duration": "Délka: 900 akademických hodin",
+          "intensity": "Intenzita: 20–25 hodin týdně",
+          "groupSize": "Skupina: do 12 osob",
+          "price": "Cena: zdarma",
+          "cta": "Přihlásit se"
+        },
+        {
+          "title": "Intenziv biologie a chemie",
+          "format": "Formát: prezenčně v Praze / online",
+          "duration": "Délka: 120 akademických hodin",
+          "intensity": "Intenzita: 8–10 hodin týdně",
+          "groupSize": "Skupina: do 10 osob",
+          "price": "Cena: zdarma",
+          "cta": "Přihlásit se"
+        },
+        {
+          "title": "Adaptační čeština",
+          "format": "Formát: prezenčně v Praze / online",
+          "duration": "Délka: 60 akademických hodin",
+          "intensity": "Intenzita: 6 hodin týdně",
+          "groupSize": "Skupina: do 14 osob",
+          "price": "Cena: zdarma",
+          "cta": "Přihlásit se"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Proč nám lidé důvěřují",
+      "items": [
+        "Diplomovaní lektoři se zkušeností s cizinci",
+        "Důraz na konverzaci a překonání jazykové bariéry",
+        "Lékařská a akademická terminologie v programech",
+        "Flexibilní formáty: prezenčně v Praze nebo online"
+      ]
+    },
+    "faq": {
+      "title": "Časté otázky",
+      "items": [
+        {
+          "question": "Od jaké úrovně mohu začít?",
+          "answer": "Máme programy od nuly i moduly pro ty, kdo už česky mluví. Na konzultaci vybereme vhodný formát."
+        },
+        {
+          "question": "Je výuka prezenční, nebo online?",
+          "answer": "Oba formáty jsou dostupné: prezenční výuka v Praze i online skupiny. Po domluvě je lze kombinovat."
+        },
+        {
+          "question": "Kdy začínají nové skupiny?",
+          "answer": "Nábory probíhají několikrát ročně. Zanechte poptávku — kurátor vám sdělí nejbližší termíny."
+        }
+      ]
+    },
+    "formTitle": "Vybrat kurz",
+    "formSubject": "Výběr vzdělávacího kurzu"
+  },
+  "healthcare": {
+    "metaTitle": "Podpora zdravotníků | MedStudyacademy",
+    "metaDescription": "Legalizace lékařského vzdělání, aprobace a kariéra lékaře, sestry nebo stomatologa v ČR.",
+    "hero": {
+      "title": "Legalizace lékařského vzdělání a kariéra lékaře, sestry nebo stomatologa v Česku",
+      "subtitle": "Provázíme vás každým krokem aprobace — od uznání diplomu po praxi v českých zdravotnických zařízeních.",
+      "cta": "Posoudit šance"
+    },
+    "timeline": {
+      "title": "Krok za krokem k aprobaci",
+      "items": [
+        {
+          "title": "Uznání diplomu",
+          "description": "Nostrifikace / uznání vzdělání — příprava a podání dokumentů k uznání kvalifikace."
+        },
+        {
+          "title": "Aprobační zkouška",
+          "description": "Příprava na testy, praktickou část a český lékařský jazyk."
+        },
+        {
+          "title": "Povinná praxe (stáž)",
+          "description": "Požadavky na praxi ve zdravotnických zařízeních a pomoc s hledáním stáže."
+        }
+      ]
+    },
+    "packages": {
+      "title": "Co zahrnuje doprovod",
+      "items": [
+        {
+          "title": "Balíček dokumentů",
+          "description": "Příprava a kontrola kompletní dokumentace pro nostrifikaci a aprobaci."
+        },
+        {
+          "title": "Právní doprovod",
+          "description": "Orientace v postupech, lhůtách a požadavcích regulátorů."
+        },
+        {
+          "title": "Lékařská terminologie",
+          "description": "Specializovaný kurz českého lékařského jazyka ke zkoušce i práci na klinice."
+        }
+      ]
+    },
+    "stories": {
+      "title": "Příběhy úspěchu",
+      "items": [
+        {
+          "name": "Anna",
+          "role": "Praktická lékařka, Praha",
+          "quote": "Aprobace mi připadala nemožná. Tým pomohl s dokumenty i jazykem — teď pracuji na klinice."
+        },
+        {
+          "name": "Oleh",
+          "role": "Stomatolog, Brno",
+          "quote": "Nejtěžší byla zkouška. Příprava a podpora kurátora mi daly jistotu v každém kroku."
+        },
+        {
+          "name": "Marie",
+          "role": "Zdravotní sestra, Praha",
+          "quote": "Bez doprovodu bych uvízla u praxe. Pomohli najít stáž a nevzdát to."
+        }
+      ]
+    },
+    "formTitle": "Konzultace k aprobaci",
+    "formSubject": "Konzultace k aprobaci"
+  },
+  "events": {
+    "metaTitle": "Sociální a kulturní aktivity | MedStudyacademy",
+    "metaDescription": "Jazykové kluby, výlety a kulturní iniciativy pro komunitu cizinců v ČR.",
+    "hero": {
+      "title": "Víc než studium: najděte přátele, poznávejte kulturu Česka a cíťte se jako doma",
+      "subtitle": "Snižujeme izolaci, rozvíjíme místní komunitu a pořádáme jazykové kluby, výlety a kulturní setkání.",
+      "cta": "Registrovat se"
+    },
+    "purpose": "Cílem sekce je snižovat izolaci, rozvíjet místní komunitu a organizovat jazykové kluby, výlety a kulturní iniciativy.",
+    "eventTypes": {
+      "title": "Program aktivit",
+      "items": [
+        {
+          "title": "Konverzační kluby",
+          "description": "Kluby konverzace podle úrovní — praxe češtiny v živé komunikaci."
+        },
+        {
+          "title": "Výlety",
+          "description": "Historická místa Prahy a Česka s průvodci z naší komunity."
+        },
+        {
+          "title": "Workshopy a iniciativy",
+          "description": "Tvůrčí setkání a dětské sociální iniciativy pro celou rodinu."
+        }
+      ]
+    },
+    "events": {
+      "title": "Nejbližší akce",
+      "items": [
+        {
+          "title": "Klub konverzace B1+",
+          "date": "Každou středu",
+          "time": "18:00",
+          "location": "Praha / online",
+          "price": "Zdarma",
+          "cta": "Registrovat se"
+        },
+        {
+          "title": "Výlet: Staré Město",
+          "date": "O víkendech",
+          "time": "11:00",
+          "location": "Praha, centrum",
+          "price": "Symbolický poplatek / zdarma",
+          "cta": "Registrovat se"
+        },
+        {
+          "title": "Tvůrčí setkání pro rodiny",
+          "date": "Jednou měsíčně",
+          "time": "15:00",
+          "location": "Praha",
+          "price": "Zdarma",
+          "cta": "Registrovat se"
+        }
+      ]
+    },
+    "archive": {
+      "title": "Archiv minulých setkání",
+      "text": "Fotoreportáže a reakce účastníků pomáhají novým členům komunity poznat atmosféru našich akcí. Sledujte novinky na sociálních sítích a v blogu."
+    },
+    "volunteerBlock": {
+      "title": "Dobrovolnictví a partnerství",
+      "text": "Zveme vás k aktivní účasti v životě organizace: vést kluby, pomáhat na výletech nebo navrhovat společné iniciativy.",
+      "cta": "Připojit se"
+    },
+    "formTitle": "Přihláška na akci",
+    "formSubject": "Přihláška na akci"
+  },
+  "consulting": {
+    "metaTitle": "Poradenství | MedStudyacademy",
+    "metaDescription": "Individuální konzultace k vízům, kariéře, vzdělání a sociálně-právním otázkám v ČR.",
+    "hero": {
+      "title": "Osobní konzultace expertů k životu, studiu a práci v Česku",
+      "subtitle": "Kvalifikovaná individuální pomoc v byrokratických, právních, vízových a kariérních otázkách.",
+      "cta": "Objednat konzultaci"
+    },
+    "directions": {
+      "title": "Oblasti poradenství",
+      "items": [
+        {
+          "title": "Víza a dokumenty",
+          "description": "Typy dlouhodobých víz, pobyt, prodloužení a příprava dokumentů."
+        },
+        {
+          "title": "Zaměstnání a kariéra",
+          "description": "CV podle českých standardů, příprava na pohovory a analýza trhu práce."
+        },
+        {
+          "title": "Vzdělávací konzultace",
+          "description": "Výběr VŠ, školy nebo jazykových kurzů podle vašich cílů."
+        },
+        {
+          "title": "Sociálně-právní otázky",
+          "description": "Základní právní orientace pro adaptaci a každodenní život."
+        }
+      ]
+    },
+    "formats": {
+      "title": "Formáty a délka",
+      "items": [
+        {
+          "label": "Formát",
+          "value": "Online (Zoom/Teams) nebo prezenčně v kanceláři v Praze"
+        },
+        {
+          "label": "Délka sezení",
+          "value": "Přibližně 45 minut — dostatek času na váš požadavek"
+        },
+        {
+          "label": "Cena",
+          "value": "Konzultace poskytujeme zdarma"
+        },
+        {
+          "label": "Rezervace",
+          "value": "Vyberte téma a čas — kurátor termín potvrdí"
+        }
+      ]
+    },
+    "formTitle": "Objednávka konzultace",
+    "formSubject": "Objednávka konzultace"
+  },
+  "partnership": {
+    "metaTitle": "Partnerství a projekty | MedStudyacademy",
+    "metaDescription": "Spolupráce se státem, VŠ, NNO a zaměstnavateli na integraci cizinců v ČR.",
+    "hero": {
+      "title": "Spojujeme síly se státem i byznysem, abychom lidem pomohli se adaptovat",
+      "subtitle": "B2B a institucionální směr: společné projekty s úřady, vysokými školami, NNO a zaměstnavateli.",
+      "cta": "Navrhnout spolupráci"
+    },
+    "directions": {
+      "title": "Směry partnerství",
+      "items": [
+        {
+          "title": "Grantové a sociální projekty",
+          "description": "Společné iniciativy pro integraci cizinců a prevenci vyloučení."
+        },
+        {
+          "title": "Univerzity a školy",
+          "description": "Spolupráce s českými VŠ a středními školami."
+        },
+        {
+          "title": "Zaměstnavatelé a agentury",
+          "description": "Kooperace při zaměstnávání absolventů a specialistů (včetně stylu Navigo Práce)."
+        }
+      ]
+    },
+    "audiences": {
+      "title": "Formy spolupráce",
+      "items": [
+        {
+          "title": "Pro vzdělávací instituce",
+          "description": "Společné vzdělávací programy, příprava uchazečů a podpora studentů."
+        },
+        {
+          "title": "Pro byznys",
+          "description": "Partnerství v náboru, adaptace zahraničních zaměstnanců a CSR."
+        },
+        {
+          "title": "Pro veřejné fondy",
+          "description": "Společné granty, dobrovolnické programy a sociální iniciativy."
+        }
+      ]
+    },
+    "formTitle": "Kontakt pro partnery",
+    "formSubject": "Návrh partnerství",
+    "partnerEmail": "partner@medstudyacademy.cz"
+  },
+  "support": {
+    "metaTitle": "Další podpora | MedStudyacademy",
+    "metaDescription": "Pomoc s bydlením, právní a psychologická podpora, doprovod na úřady v ČR.",
+    "hero": {
+      "title": "Praktická pomoc s každodenními otázkami v Česku — od bydlení po psychologickou podporu",
+      "subtitle": "Každodenní a humanitární pomoc při adaptaci: bydlení, orientace, psychologie a právní opora.",
+      "cta": "Kontaktovat koordinátora"
+    },
+    "helpAreas": {
+      "title": "Oblasti pomoci",
+      "items": [
+        {
+          "title": "Pomoc s bydlením",
+          "description": "Doporučení, kontrola nájemních smluv, výběr kolejí nebo bytů."
+        },
+        {
+          "title": "Právní pomoc",
+          "description": "Pravidelné otevřené konzultace s pozvanými právníky."
+        },
+        {
+          "title": "Psychologická podpora",
+          "description": "Rozhovory a podpůrné skupiny při stresu z přestěhování a adaptace."
+        },
+        {
+          "title": "Doprovod na úřady",
+          "description": "Pomoc tlumočníka při návštěvách úřadů (OAMP aj.)."
+        }
+      ]
+    },
+    "knowledge": {
+      "title": "Užitečné materiály",
+      "items": [
+        "Checklist prvních kroků po příjezdu do Česka",
+        "Přehled základních dokumentů a lhůt",
+        "Návod k hledání bydlení a kontrole smlouvy",
+        "Orientace při jednání s OAMP a dalšími úřady"
+      ]
+    },
+    "messengerCta": {
+      "title": "Kontakt na koordinátora",
+      "text": "Potřebujete akutní nebo plánovanou pomoc? Zanechte poptávku — koordinátor se ozve v messengeru nebo telefonicky.",
+      "cta": "Napsat koordinátorovi"
+    },
+    "formTitle": "Žádost o podporu",
+    "formSubject": "Další podpora"
+  }
+}
