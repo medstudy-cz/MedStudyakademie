@@ -34,7 +34,6 @@
           "duration": "Délka: 900 akademických hodin",
           "intensity": "Intenzita: 20–25 hodin týdně",
           "groupSize": "Skupina: do 12 osob",
-          "price": "Cena: zdarma",
           "cta": "Přihlásit se"
         },
         {
@@ -43,7 +42,6 @@
           "duration": "Délka: 120 akademických hodin",
           "intensity": "Intenzita: 8–10 hodin týdně",
           "groupSize": "Skupina: do 10 osob",
-          "price": "Cena: zdarma",
           "cta": "Přihlásit se"
         },
         {
@@ -52,7 +50,6 @@
           "duration": "Délka: 60 akademických hodin",
           "intensity": "Intenzita: 6 hodin týdně",
           "groupSize": "Skupina: do 14 osob",
-          "price": "Cena: zdarma",
           "cta": "Přihlásit se"
         }
       ]
@@ -185,7 +182,6 @@
           "date": "Každou středu",
           "time": "18:00",
           "location": "Praha / online",
-          "price": "Zdarma",
           "cta": "Registrovat se"
         },
         {
@@ -193,7 +189,6 @@
           "date": "O víkendech",
           "time": "11:00",
           "location": "Praha, centrum",
-          "price": "Symbolický poplatek / zdarma",
           "cta": "Registrovat se"
         },
         {
@@ -201,14 +196,33 @@
           "date": "Jednou měsíčně",
           "time": "15:00",
           "location": "Praha",
-          "price": "Zdarma",
           "cta": "Registrovat se"
         }
       ]
     },
     "archive": {
       "title": "Archiv minulých setkání",
-      "text": "Fotoreportáže a reakce účastníků pomáhají novým členům komunity poznat atmosféru našich akcí. Sledujte novinky na sociálních sítích a v blogu."
+      "text": "Fotoreportáže a reakce účastníků pomáhají novým členům komunity poznat atmosféru našich akcí. Sledujte novinky na sociálních sítích a v blogu.",
+      "photos": [
+        {
+          "caption": "Fotoexkurze",
+          "images": [
+            "/events/excursion.png",
+            "/events/excursion-2.png",
+            "/events/excursion-3.png",
+            "/events/excursion-4.png"
+          ]
+        },
+        {
+          "caption": "Otevřená lekce",
+          "images": [
+            "/events/open-lesson.png",
+            "/events/open-lesson-2.png",
+            "/events/open-lesson-3.png",
+            "/events/open-lesson-4.png"
+          ]
+        }
+      ]
     },
     "volunteerBlock": {
       "title": "Dobrovolnictví a partnerství",
@@ -259,10 +273,6 @@
           "value": "Přibližně 45 minut — dostatek času na váš požadavek"
         },
         {
-          "label": "Cena",
-          "value": "Konzultace poskytujeme zdarma"
-        },
-        {
           "label": "Rezervace",
           "value": "Vyberte téma a čas — kurátor termín potvrdí"
         }
@@ -292,7 +302,7 @@
         },
         {
           "title": "Zaměstnavatelé a agentury",
-          "description": "Kooperace při zaměstnávání absolventů a specialistů (včetně stylu Navigo Práce)."
+          "description": "Kooperace při zaměstnávání absolventů a specialistů."
         }
       ]
     },

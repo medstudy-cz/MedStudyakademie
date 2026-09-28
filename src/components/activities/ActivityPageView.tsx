@@ -16,6 +16,10 @@ import { ScrollReveal } from "@/components/shared/ScrollReveal";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { buttonVariants } from "@/components/ui/button";
+import {
+  ArchivePhotoGallery,
+  type ArchivePhoto,
+} from "@/components/activities/ArchivePhotoGallery";
 import { smoothEase, staggerContainer, staggerItem } from "@/lib/motion";
 import type { ActivitySlug } from "@/lib/activity-slugs";
 import { cn } from "@/lib/utils";
@@ -27,7 +31,7 @@ type ProgramCard = {
   duration: string;
   intensity: string;
   groupSize: string;
-  price: string;
+  price?: string;
   cta: string;
 };
 type TimelineStep = { title: string; description: string };
@@ -37,7 +41,7 @@ type EventCard = {
   date: string;
   time: string;
   location: string;
-  price: string;
+  price?: string;
   cta: string;
 };
 type StoryCard = { name: string; role: string; quote: string };
@@ -77,7 +81,11 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
     ? (page.raw("events") as { title: string; items: EventCard[] })
     : null;
   const archive = page.has("archive")
-    ? (page.raw("archive") as { title: string; text: string })
+    ? (page.raw("archive") as {
+        title: string;
+        text: string;
+        photos?: ArchivePhoto[];
+      })
     : null;
   const volunteerBlock = page.has("volunteerBlock")
     ? (page.raw("volunteerBlock") as {
@@ -198,7 +206,9 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
                       <MetaLine icon={Clock} label={item.duration} />
                       <p>{item.intensity}</p>
                       <p>{item.groupSize}</p>
-                      <p className="font-semibold text-primary">{item.price}</p>
+                      {item.price ? (
+                        <p className="font-semibold text-primary">{item.price}</p>
+                      ) : null}
                     </dl>
                     <a
                       href="#activity-form"
@@ -315,7 +325,9 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
                   <dl className="mt-4 flex-1 space-y-2 text-sm text-slate-600">
                     <MetaLine icon={Clock} label={`${event.date} · ${event.time}`} />
                     <MetaLine icon={MapPin} label={event.location} />
-                    <p className="font-semibold text-primary">{event.price}</p>
+                    {event.price ? (
+                      <p className="font-semibold text-primary">{event.price}</p>
+                    ) : null}
                   </dl>
                   <a
                     href="#activity-form"
@@ -341,6 +353,9 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
               {archive.text}
             </p>
           </ScrollReveal>
+          {archive.photos?.length ? (
+            <ArchivePhotoGallery photos={archive.photos} />
+          ) : null}
         </SectionShell>
       )}
 

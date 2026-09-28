@@ -34,7 +34,6 @@
           "duration": "Duration: 900 academic hours",
           "intensity": "Intensity: 20–25 hours per week",
           "groupSize": "Group: up to 12 people",
-          "price": "Price: free",
           "cta": "Apply"
         },
         {
@@ -43,7 +42,6 @@
           "duration": "Duration: 120 academic hours",
           "intensity": "Intensity: 8–10 hours per week",
           "groupSize": "Group: up to 10 people",
-          "price": "Price: free",
           "cta": "Apply"
         },
         {
@@ -52,7 +50,6 @@
           "duration": "Duration: 60 academic hours",
           "intensity": "Intensity: 6 hours per week",
           "groupSize": "Group: up to 14 people",
-          "price": "Price: free",
           "cta": "Apply"
         }
       ]
@@ -185,7 +182,6 @@
           "date": "Every Wednesday",
           "time": "18:00",
           "location": "Prague / online",
-          "price": "Free",
           "cta": "Register"
         },
         {
@@ -193,7 +189,6 @@
           "date": "Weekends",
           "time": "11:00",
           "location": "Prague centre",
-          "price": "Symbolic fee / free",
           "cta": "Register"
         },
         {
@@ -201,14 +196,33 @@
           "date": "Once a month",
           "time": "15:00",
           "location": "Prague",
-          "price": "Free",
           "cta": "Register"
         }
       ]
     },
     "archive": {
       "title": "Past events archive",
-      "text": "Photo reports and participant feedback help new community members feel the atmosphere of our events. Follow updates on social media and the blog."
+      "text": "Photo reports and participant feedback help new community members feel the atmosphere of our events. Follow updates on social media and the blog.",
+      "photos": [
+        {
+          "caption": "Photo excursion",
+          "images": [
+            "/events/excursion.png",
+            "/events/excursion-2.png",
+            "/events/excursion-3.png",
+            "/events/excursion-4.png"
+          ]
+        },
+        {
+          "caption": "Open lesson",
+          "images": [
+            "/events/open-lesson.png",
+            "/events/open-lesson-2.png",
+            "/events/open-lesson-3.png",
+            "/events/open-lesson-4.png"
+          ]
+        }
+      ]
     },
     "volunteerBlock": {
       "title": "Volunteering and partnerships",
@@ -259,10 +273,6 @@
           "value": "About 45 minutes — enough to work through your request"
         },
         {
-          "label": "Price",
-          "value": "Consultations are provided free of charge"
-        },
-        {
           "label": "Booking",
           "value": "Choose a topic and time — a coordinator will confirm the slot"
         }
@@ -292,7 +302,7 @@
         },
         {
           "title": "Employers and agencies",
-          "description": "Cooperation on graduate and specialist employment (including Navigo Práce-style models)."
+          "description": "Cooperation on graduate and specialist employment."
         }
       ]
     },
