@@ -12,12 +12,12 @@ import { smoothEase } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/#about", key: "about" as const, isExternal: false },
-  { href: "/#activities", key: "activities" as const, isExternal: false },
-  { href: "/#audience", key: "audience" as const, isExternal: false },
-  { href: "/blog", key: "blog" as const, isExternal: false },
-  { href: "/#contact", key: "contact" as const, isExternal: false },
-];
+  { href: { pathname: "/", hash: "about" }, key: "about" as const },
+  { href: { pathname: "/", hash: "activities" }, key: "activities" as const },
+  { href: { pathname: "/", hash: "audience" }, key: "audience" as const },
+  { href: "/blog", key: "blog" as const },
+  { href: { pathname: "/", hash: "contact" }, key: "contact" as const },
+] as const;
 
 export function Header() {
   const t = useTranslations("nav");
@@ -32,12 +32,7 @@ export function Header() {
 
   return (
     <>
-      <motion.header
-        initial={{ opacity: 0, y: -16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: smoothEase }}
-        className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur"
-      >
+      <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
           <Logo className="shrink-0" />
 
@@ -58,7 +53,10 @@ export function Header() {
 
           <div className="hidden items-center gap-3 md:flex">
             <LanguageSwitcher />
-            <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
+            <Link
+              href={{ pathname: "/", hash: "contact" }}
+              className={buttonVariants({ size: "sm" })}
+            >
               {t("contactUs")}
             </Link>
           </div>
@@ -73,7 +71,7 @@ export function Header() {
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-      </motion.header>
+      </header>
 
       <AnimatePresence>
         {open && (
@@ -99,56 +97,36 @@ export function Header() {
               </button>
             </div>
 
-            <motion.nav
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 16 }}
-              transition={{ duration: 0.35, ease: smoothEase, delay: 0.05 }}
+            <nav
               className="flex flex-1 flex-col justify-center gap-2 px-6"
               aria-label="Mobile"
             >
-              {navItems.map((item, index) => (
-                <motion.div
+              {navItems.map((item) => (
+                <Link
                   key={item.key}
-                  initial={{ opacity: 0, x: -16 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{
-                    duration: 0.35,
-                    ease: smoothEase,
-                    delay: 0.08 + index * 0.06,
-                  }}
+                  href={item.href as any}
+                  className="block rounded-xl px-4 py-4 text-xl font-semibold text-slate-800 transition-colors hover:bg-sky-50 hover:text-primary"
+                  onClick={() => setOpen(false)}
                 >
-                  <Link
-                    href={item.href as any}
-                    className="block rounded-xl px-4 py-4 text-xl font-semibold text-slate-800 transition-colors hover:bg-sky-50 hover:text-primary"
-                    onClick={() => setOpen(false)}
-                  >
-                    {t(item.key)}
-                  </Link>
-                </motion.div>
+                  {t(item.key)}
+                </Link>
               ))}
-            </motion.nav>
+            </nav>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 12 }}
-              transition={{ duration: 0.35, ease: smoothEase, delay: 0.1 }}
-              className="space-y-4 border-t border-slate-100 px-6 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))]"
-            >
+            <div className="space-y-4 border-t border-slate-100 px-6 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
               <LanguageSwitcher
                 variant="inline"
                 className="w-full"
                 onLocaleChange={() => setOpen(false)}
               />
               <Link
-                href="/#contact"
+                href={{ pathname: "/", hash: "contact" }}
                 className={cn(buttonVariants({ size: "lg" }), "w-full")}
                 onClick={() => setOpen(false)}
               >
                 {t("contactUs")}
               </Link>
-            </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

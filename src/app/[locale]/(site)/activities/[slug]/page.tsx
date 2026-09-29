@@ -8,6 +8,7 @@ import {
   type ActivitySlug,
 } from "@/lib/activity-slugs";
 import { routing } from "@/i18n/routing";
+import { pageAlternates } from "@/lib/site";
 
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -36,6 +37,7 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
+    alternates: pageAlternates(locale, `/activities/${slug}`),
   };
 }
 

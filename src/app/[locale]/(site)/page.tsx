@@ -6,6 +6,7 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { AudienceSection } from "@/components/sections/AudienceSection";
 import { PartnersSection } from "@/components/sections/PartnersSection";
 import { VolunteerSection } from "@/components/sections/VolunteerSection";
+import { HomeCtaBand } from "@/components/sections/HomeCtaBand";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { routing } from "@/i18n/routing";
 
@@ -26,6 +27,7 @@ export default async function HomePage({ params }: PageProps) {
       <AudienceSection />
       <PartnersSection />
       <VolunteerSection />
+      <HomeCtaBand />
       <ContactSection />
     </>
   );

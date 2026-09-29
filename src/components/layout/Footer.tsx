@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -54,16 +56,10 @@ export function Footer() {
               Blog
             </Link>
             <Link
-              href="/"
+              href="/privacy"
               className="font-medium text-primary hover:underline"
             >
               {t("privacy")}
-            </Link>
-            <Link
-              href="/"
-              className="font-medium text-primary hover:underline"
-            >
-              {t("annualReports")}
             </Link>
           </div>
         </div>

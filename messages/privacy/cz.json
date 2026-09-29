@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Zásady ochrany osobních údajů | MedStudyacademy z.s.",
+  "metaDescription": "Informace o zpracování osobních údajů spolkem MedStudyacademy z.s. v souladu s GDPR a českým právem.",
+  "title": "Zásady ochrany osobních údajů",
+  "updated": "Poslední aktualizace: 29. září 2026",
+  "intro": "Medstudy Academy, z. s. (dále jen „Spolek“, „my“ nebo „správce“) respektuje vaše soukromí. Tento dokument popisuje, jaké osobní údaje zpracováváme při provozu webu medstudyacademy.cz a souvisejících služeb, proč je zpracováváme a jaká máte práva.",
+  "sections": [
+    {
+      "heading": "1. Správce osobních údajů",
+      "paragraphs": [
+        "Správcem osobních údajů je Medstudy Academy, z. s., IČO: 06441807, se sídlem Školní 57, Tuchoměřice, Praha-západ, Středočeský kraj, Česká republika.",
+        "Kontakt pro otázky ochrany osobních údajů: admin@edu-medstudy.cz, telefon +420 774 258 018."
+      ]
+    },
+    {
+      "heading": "2. Jaké údaje zpracováváme",
+      "paragraphs": [
+        "Údaje, které nám sami poskytnete prostřednictvím kontaktního formuláře, formuláře v blogu nebo vzdělávacího kvízu: jméno, e-mail, telefonní číslo, předmět a text zprávy, případně odpovědi v kvízu a další informace, které do formuláře uvedete.",
+        "Technické údaje o návštěvě webu v nezbytném rozsahu (např. IP adresa, typ prohlížeče, čas přístupu), pokud je to potřebné pro provoz, bezpečnost a základní analytiku.",
+        "Nezpracováváme zvláštní kategorie osobních údajů (např. zdravotní údaje) záměrně. Prosíme, abyste takové údaje do formulářů neuváděli."
+      ]
+    },
+    {
+      "heading": "3. Účely a právní základy zpracování",
+      "paragraphs": [
+        "Vyřízení vaší poptávky, konzultace a poskytnutí bezplatných vzdělávacích a integračních služeb — plnění smlouvy / opatření před uzavřením smlouvy, nebo oprávněný zájem spolku na komunikaci s žadateli o pomoc (čl. 6 odst. 1 písm. b) nebo f) GDPR).",
+        "Odpověď na zprávy a správa vztahů s uživateli webu — oprávněný zájem (čl. 6 odst. 1 písm. f) GDPR).",
+        "Plnění právních povinností spolku (např. účetní a daňové povinnosti, pokud vzniknou) — čl. 6 odst. 1 písm. c) GDPR.",
+        "Zajištění bezpečnosti a funkčnosti webu — oprávněný zájem (čl. 6 odst. 1 písm. f) GDPR).",
+        "Pokud zpracování vyžaduje souhlas (např. dobrovolný marketingový newsletter, pokud jej spustíme), vyžádáme si jej zvlášť a můžete jej kdykoli odvolat."
+      ]
+    },
+    {
+      "heading": "4. Komu mohou být údaje předány",
+      "paragraphs": [
+        "Poskytovatelům technických služeb, kteří nám pomáhají provozovat web a zpracovávat poptávky (např. hosting, e-mailové služby, CRM / Bitrix24, CMS Sanity), vždy v rozsahu nezbytném pro danou službu a na základě smluvních závazků k ochraně údajů.",
+        "Orgánům veřejné moci, pokud to vyžaduje zákon.",
+        "Údaje nepředáváme třetím stranám za účelem prodeje nebo nevyžádané reklamy."
+      ]
+    },
+    {
+      "heading": "5. Doba uchování",
+      "paragraphs": [
+        "Údaje z poptávek a komunikace uchováváme po dobu potřebnou k vyřízení požadavku a následné přiměřené době (zpravidla nejvýše 24 měsíců od posledního kontaktu), pokud delší uchování nevyžaduje zákon nebo oprávněný zájem (např. ochrana právních nároků).",
+        "Technické logy uchováváme jen po dobu nezbytně nutnou pro bezpečnost a provoz."
+      ]
+    },
+    {
+      "heading": "6. Cookies a podobné technologie",
+      "paragraphs": [
+        "Web může používat nezbytné technické cookies nebo obdobné technologie potřebné pro základní fungování stránek a zabezpečení.",
+        "Pokud v budoucnu zavedeme nepovinné analytické nebo marketingové cookies, požádáme o souhlas tam, kde to zákon vyžaduje, a umožníme odvolání souhlasu."
+      ]
+    },
+    {
+      "heading": "7. Vaše práva",
+      "paragraphs": [
+        "Podle GDPR máte právo na přístup k údajům, opravu, výmaz, omezení zpracování, přenositelnost (kde je to relevantní), vznést námitku proti zpracování založenému na oprávněném zájmu a odvolat souhlas, pokud je zpracování na souhlasu založeno.",
+        "Svá práva můžete uplatnit e-mailem na admin@edu-medstudy.cz. Máte také právo podat stížnost u Úřadu pro ochranu osobních údajů (www.uoou.cz)."
+      ]
+    },
+    {
+      "heading": "8. Zabezpečení",
+      "paragraphs": [
+        "Přijímáme přiměřená technická a organizační opatření, aby nedošlo k neoprávněnému přístupu, ztrátě nebo zneužití osobních údajů. Přenos dat na web probíhá přes HTTPS."
+      ]
+    },
+    {
+      "heading": "9. Děti",
+      "paragraphs": [
+        "Služby spolku mohou využívat i mladiství v souvislosti se vzděláváním. Pokud jste zákonný zástupce a domníváte se, že jsme získali údaje o dítěti bez odpovídajícího důvodu, kontaktujte nás — údaje posoudíme a případně smažeme."
+      ]
+    },
+    {
+      "heading": "10. Změny těchto zásad",
+      "paragraphs": [
+        "Tyto zásady můžeme čas od času aktualizovat. Aktuální znění vždy zveřejníme na této stránce s datem poslední aktualizace."
+      ]
+    }
+  ]
+}

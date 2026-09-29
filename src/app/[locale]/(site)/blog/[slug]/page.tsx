@@ -16,6 +16,7 @@ import { BlogLeadCta } from "@/components/blog/BlogLeadCta";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { type Locale } from "@/i18n/routing";
+import { pageAlternates } from "@/lib/site";
 
 export const revalidate = 60;
 
@@ -56,23 +57,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? urlForImage(post.mainImage)?.width(1200).height(630).url()
     : undefined;
 
+  const alternates = pageAlternates(locale, `/blog/${slug}`);
+
   return {
     title: `${metaTitle} | MedStudyacademy z.s.`,
     description: metaDescription,
     keywords: post.seo?.keywords,
-    alternates: {
-      canonical: `/${locale}/blog/${slug}`,
-      languages: {
-        "cs-CZ": `/cz/blog/${slug}`,
-        "uk-UA": `/ua/blog/${slug}`,
-        "ru-RU": `/ru/blog/${slug}`,
-        "en-US": `/en/blog/${slug}`,
-      },
-    },
+    alternates,
     openGraph: {
       title: metaTitle,
       description: metaDescription,
-      url: `/${locale}/blog/${slug}`,
+      url: alternates.canonical,
       type: "article",
       images: imageUrl ? [{ url: imageUrl, width: 1200, height: 630 }] : undefined,
     },

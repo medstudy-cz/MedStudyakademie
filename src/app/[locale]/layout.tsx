@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { routing } from "@/i18n/routing";
 import { LocaleHtmlLang } from "@/components/layout/LocaleHtmlLang";
 import { Header } from "@/components/layout/Header";
+import { SITE_URL, pageAlternates, localeToHtmlLang } from "@/lib/site";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -27,14 +28,18 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const alternates = pageAlternates(locale);
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    alternates,
     openGraph: {
       title: t("title"),
       description: t("description"),
-      locale,
+      locale: localeToHtmlLang(locale),
+      url: alternates.canonical,
       type: "website",
     },
   };

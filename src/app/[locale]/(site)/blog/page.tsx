@@ -4,6 +4,7 @@ import { BlogListingClient } from "@/components/blog/BlogListingClient";
 import { sanityFetch } from "@/sanity/lib/client";
 import { BLOG_POSTS_QUERY } from "@/sanity/lib/queries";
 import { type Locale } from "@/i18n/routing";
+import { pageAlternates } from "@/lib/site";
 
 export const revalidate = 60;
 
@@ -14,23 +15,16 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
+  const alternates = pageAlternates(locale, "/blog");
 
   return {
     title: `${t("title")} | MedStudyacademy z.s.`,
     description: t("subtitle"),
-    alternates: {
-      canonical: `/${locale}/blog`,
-      languages: {
-        "cs-CZ": `/cz/blog`,
-        "uk-UA": `/ua/blog`,
-        "ru-RU": `/ru/blog`,
-        "en-US": `/en/blog`,
-      },
-    },
+    alternates,
     openGraph: {
       title: `${t("title")} | MedStudyacademy z.s.`,
       description: t("subtitle"),
-      url: `/${locale}/blog`,
+      url: alternates.canonical,
       type: "website",
     },
   };

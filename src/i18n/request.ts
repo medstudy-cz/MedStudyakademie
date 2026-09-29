@@ -12,12 +12,16 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const activityPages = (
     await import(`../../messages/activity-pages/${locale}.json`)
   ).default;
+  const privacyPage = (
+    await import(`../../messages/privacy/${locale}.json`)
+  ).default;
 
   return {
     locale,
     messages: {
       ...base,
       activityPages,
+      privacyPage,
     },
   };
 });

@@ -145,27 +145,20 @@
     "legalAddress": "Adresa sídla",
     "legalIco": "IČO",
     "privacy": "Zásady ochrany osobních údajů",
-    "annualReports": "Výroční zprávy",
     "googleWorkspaceVerification": "MedStudyacademy z.s. je registrovaný neziskový spolek v České republice poskytující bezplatné vzdělávací a integrační služby cizincům a zdravotníkům.",
     "copyright": "© {year} MedStudyacademy z.s. Všechna práva vyhrazena."
-  },
-  "placeholders": {
-    "privacy": {
-      "title": "Zásady ochrany osobních údajů",
-      "body": "Tato stránka se připravuje. Brzy zde najdete úplné znění zásad ochrany osobních údajů.",
-      "back": "Zpět na hlavní stránku"
-    },
-    "reports": {
-      "title": "Výroční zprávy",
-      "body": "Tato stránka se připravuje. Brzy zde zveřejníme výroční zprávy spolku.",
-      "back": "Zpět na hlavní stránku"
-    }
   },
   "localeLabels": {
     "cz": "Čeština",
     "ua": "Українська",
     "ru": "Русский",
     "en": "English"
+  },
+  "homeCta": {
+    "title": "Připraveni na další krok?",
+    "subtitle": "Absolvujte krátký bezplatný test nebo nám napište — pomůžeme s integrací a vzděláváním v Česku.",
+    "primary": "Absolvovat bezplatný test",
+    "secondary": "Kontaktujte nás"
   },
   "blog": {
     "title": "Blog a užitečné články",

@@ -1,0 +1,81 @@
+{
+  "metaTitle": "Privacy Policy | MedStudyacademy z.s.",
+  "metaDescription": "How the nonprofit association MedStudyacademy z.s. processes personal data under the GDPR and Czech law.",
+  "title": "Privacy Policy",
+  "updated": "Last updated: 29 September 2026",
+  "intro": "Medstudy Academy, z. s. (the “Association”, “we”, or “controller”) respects your privacy. This document explains what personal data we process when operating medstudyacademy.cz and related services, why we process it, and what rights you have.",
+  "sections": [
+    {
+      "heading": "1. Data controller",
+      "paragraphs": [
+        "The controller is Medstudy Academy, z. s., Company ID (IČO): 06441807, registered office: Školní 57, Tuchoměřice, Praha-západ, Středočeský kraj, Czech Republic.",
+        "Privacy contact: admin@edu-medstudy.cz, phone +420 774 258 018."
+      ]
+    },
+    {
+      "heading": "2. What data we process",
+      "paragraphs": [
+        "Data you submit via the contact form, blog form, or educational quiz: name, email, phone number, subject and message text, quiz answers, and any other information you choose to provide.",
+        "Technical visit data to the extent necessary (e.g. IP address, browser type, access time) for operations, security, and basic analytics.",
+        "We do not intentionally process special categories of data (e.g. health data). Please do not include such data in forms."
+      ]
+    },
+    {
+      "heading": "3. Purposes and legal bases",
+      "paragraphs": [
+        "Handling enquiries, consultations, and free educational and integration services — performance of a contract / pre-contractual steps, or the Association’s legitimate interest (Art. 6(1)(b) or (f) GDPR).",
+        "Responding to messages and communicating with website users — legitimate interest (Art. 6(1)(f) GDPR).",
+        "Complying with legal obligations — Art. 6(1)(c) GDPR.",
+        "Keeping the website secure and functional — legitimate interest (Art. 6(1)(f) GDPR).",
+        "Where consent is required (e.g. an optional newsletter), we will ask separately; you may withdraw consent at any time."
+      ]
+    },
+    {
+      "heading": "4. Recipients",
+      "paragraphs": [
+        "Technical service providers (hosting, email, CRM / Bitrix24, CMS Sanity) — only as needed for the service and under data-protection commitments.",
+        "Public authorities — where required by law.",
+        "We do not sell personal data or share it for unsolicited advertising."
+      ]
+    },
+    {
+      "heading": "5. Retention",
+      "paragraphs": [
+        "Enquiry and communication data are kept for as long as needed to handle the request and for a reasonable period afterwards (typically up to 24 months from the last contact), unless a longer period is required by law.",
+        "Technical logs are kept only as long as needed for security and operations."
+      ]
+    },
+    {
+      "heading": "6. Cookies",
+      "paragraphs": [
+        "The site may use essential technical cookies (or similar technologies) required for basic functionality and security.",
+        "If we introduce optional analytics or marketing cookies, we will request consent where required by law."
+      ]
+    },
+    {
+      "heading": "7. Your rights",
+      "paragraphs": [
+        "Under the GDPR you may request access, rectification, erasure, restriction, data portability (where applicable), object to processing based on legitimate interest, and withdraw consent.",
+        "Contact: admin@edu-medstudy.cz. You may also lodge a complaint with the Czech Office for Personal Data Protection (www.uoou.cz)."
+      ]
+    },
+    {
+      "heading": "8. Security",
+      "paragraphs": [
+        "We apply appropriate technical and organisational measures. Data transmission on the website uses HTTPS."
+      ]
+    },
+    {
+      "heading": "9. Children",
+      "paragraphs": [
+        "Minors may use services in an educational context. If you are a legal guardian and believe a child’s data was obtained without a proper basis, contact us — we will review and delete data where appropriate."
+      ]
+    },
+    {
+      "heading": "10. Changes",
+      "paragraphs": [
+        "We may update this policy from time to time. The current version is always published on this page with the update date."
+      ]
+    }
+  ]
+}
