@@ -3,16 +3,33 @@ import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import { urlForImage } from "@/sanity/lib/client";
 import { headingIdFromBlock } from "@/lib/blog-utils";
 
-function textFromValue(value: { children?: { text?: string }[] } | undefined) {
-  return Array.isArray(value?.children)
-    ? value.children.map((c) => c.text || "").join("")
-    : "";
+function textFromValue(value: unknown): string {
+  if (!value || typeof value !== "object") return "";
+  const children = (value as { children?: unknown }).children;
+  if (!Array.isArray(children)) return "";
+  return children
+    .map((child) =>
+      child && typeof child === "object" && "text" in child
+        ? String((child as { text?: unknown }).text ?? "")
+        : "",
+    )
+    .join("");
+}
+
+function blockKey(value: unknown): string | undefined {
+  if (!value || typeof value !== "object") return undefined;
+  const key = (value as { _key?: unknown })._key;
+  return typeof key === "string" ? key : undefined;
 }
 
 const portableTextComponents: PortableTextComponents = {
   block: {
     h2: ({ children, value }) => {
-      const id = headingIdFromBlock(value, textFromValue(value), "h-h2");
+      const id = headingIdFromBlock(
+        { _key: blockKey(value) },
+        textFromValue(value),
+        "h-h2",
+      );
       return (
         <h2
           id={id}
@@ -23,7 +40,11 @@ const portableTextComponents: PortableTextComponents = {
       );
     },
     h3: ({ children, value }) => {
-      const id = headingIdFromBlock(value, textFromValue(value), "h-h3");
+      const id = headingIdFromBlock(
+        { _key: blockKey(value) },
+        textFromValue(value),
+        "h-h3",
+      );
       return (
         <h3
           id={id}
