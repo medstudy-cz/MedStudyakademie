@@ -16,14 +16,18 @@ export function slugify(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
-/** Prefer Sanity block _key — stable, unique, no Cyrillic/URL issues. */
+/**
+ * Prefer Sanity block _key (ASCII, unique).
+ * Prefix with `h-` so ids never start with a digit (CSS/querySelector-safe).
+ */
 export function headingIdFromBlock(
   block: { _key?: string } | undefined,
   text: string,
   fallback: string,
 ): string {
-  if (block?._key) return block._key;
-  return slugify(text.trim()) || fallback;
+  if (block?._key) return `h-${block._key}`;
+  const slug = slugify(text.trim());
+  return slug ? `h-${slug}` : fallback;
 }
 
 export function extractHeadings(content: any[]): HeadingItem[] {
@@ -41,7 +45,7 @@ export function extractHeadings(content: any[]): HeadingItem[] {
       const trimmed = text.trim();
       if (!trimmed) return;
 
-      let id = headingIdFromBlock(block, trimmed, `heading-${index}`);
+      let id = headingIdFromBlock(block, trimmed, `h-heading-${index}`);
       const count = usedIds.get(id) ?? 0;
       usedIds.set(id, count + 1);
       if (count > 0) {
