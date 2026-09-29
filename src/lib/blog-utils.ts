@@ -60,5 +60,7 @@ export function extractHeadings(content: any[]): HeadingItem[] {
     }
   });
 
-  return headings;
+  // Prefer H2-only TOC when article has main sections; otherwise keep H3.
+  const h2 = headings.filter((h) => h.level === 2);
+  return h2.length > 0 ? h2 : headings.filter((h) => h.level === 3);
 }
