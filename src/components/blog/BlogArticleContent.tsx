@@ -4,18 +4,7 @@ import { useMemo } from "react";
 import Image from "next/image";
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import { urlForImage } from "@/sanity/lib/client";
-import { slugify } from "@/lib/blog-utils";
-
-function createUniqueIdFactory() {
-  const usedIds = new Map<string, number>();
-  return (text: string, fallback: string) => {
-    let id = slugify(text.trim()) || fallback;
-    const count = usedIds.get(id) ?? 0;
-    usedIds.set(id, count + 1);
-    if (count > 0) id = `${id}-${count + 1}`;
-    return id;
-  };
-}
+import { headingIdFromBlock } from "@/lib/blog-utils";
 
 function textFromValue(value: { children?: { text?: string }[] } | undefined) {
   return Array.isArray(value?.children)
@@ -23,13 +12,11 @@ function textFromValue(value: { children?: { text?: string }[] } | undefined) {
     : "";
 }
 
-function createPortableTextComponents(
-  nextHeadingId: (text: string, fallback: string) => string,
-): PortableTextComponents {
+function createPortableTextComponents(): PortableTextComponents {
   return {
     block: {
       h2: ({ children, value }) => {
-        const id = nextHeadingId(textFromValue(value), "h2");
+        const id = headingIdFromBlock(value, textFromValue(value), "h2");
         return (
           <h2
             id={id}
@@ -40,7 +27,7 @@ function createPortableTextComponents(
         );
       },
       h3: ({ children, value }) => {
-        const id = nextHeadingId(textFromValue(value), "h3");
+        const id = headingIdFromBlock(value, textFromValue(value), "h3");
         return (
           <h3
             id={id}
@@ -120,10 +107,7 @@ function createPortableTextComponents(
 }
 
 export function BlogArticleContent({ value }: { value: any }) {
-  const components = useMemo(() => {
-    // New id factory each time content identity changes (same order as extractHeadings)
-    return createPortableTextComponents(createUniqueIdFactory());
-  }, [value]);
+  const components = useMemo(() => createPortableTextComponents(), []);
 
   if (!value) return null;
   return (

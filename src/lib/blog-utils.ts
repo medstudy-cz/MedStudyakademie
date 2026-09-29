@@ -5,8 +5,7 @@ export type HeadingItem = {
 };
 
 /**
- * URL-safe id that keeps Unicode letters (Cyrillic, Czech diacritics, etc.).
- * Previous [\s\W-] slug emptied Cyrillic headings and broke TOC anchors.
+ * Keep letters/digits from any script (fallback when block has no _key).
  */
 export function slugify(text: string): string {
   return text
@@ -15,6 +14,16 @@ export function slugify(text: string): string {
     .trim()
     .replace(/[^\p{L}\p{N}]+/gu, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+/** Prefer Sanity block _key — stable, unique, no Cyrillic/URL issues. */
+export function headingIdFromBlock(
+  block: { _key?: string } | undefined,
+  text: string,
+  fallback: string,
+): string {
+  if (block?._key) return block._key;
+  return slugify(text.trim()) || fallback;
 }
 
 export function extractHeadings(content: any[]): HeadingItem[] {
@@ -32,7 +41,7 @@ export function extractHeadings(content: any[]): HeadingItem[] {
       const trimmed = text.trim();
       if (!trimmed) return;
 
-      let id = slugify(trimmed) || `heading-${index}`;
+      let id = headingIdFromBlock(block, trimmed, `heading-${index}`);
       const count = usedIds.get(id) ?? 0;
       usedIds.set(id, count + 1);
       if (count > 0) {
