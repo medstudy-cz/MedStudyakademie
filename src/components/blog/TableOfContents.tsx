@@ -58,6 +58,14 @@ export function TableOfContents({ headings, title }: TableOfContentsProps) {
             >
               <a
                 href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById(item.id);
+                  if (!el) return;
+                  el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  history.replaceState(null, "", `#${item.id}`);
+                  setActiveId(item.id);
+                }}
                 className={cn(
                   "block py-0.5 leading-snug transition-colors hover:text-primary",
                   isActive
