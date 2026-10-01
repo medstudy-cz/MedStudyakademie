@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "@/features/quiz/integrations/email";
 
 const ADMIN_EMAIL =
-  process.env.QUIZ_ADMIN_EMAIL?.trim() || "adm.cur.medstudy@gmail.com";
+  process.env.QUIZ_ADMIN_EMAIL?.trim() || "medstudyacademy.cz@gmail.com";
 
 export async function POST(req: NextRequest) {
   try {
@@ -62,7 +62,7 @@ ${typeof adminAnswersHtml === "string" ? adminAnswersHtml : ""}
         {
           error: "Failed to send email",
           hint: "Check SENDGRID_API_KEY and that EMAIL_FROM is a verified sender in SendGrid",
-          from: process.env.EMAIL_FROM?.trim() || "noreply@medstudy.cz",
+          from: process.env.EMAIL_FROM?.trim() || "noreply@medstudyacademy.cz",
         },
         { status: 500 },
       );

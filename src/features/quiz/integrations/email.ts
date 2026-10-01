@@ -18,11 +18,11 @@ function getApiKey(): string {
 }
 
 const FROM_EMAIL = () =>
-  process.env.EMAIL_FROM?.trim() || "noreply@medstudy.cz";
+  process.env.EMAIL_FROM?.trim() || "noreply@medstudyacademy.cz";
 const FROM_NAME = () =>
-  process.env.EMAIL_FROM_NAME?.trim() || "MedStudy Akademie | Quiz";
+  process.env.EMAIL_FROM_NAME?.trim() || "MedStudyacademy z.s.";
 const DEFAULT_REPLY_TO = () =>
-  process.env.EMAIL_REPLY_TO?.trim() || "sales@medstudy.cz";
+  process.env.EMAIL_REPLY_TO?.trim() || "medstudyacademy.cz@gmail.com";
 
 async function sendWithRetry(
   message: MailDataRequired,

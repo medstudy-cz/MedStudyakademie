@@ -14,10 +14,10 @@
   },
   "hero": {
     "title": "Integrace. Vzdělávání. Podpora.",
-    "subtitle": "Odpovězte na pár jednoduchých otázek — a získejte výběr oborů a univerzit právě pro vás. Zabere to jen 3 minuty!",
-    "ctaServices": "Naše služby",
+    "subtitle": "MedStudyacademy z.s. je neziskový spolek, který pomáhá cizincům, zdravotníkům a rodinám integrovat se do české společnosti. Vzdělávání, poradenství a komunitní podpora — zdarma.",
+    "ctaServices": "Co děláme",
     "ctaContact": "Kontaktujte nás",
-    "ctaQuiz": "Absolvovat test"
+    "ctaQuiz": "Bezplatný orientační test"
   },
   "about": {
     "title": "Kdo jsme?",
@@ -108,9 +108,12 @@
     "title": "Kontaktujte nás",
     "infoTitle": "Kontaktní údaje",
     "socialTitle": "Sociální sítě",
-    "email": "admin@edu-medstudy.cz",
+    "email": "medstudyacademy.cz@gmail.com",
     "phone": "+420 774 258 018",
-    "website": "medstudy.cz",
+    "website": "medstudyacademy.cz",
+    "legalCompanyName": "Registrovaný název",
+    "legalAddress": "Adresa sídla",
+    "legalIco": "IČO",
     "social": {
       "instagram": "Instagram",
       "tiktok": "TikTok",
@@ -144,6 +147,7 @@
     "legalCompanyName": "Obchodní firma",
     "legalAddress": "Adresa sídla",
     "legalIco": "IČO",
+    "blog": "Blog",
     "privacy": "Zásady ochrany osobních údajů",
     "googleWorkspaceVerification": "MedStudyacademy z.s. je registrovaný neziskový spolek v České republice poskytující bezplatné vzdělávací a integrační služby cizincům a zdravotníkům.",
     "copyright": "© {year} MedStudyacademy z.s. Všechna práva vyhrazena."
@@ -156,7 +160,7 @@
   },
   "homeCta": {
     "title": "Připraveni na další krok?",
-    "subtitle": "Absolvujte krátký bezplatný test nebo nám napište — pomůžeme s integrací a vzděláváním v Česku.",
+    "subtitle": "Absolvujte bezplatný orientační test nebo nám napište — náš neziskový tým pomáhá s integrací a vzděláváním v Česku zdarma.",
     "primary": "Absolvovat bezplatný test",
     "secondary": "Kontaktujte nás"
   },
@@ -175,13 +179,13 @@
     "ctaButton": "Získat konzultaci"
   },
   "StartScreen": {
-    "title": "Vyberte si vysněnou profesi a univerzitu v Česku — za 5 minut",
-    "description": "Odpovězte na několik jednoduchých otázek a získejte výběr oborů a univerzit, které se k vám hodí. Více než 1000 uchazečů už našlo svou cestu s naším AI testem.",
-    "button": "Zahájit test",
-    "footer": "AI a naši konzultanti už pomohli stovkám studentů dostat se na rozpočet v Česku.",
+    "title": "Najděte svou studijní cestu v Česku — bezplatný orientační test",
+    "description": "Odpovězte na několik jednoduchých otázek a získejte bezplatné tipy ke studijním možnostem. MedStudyacademy z.s. pomáhá cizincům a rodinám se vzděláváním a integrací zdarma.",
+    "button": "Spustit bezplatný test",
+    "footer": "Bezplatná služba neziskového spolku MedStudyacademy z.s. — podpora vzdělávání a integrace v České republice.",
     "feature1": "Zdarma",
     "feature2": "Jen 5 minut",
-    "feature3": "Doporučení od expertů"
+    "feature3": "Osobní orientace"
   },
   "RoleSelection": {
     "title": "Kdo teď prochází testem?",
@@ -239,8 +243,8 @@
   "ThankYouScreen": {
     "title": "Děkujeme!",
     "message1": "Vaše osobní doporučení už jsou na cestě! Zkontrolujte e-mail, který jste uvedli.",
-    "message2": "Mezitím se můžete podívat na naše programy na ",
-    "linkText": "hlavním webu"
+    "message2": "Mezitím se můžete podívat na naše bezplatné programy:",
+    "linkText": "vzdělávací programy"
   },
   "QuizScreen": {
     "placeholder": "Vaše odpověď...",

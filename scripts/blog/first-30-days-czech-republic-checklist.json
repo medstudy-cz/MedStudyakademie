@@ -1,0 +1,466 @@
+{
+  "slug": "first-30-days-czech-republic-checklist",
+  "publishedAt": "2026-10-01T15:00:00.000Z",
+  "coverImage": "scripts/blog/first-30-days-cover.png",
+  "coverAlt": "Foreigner checklist for the first 30 days in the Czech Republic in Prague",
+  "locales": [
+    {
+      "locale": "en",
+      "title": "First 30 days in the Czech Republic: checklist for a foreigner",
+      "excerpt": "A practical first-month checklist: residence reporting, housing, SIM, bank, insurance, transport and language — with links to official Czech sources.",
+      "seo": {
+        "metaTitle": "First 30 Days in Czechia: Foreigner Checklist",
+        "metaDescription": "What to do in your first 30 days in the Czech Republic: Foreign Police registration, housing, insurance, bank, Lítačka and Czech courses. Official links included.",
+        "keywords": [
+          "first 30 days Czech Republic",
+          "foreigner checklist Czechia",
+          "Foreign Police registration",
+          "health insurance foreigners Czech Republic",
+          "Lítačka Prague"
+        ]
+      },
+      "ctaBanner": {
+        "title": "Need free help with your first steps?",
+        "description": "MedStudyacademy z.s. is a nonprofit association. We provide free integration and education support for foreigners and families in Czechia.",
+        "buttonText": "Contact us free of charge"
+      },
+      "content": [
+        {
+          "type": "p",
+          "parts": [
+            { "text": "The first month in the Czech Republic is easier if you follow a clear order: registration, housing, communication, money, insurance, transport and language. Below is a short checklist for foreigners. Rules can differ for EU and non-EU citizens — always check the official pages linked in each section." }
+          ]
+        },
+        { "type": "h2", "text": "1. Report your residence (Foreign Police)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "In most cases, a third-country national must report the place of residence to the Foreign Police (" },
+            { "text": "Cizinecká policie", "marks": ["em"] },
+            { "text": ") within " },
+            { "text": "3 working days", "marks": ["strong"] },
+            { "text": " after entry, unless the accommodation provider already did it for you. Official guidance:" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "Police of the Czech Republic — reporting residence", "href": "https://policie.gov.cz/clanek/reporting-of-the-place-of-aliens-residence.aspx" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "gov.cz — registration after arrival (third-country nationals)", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-a-thirdcountry-national-after-arrival-in-the-czech-republic-S7732" }
+          ]
+        },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "EU citizens (and eligible family members) who plan to stay longer than 30 days generally report within " },
+            { "text": "30 days", "marks": ["strong"] },
+            { "text": ". See:" },
+            { "text": " gov.cz for EU citizens", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-an-eu-citizen-or-a-family-member-of-an-eu-citizen-after-arrival-in-the-czech-republic-S7764" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "2. Secure housing and keep your lease documents" },
+        {
+          "type": "p",
+          "text": "Save your lease or accommodation confirmation, landlord contacts and proof of address. Hotels and dormitories often register guests automatically; private rentals usually require you to arrange registration yourself. Keep copies — you will need them for banks, insurance and residence procedures."
+        },
+        { "type": "h2", "text": "3. Get a local SIM / mobile plan" },
+        {
+          "type": "p",
+          "text": "A Czech number helps with bank verification, appointments and transport apps. Bring your passport (and residence permit if you already have one) when signing a prepaid or contract plan."
+        },
+        { "type": "h2", "text": "4. Open a bank account" },
+        {
+          "type": "p",
+          "text": "A local account simplifies rent, wages and insurance payments. Banks usually ask for a passport and proof of residence; requirements vary by bank and residence status. Call ahead and ask which documents they accept for newly arrived foreigners."
+        },
+        { "type": "h2", "text": "5. Arrange health insurance" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Health coverage depends on your status (employment, permanent residence, long-term visa, temporary protection, etc.). Overview from the public insurer VZP:" },
+            { "text": " health insurance for foreigners", "href": "https://www.vzp.cz/pojistenci/informace-a-zivotni-situace/zdravotni-pojisteni-cizincu" },
+            { "text": ". For comprehensive travel medical insurance required for many long-term visas/stays, see also the Information Portal for Foreigners:" },
+            { "text": " IPC.gov.cz notice", "href": "https://ipc.gov.cz/komplexni-zdravotni-pojisteni-cizincu-jiz-nebude-poskytovat-pouze-pojistovna-vzp-a-s/" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "6. Get a transport pass (Lítačka / PID)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "In Prague and the Central Bohemian region, use " },
+            { "text": "PID Lítačka", "marks": ["strong"] },
+            { "text": " for tickets and season coupons. Official fares:" },
+            { "text": " pid.cz — fares and tariff", "href": "https://pid.cz/jizdne-a-tarif/" },
+            { "text": " and" },
+            { "text": " pidlitacka.cz", "href": "https://pidlitacka.cz/cs/pricing/prague" },
+            { "text": ". From 1 January 2026, electronic tickets in the Lítačka app are cheaper than paper/SMS options for many products." }
+          ]
+        },
+        { "type": "h2", "text": "7. Enroll in Czech courses and start language practice" },
+        {
+          "type": "p",
+          "text": "Even A1–A2 Czech reduces stress at offices, clinics and schools. Combine a structured course with daily practice: apps, conversation clubs and real errands. Free educational and counselling support is part of the mission of MedStudyacademy z.s."
+        },
+        { "type": "h2", "text": "8. Plan study or work next steps" },
+        {
+          "type": "p",
+          "text": "Once basics are stable, map your longer goal: university admission, recognitions (nostrification/approbation), or job search. Collect diplomas, translations and deadlines early — Czech procedures take time."
+        },
+        { "type": "h2", "text": "Quick tip for week one" },
+        {
+          "type": "p",
+          "text": "Do residence reporting and housing paperwork first, then SIM + insurance, then bank and transport. Language learning can start immediately in parallel. When rules feel unclear, use the official links above or ask a nonprofit counsellor before paying for commercial “guarantees”."
+        }
+      ]
+    },
+    {
+      "locale": "cz",
+      "title": "Prvních 30 dní v České republice: checklist pro cizince",
+      "excerpt": "Praktický checklist na první měsíc: hlášení pobytu, bydlení, SIM, účet, pojištění, doprava a čeština — s odkazy na oficiální zdroje.",
+      "seo": {
+        "metaTitle": "Prvních 30 dní v Česku: checklist pro cizince",
+        "metaDescription": "Co udělat v prvních 30 dnech v ČR: hlášení na cizinecké policii, bydlení, pojištění, účet, Lítačka a kurzy češtiny. Oficiální odkazy.",
+        "keywords": [
+          "prvních 30 dní Česko",
+          "checklist pro cizince",
+          "hlášení pobytu cizinecká policie",
+          "zdravotní pojištění cizinců",
+          "Lítačka Praha"
+        ]
+      },
+      "ctaBanner": {
+        "title": "Potřebujete bezplatnou pomoc s prvními kroky?",
+        "description": "MedStudyacademy z.s. je neziskový spolek. Poskytujeme zdarma podporu v integraci a vzdělávání cizincům a rodinám v Česku.",
+        "buttonText": "Kontaktovat zdarma"
+      },
+      "content": [
+        {
+          "type": "p",
+          "parts": [
+            { "text": "První měsíc v České republice je snazší, když postupujete v jasném pořadí: registrace, bydlení, komunikace, peníze, pojištění, doprava a jazyk. Níže je krátký checklist. Pravidla se mohou lišit pro občany EU a třetích zemí — vždy ověřte oficiální stránky v jednotlivých bodech." }
+          ]
+        },
+        { "type": "h2", "text": "1. Hlášení pobytu (cizinecká policie)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Ve většině případů musí státní příslušník třetí země ohlásit místo pobytu na cizinecké policii do " },
+            { "text": "3 pracovních dnů", "marks": ["strong"] },
+            { "text": " od vstupu na území, pokud to už neučinil ubytovatel. Oficiální informace:" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "Policie ČR — hlášení pobytu cizinců", "href": "https://policie.gov.cz/clanek/hlaseni-pobytu-cizincu.aspx" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "gov.cz — registrace po příjezdu (třetí země)", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-a-thirdcountry-national-after-arrival-in-the-czech-republic-S7732" }
+          ]
+        },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Občané EU (a oprávnění rodinní příslušníci), kteří plánují pobyt delší než 30 dní, obvykle hlásí pobyt do " },
+            { "text": "30 dnů", "marks": ["strong"] },
+            { "text": ". Viz" },
+            { "text": " gov.cz pro občany EU", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-an-eu-citizen-or-a-family-member-of-an-eu-citizen-after-arrival-in-the-czech-republic-S7764" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "2. Zajistěte bydlení a uschovejte dokumenty" },
+        {
+          "type": "p",
+          "text": "Uložte nájemní smlouvu nebo potvrzení o ubytování, kontakty na majitele a doklad adresy. Hotely a koleje často registrují hosty automaticky; u soukromého pronájmu si registraci obvykle řešíte sami. Kopie budete potřebovat k bance, pojištění i pobytovým úkonům."
+        },
+        { "type": "h2", "text": "3. Pořiďte si českou SIM / tarif" },
+        {
+          "type": "p",
+          "text": "České číslo usnadní ověření u banky, objednávky termínů a dopravní aplikace. Při uzavření tarifu si vezměte pas (a povolení k pobytu, pokud už ho máte)."
+        },
+        { "type": "h2", "text": "4. Otevřete si bankovní účet" },
+        {
+          "type": "p",
+          "text": "Místní účet zjednoduší nájem, mzdu i platby pojištění. Banky obvykle chtějí pas a doklad o adrese; požadavky se liší. Předem se zeptejte, které doklady přijímají u nově příchozích cizinců."
+        },
+        { "type": "h2", "text": "5. Vyřešte zdravotní pojištění" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Typ pojištění závisí na statusu (zaměstnání, trvalý pobyt, dlouhodobé vízum, dočasná ochrana atd.). Přehled VZP:" },
+            { "text": " zdravotní pojištění cizinců", "href": "https://www.vzp.cz/pojistenci/informace-a-zivotni-situace/zdravotni-pojisteni-cizincu" },
+            { "text": ". K komplexnímu cestovnímu pojištění pro řadu dlouhodobých pobytů viz také" },
+            { "text": " IPC.gov.cz", "href": "https://ipc.gov.cz/komplexni-zdravotni-pojisteni-cizincu-jiz-nebude-poskytovat-pouze-pojistovna-vzp-a-s/" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "6. Zřiďte dopravu (Lítačka / PID)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "V Praze a Středočeském kraji používejte " },
+            { "text": "PID Lítačku", "marks": ["strong"] },
+            { "text": ". Oficiální jízdné:" },
+            { "text": " pid.cz — jízdné a tarif", "href": "https://pid.cz/jizdne-a-tarif/" },
+            { "text": " a" },
+            { "text": " pidlitacka.cz", "href": "https://pidlitacka.cz/cs/pricing/prague" },
+            { "text": ". Od 1. 1. 2026 jsou elektronické jízdenky v aplikaci Lítačka u mnoha produktů levnější než papír/SMS." }
+          ]
+        },
+        { "type": "h2", "text": "7. Přihlaste se na kurzy češtiny a začněte cvičit" },
+        {
+          "type": "p",
+          "text": "Už úroveň A1–A2 sníží stres na úřadech, v ambulancích i ve škole. Spojte kurz s každodenní praxí. Bezplatná vzdělávací a poradenská podpora je součástí poslání spolku MedStudyacademy z.s."
+        },
+        { "type": "h2", "text": "8. Naplánujte studium nebo práci" },
+        {
+          "type": "p",
+          "text": "Až budou základní věci hotové, naplánujte delší cíl: přijetí na VŠ, nostrifikaci/aprobaci nebo práci. Diplomy, překlady a termíny si připravte včas — české procesy trvají."
+        },
+        { "type": "h2", "text": "Tip na první týden" },
+        {
+          "type": "p",
+          "text": "Nejdřív hlášení pobytu a bydlení, pak SIM + pojištění, poté banka a doprava. Jazyk můžete začít hned paralelně. Když si nejste jistí pravidly, použijte oficiální odkazy výše nebo se zeptejte neziskového poradce dřív, než zaplatíte za komerční „garance“."
+        }
+      ]
+    },
+    {
+      "locale": "ua",
+      "title": "Перші 30 днів у Чехії: чек-лист для іноземця",
+      "excerpt": "Практичний чек-лист на перший місяць: реєстрація проживання, житло, SIM, рахунок, страхування, транспорт і чеська — з посиланнями на офіційні джерела.",
+      "seo": {
+        "metaTitle": "Перші 30 днів у Чехії: чек-лист для іноземця",
+        "metaDescription": "Що зробити в перші 30 днів у Чехії: реєстрація в поліції у справах іноземців, житло, страхування, рахунок, Lítačka та курси чеської. Офіційні посилання.",
+        "keywords": [
+          "перші 30 днів Чехія",
+          "чек-лист для іноземця",
+          "реєстрація проживання Чехія",
+          "медичне страхування іноземців",
+          "Lítačka Прага"
+        ]
+      },
+      "ctaBanner": {
+        "title": "Потрібна безкоштовна допомога з першими кроками?",
+        "description": "MedStudyacademy z.s. — некомерційне об'єднання. Ми безкоштовно допомагаємо іноземцям і родинам з інтеграцією та освітою в Чехії.",
+        "buttonText": "Зв'язатися безкоштовно"
+      },
+      "content": [
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Перший місяць у Чехії простіший, якщо йти за порядком: реєстрація, житло, зв'язок, гроші, страхування, транспорт і мова. Нижче — короткий чек-лист. Правила можуть відрізнятися для громадян ЄС і третіх країн — завжди перевіряйте офіційні сторінки в кожному пункті." }
+          ]
+        },
+        { "type": "h2", "text": "1. Зареєструйте місце проживання (поліція у справах іноземців)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "У більшості випадків громадянин третьої країни має повідомити місце проживання поліції у справах іноземців протягом " },
+            { "text": "3 робочих днів", "marks": ["strong"] },
+            { "text": " після в'їзду, якщо це вже не зробив надавач житла. Офіційно:" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "Policie ČR — reporting residence (EN)", "href": "https://policie.gov.cz/clanek/reporting-of-the-place-of-aliens-residence.aspx" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "gov.cz — реєстрація після прибуття", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-a-thirdcountry-national-after-arrival-in-the-czech-republic-S7732" }
+          ]
+        },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Громадяни ЄС (і члени сімей), які планують перебування понад 30 днів, зазвичай повідомляють протягом " },
+            { "text": "30 днів", "marks": ["strong"] },
+            { "text": ". Див." },
+            { "text": " gov.cz для громадян ЄС", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-an-eu-citizen-or-a-family-member-of-an-eu-citizen-after-arrival-in-the-czech-republic-S7764" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "2. Оформіть житло і збережіть документи" },
+        {
+          "type": "p",
+          "text": "Збережіть договір оренди або підтвердження проживання, контакти власника та доказ адреси. Готелі й гуртожитки часто реєструють гостей автоматично; приватна оренда зазвичай вимагає самостійної реєстрації. Копії знадобляться для банку, страховки та процедур проживання."
+        },
+        { "type": "h2", "text": "3. Оформіть місцеву SIM / тариф" },
+        {
+          "type": "p",
+          "text": "Чеський номер потрібен для банку, записів і транспортних додатків. Візьміть паспорт (і дозвіл на проживання, якщо вже є)."
+        },
+        { "type": "h2", "text": "4. Відкрийте банківський рахунок" },
+        {
+          "type": "p",
+          "text": "Місцевий рахунок спрощує оренду, зарплату й страховку. Банки зазвичай просять паспорт і підтвердження адреси; вимоги різняться. Заздалегідь уточніть, які документи приймають для новоприбулих іноземців."
+        },
+        { "type": "h2", "text": "5. Оформіть медичне страхування" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Тип покриття залежить від статусу (робота, постійне проживання, довгострокова віза, тимчасовий захист тощо). Огляд VZP:" },
+            { "text": " страхування іноземців", "href": "https://www.vzp.cz/pojistenci/informace-a-zivotni-situace/zdravotni-pojisteni-cizincu" },
+            { "text": ". Про комплексне туристичне медичне страхування для багатьох довгострокових перебувань див. також" },
+            { "text": " IPC.gov.cz", "href": "https://ipc.gov.cz/komplexni-zdravotni-pojisteni-cizincu-jiz-nebude-poskytovat-pouze-pojistovna-vzp-a-s/" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "6. Оформіть транспорт (Lítačka / PID)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "У Празі та Середньочеському краї користуйтеся " },
+            { "text": "PID Lítačka", "marks": ["strong"] },
+            { "text": ". Офіційні тарифи:" },
+            { "text": " pid.cz", "href": "https://pid.cz/jizdne-a-tarif/" },
+            { "text": " і" },
+            { "text": " pidlitacka.cz", "href": "https://pidlitacka.cz/cs/pricing/prague" },
+            { "text": ". З 1 січня 2026 електронні квитки в додатку часто дешевші за папір/SMS." }
+          ]
+        },
+        { "type": "h2", "text": "7. Запишіться на курси чеської та практикуйте мову" },
+        {
+          "type": "p",
+          "text": "Навіть A1–A2 зменшує стрес у державних установах, клініках і школі. Поєднуйте курс із щоденною практикою. Безкоштовна освітня та консультаційна підтримка — частина місії MedStudyacademy z.s."
+        },
+        { "type": "h2", "text": "8. Сплануйте навчання або роботу" },
+        {
+          "type": "p",
+          "text": "Коли базові справи закриті, визначте довгу мету: вступ до вишу, нострифікація/апробація чи робота. Збирайте дипломи, переклади й дедлайни заздалегідь — чеські процедури займають час."
+        },
+        { "type": "h2", "text": "Порада на перший тиждень" },
+        {
+          "type": "p",
+          "text": "Спочатку реєстрація проживання й житло, потім SIM + страховка, далі банк і транспорт. Мову можна починати паралельно. Якщо правила незрозумілі — користуйтеся офіційними посиланнями або зверніться до некомерційного консультанта, перш ніж платити за комерційні «гарантії»."
+        }
+      ]
+    },
+    {
+      "locale": "ru",
+      "title": "Первые 30 дней в Чехии: чек-лист для иностранца",
+      "excerpt": "Практический чек-лист на первый месяц: регистрация проживания, жильё, SIM, счёт, страховка, транспорт и чешский — со ссылками на официальные источники.",
+      "seo": {
+        "metaTitle": "Первые 30 дней в Чехии: чек-лист для иностранца",
+        "metaDescription": "Что сделать в первые 30 дней в Чехии: регистрация в полиции по делам иностранцев, жильё, страховка, счёт, Lítačka и курсы чешского. Официальные ссылки.",
+        "keywords": [
+          "первые 30 дней Чехия",
+          "чек-лист для иностранца",
+          "регистрация проживания Чехия",
+          "медицинская страховка иностранцев",
+          "Lítačka Прага"
+        ]
+      },
+      "ctaBanner": {
+        "title": "Нужна бесплатная помощь с первыми шагами?",
+        "description": "MedStudyacademy z.s. — некоммерческое объединение. Мы бесплатно помогаем иностранцам и семьям с интеграцией и образованием в Чехии.",
+        "buttonText": "Связаться бесплатно"
+      },
+      "content": [
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Первый месяц в Чехии проще, если идти по порядку: регистрация, жильё, связь, деньги, страховка, транспорт и язык. Ниже — короткий чек-лист. Правила могут отличаться для граждан ЕС и третьих стран — всегда сверяйтесь с официальными страницами в каждом пункте." }
+          ]
+        },
+        { "type": "h2", "text": "1. Сообщите о месте проживания (полиция по делам иностранцев)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "В большинстве случаев гражданин третьей страны должен сообщить место проживания в полицию по делам иностранцев в течение " },
+            { "text": "3 рабочих дней", "marks": ["strong"] },
+            { "text": " после въезда, если это уже не сделал провайдер жилья. Официально:" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "Policie ČR — reporting residence (EN)", "href": "https://policie.gov.cz/clanek/reporting-of-the-place-of-aliens-residence.aspx" }
+          ]
+        },
+        {
+          "type": "li",
+          "parts": [
+            { "text": "gov.cz — регистрация после прибытия", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-a-thirdcountry-national-after-arrival-in-the-czech-republic-S7732" }
+          ]
+        },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Граждане ЕС (и члены семьи), планирующие пребывание дольше 30 дней, обычно сообщают в течение " },
+            { "text": "30 дней", "marks": ["strong"] },
+            { "text": ". См." },
+            { "text": " gov.cz для граждан ЕС", "href": "https://portal.gov.cz/en/sluzby-vs/registration-of-residence-by-an-eu-citizen-or-a-family-member-of-an-eu-citizen-after-arrival-in-the-czech-republic-S7764" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "2. Оформите жильё и сохраните документы" },
+        {
+          "type": "p",
+          "text": "Сохраните договор аренды или подтверждение проживания, контакты владельца и доказательство адреса. Отели и общежития часто регистрируют гостей автоматически; частная аренда обычно требует самостоятельной регистрации. Копии понадобятся для банка, страховки и процедур проживания."
+        },
+        { "type": "h2", "text": "3. Оформите местную SIM / тариф" },
+        {
+          "type": "p",
+          "text": "Чешский номер нужен для банка, записи на приём и транспортных приложений. Возьмите паспорт (и ВНЖ, если уже есть)."
+        },
+        { "type": "h2", "text": "4. Откройте банковский счёт" },
+        {
+          "type": "p",
+          "text": "Местный счёт упрощает аренду, зарплату и страховку. Банки обычно просят паспорт и подтверждение адреса; требования различаются. Заранее уточните, какие документы принимают у недавно приехавших иностранцев."
+        },
+        { "type": "h2", "text": "5. Оформите медицинскую страховку" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "Тип покрытия зависит от статуса (работа, ПМЖ, долгосрочная виза, временная защита и т.д.). Обзор VZP:" },
+            { "text": " страховка иностранцев", "href": "https://www.vzp.cz/pojistenci/informace-a-zivotni-situace/zdravotni-pojisteni-cizincu" },
+            { "text": ". О комплексном туристическом медустраховании для многих долгосрочных пребываний см. также" },
+            { "text": " IPC.gov.cz", "href": "https://ipc.gov.cz/komplexni-zdravotni-pojisteni-cizincu-jiz-nebude-poskytovat-pouze-pojistovna-vzp-a-s/" },
+            { "text": "." }
+          ]
+        },
+        { "type": "h2", "text": "6. Оформите транспорт (Lítačka / PID)" },
+        {
+          "type": "p",
+          "parts": [
+            { "text": "В Праге и Среднечешском крае используйте " },
+            { "text": "PID Lítačka", "marks": ["strong"] },
+            { "text": ". Официальные тарифы:" },
+            { "text": " pid.cz", "href": "https://pid.cz/jizdne-a-tarif/" },
+            { "text": " и" },
+            { "text": " pidlitacka.cz", "href": "https://pidlitacka.cz/cs/pricing/prague" },
+            { "text": ". С 1 января 2026 электронные билеты в приложении часто дешевле бумаги/SMS." }
+          ]
+        },
+        { "type": "h2", "text": "7. Запишитесь на курсы чешского и практикуйте язык" },
+        {
+          "type": "p",
+          "text": "Уже A1–A2 снижает стресс в госучреждениях, клиниках и школе. Совмещайте курс с ежедневной практикой. Бесплатная образовательная и консультационная поддержка — часть миссии MedStudyacademy z.s."
+        },
+        { "type": "h2", "text": "8. Спланируйте учёбу или работу" },
+        {
+          "type": "p",
+          "text": "Когда базовые дела закрыты, определите долгую цель: поступление в вуз, нострификация/апробация или работа. Собирайте дипломы, переводы и дедлайны заранее — чешские процедуры занимают время."
+        },
+        { "type": "h2", "text": "Совет на первую неделю" },
+        {
+          "type": "p",
+          "text": "Сначала регистрация проживания и жильё, затем SIM + страховка, потом банк и транспорт. Язык можно начинать параллельно. Если правила непонятны — используйте официальные ссылки или обратитесь к некоммерческому консультанту, прежде чем платить за коммерческие «гарантии»."
+        }
+      ]
+    }
+  ]
+}

@@ -2,11 +2,11 @@
   "back": "Back to “What we do”",
   "education": {
     "metaTitle": "Educational programmes | MedStudyacademy",
-    "metaDescription": "Czech language courses, subject intensives and adaptation modules for successful integration and university admission in Czechia.",
+    "metaDescription": "Free Czech language courses, subject intensives and adaptation modules for foreigners integrating in Czechia — provided by nonprofit MedStudyacademy z.s.",
     "hero": {
-      "title": "Confident Czech and strong education — your key to integration and a career in Czechia",
-      "subtitle": "Real adaptation starts with language confidence and a solid academic base. Open doors to top universities and the professional environment with MedStudyAcademy.",
-      "cta": "Find a course"
+      "title": "Free educational programmes for successful integration in Czechia",
+      "subtitle": "As a nonprofit association we offer Czech language courses, subject intensives and adaptation modules free of charge — so foreigners can study, work and feel at home.",
+      "cta": "Request free support"
     },
     "categories": {
       "title": "Programme categories",
@@ -34,7 +34,7 @@
           "duration": "Duration: 900 academic hours",
           "intensity": "Intensity: 20–25 hours per week",
           "groupSize": "Group: up to 12 people",
-          "cta": "Apply"
+          "cta": "Request free place"
         },
         {
           "title": "Biology & chemistry intensive",
@@ -42,7 +42,7 @@
           "duration": "Duration: 120 academic hours",
           "intensity": "Intensity: 8–10 hours per week",
           "groupSize": "Group: up to 10 people",
-          "cta": "Apply"
+          "cta": "Request free place"
         },
         {
           "title": "Adaptation Czech",
@@ -50,13 +50,14 @@
           "duration": "Duration: 60 academic hours",
           "intensity": "Intensity: 6 hours per week",
           "groupSize": "Group: up to 14 people",
-          "cta": "Apply"
+          "cta": "Request free place"
         }
       ]
     },
     "advantages": {
       "title": "Why people trust us",
       "items": [
+        "All programmes are provided free of charge by a registered nonprofit association",
         "Qualified teachers experienced with international learners",
         "Focus on speaking practice and overcoming the language barrier",
         "Medical and academic terminology built into programmes",
@@ -67,8 +68,12 @@
       "title": "FAQ",
       "items": [
         {
+          "question": "Are the programmes really free?",
+          "answer": "Yes. MedStudyacademy z.s. is a nonprofit association. Our educational programmes and counselling are provided free of charge as part of our mission."
+        },
+        {
           "question": "Which level can I start from?",
-          "answer": "We offer zero-beginner programmes and modules for those who already speak Czech. We will choose the right format in a consultation."
+          "answer": "We offer zero-beginner programmes and modules for those who already speak Czech. We will choose the right format in a free consultation."
         },
         {
           "question": "Is learning in person or online?",
@@ -80,8 +85,8 @@
         }
       ]
     },
-    "formTitle": "Find a course",
-    "formSubject": "Educational course enquiry"
+    "formTitle": "Request free educational support",
+    "formSubject": "Educational programme enquiry"
   },
   "healthcare": {
     "metaTitle": "Support for healthcare workers | MedStudyacademy",

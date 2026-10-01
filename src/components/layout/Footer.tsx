@@ -53,7 +53,7 @@ export function Footer() {
               href="/blog"
               className="font-medium text-primary hover:underline"
             >
-              Blog
+              {t("blog")}
             </Link>
             <Link
               href="/privacy"

@@ -2,11 +2,11 @@
   "back": "Zpět na sekci „Co děláme“",
   "education": {
     "metaTitle": "Vzdělávací programy | MedStudyacademy",
-    "metaDescription": "Kurzy češtiny, intenzivy odborných předmětů a adaptační moduly pro úspěšnou integraci a přijetí na školy v ČR.",
+    "metaDescription": "Bezplatné kurzy češtiny, intenzivy odborných předmětů a adaptační moduly pro cizince v ČR — neziskový spolek MedStudyacademy z.s.",
     "hero": {
-      "title": "Svobodná čeština a kvalitní vzdělání — váš klíč k úspěšné integraci a kariéře v Česku",
-      "subtitle": "Plnohodnotná adaptace začíná jistým ovládáním jazyka a silnou akademickou základnou. Otevřete dveře na nejlepší vysoké školy a do profesního prostředí s MedStudyAcademy.",
-      "cta": "Vybrat kurz"
+      "title": "Bezplatné vzdělávací programy pro úspěšnou integraci v Česku",
+      "subtitle": "Jako neziskový spolek nabízíme kurzy češtiny, intenzivy odborných předmětů a adaptační moduly zdarma — aby se cizinci mohli vzdělávat, pracovat a cítit se doma.",
+      "cta": "Požádat o bezplatnou podporu"
     },
     "categories": {
       "title": "Kategorie programů",
@@ -34,7 +34,7 @@
           "duration": "Délka: 900 akademických hodin",
           "intensity": "Intenzita: 20–25 hodin týdně",
           "groupSize": "Skupina: do 12 osob",
-          "cta": "Přihlásit se"
+          "cta": "Požádat o místo zdarma"
         },
         {
           "title": "Intenziv biologie a chemie",
@@ -42,7 +42,7 @@
           "duration": "Délka: 120 akademických hodin",
           "intensity": "Intenzita: 8–10 hodin týdně",
           "groupSize": "Skupina: do 10 osob",
-          "cta": "Přihlásit se"
+          "cta": "Požádat o místo zdarma"
         },
         {
           "title": "Adaptační čeština",
@@ -50,13 +50,14 @@
           "duration": "Délka: 60 akademických hodin",
           "intensity": "Intenzita: 6 hodin týdně",
           "groupSize": "Skupina: do 14 osob",
-          "cta": "Přihlásit se"
+          "cta": "Požádat o místo zdarma"
         }
       ]
     },
     "advantages": {
       "title": "Proč nám lidé důvěřují",
       "items": [
+        "Všechny programy poskytuje registrovaný neziskový spolek zdarma",
         "Diplomovaní lektoři se zkušeností s cizinci",
         "Důraz na konverzaci a překonání jazykové bariéry",
         "Lékařská a akademická terminologie v programech",
@@ -67,8 +68,12 @@
       "title": "Časté otázky",
       "items": [
         {
+          "question": "Jsou programy opravdu zdarma?",
+          "answer": "Ano. MedStudyacademy z.s. je neziskový spolek. Naše vzdělávací programy a poradenství poskytujeme zdarma v rámci našeho poslání."
+        },
+        {
           "question": "Od jaké úrovně mohu začít?",
-          "answer": "Máme programy od nuly i moduly pro ty, kdo už česky mluví. Na konzultaci vybereme vhodný formát."
+          "answer": "Máme programy od nuly i moduly pro ty, kdo už česky mluví. Na bezplatné konzultaci vybereme vhodný formát."
         },
         {
           "question": "Je výuka prezenční, nebo online?",
@@ -80,8 +85,8 @@
         }
       ]
     },
-    "formTitle": "Vybrat kurz",
-    "formSubject": "Výběr vzdělávacího kurzu"
+    "formTitle": "Požádat o bezplatnou vzdělávací podporu",
+    "formSubject": "Poptávka vzdělávacího programu"
   },
   "healthcare": {
     "metaTitle": "Podpora zdravotníků | MedStudyacademy",

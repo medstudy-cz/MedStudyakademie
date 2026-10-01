@@ -1,8 +1,13 @@
 import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
-import { Mail, Phone } from "lucide-react";
+import { Building2, Mail, MapPin, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { ContactForm } from "./ContactForm";
+import {
+  LEGAL_ADDRESS,
+  LEGAL_COMPANY_NAME,
+  LEGAL_ICO,
+} from "@/lib/legal";
 
 const CONTACT_PHONE_TEL = "+420774258018";
 
@@ -25,6 +30,41 @@ export async function ContactSection() {
                 {t("infoTitle")}
               </h3>
               <ul className="mt-4 space-y-4">
+                <li className="flex items-start gap-3 text-slate-700">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Building2 className="h-5 w-5" aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      {t("legalCompanyName")}
+                    </p>
+                    <p className="mt-0.5 font-medium">{LEGAL_COMPANY_NAME}</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <MapPin className="h-5 w-5" aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      {t("legalAddress")}
+                    </p>
+                    <p className="mt-0.5 font-medium leading-relaxed">
+                      {LEGAL_ADDRESS}
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3 text-slate-700">
+                  <span className="mt-0 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary">
+                    ID
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      {t("legalIco")}
+                    </p>
+                    <p className="mt-0.5 font-medium">{LEGAL_ICO}</p>
+                  </div>
+                </li>
                 <li>
                   <a
                     href={`mailto:${t("email")}`}

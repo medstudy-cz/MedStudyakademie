@@ -14,10 +14,10 @@
   },
   "hero": {
     "title": "Integration. Education. Support.",
-    "subtitle": "Answer a few simple questions — and get a selection of majors and universities tailored to you. It only takes 3 minutes!",
-    "ctaServices": "Our services",
+    "subtitle": "MedStudyacademy z.s. is a nonprofit association helping foreigners, healthcare workers and families integrate into Czech society. Education, counselling and community support — free of charge.",
+    "ctaServices": "What we do",
     "ctaContact": "Contact us",
-    "ctaQuiz": "Take the test"
+    "ctaQuiz": "Free orientation quiz"
   },
   "about": {
     "title": "Who we are",
@@ -108,9 +108,12 @@
     "title": "Contact us",
     "infoTitle": "Contact details",
     "socialTitle": "Social media",
-    "email": "admin@edu-medstudy.cz",
+    "email": "medstudyacademy.cz@gmail.com",
     "phone": "+420 774 258 018",
-    "website": "medstudy.cz",
+    "website": "medstudyacademy.cz",
+    "legalCompanyName": "Registered name",
+    "legalAddress": "Registered address",
+    "legalIco": "Company ID (IČO)",
     "social": {
       "instagram": "Instagram",
       "tiktok": "TikTok",
@@ -144,6 +147,7 @@
     "legalCompanyName": "Registered name",
     "legalAddress": "Registered address",
     "legalIco": "Company ID (IČO)",
+    "blog": "Blog",
     "privacy": "Privacy policy",
     "googleWorkspaceVerification": "MedStudyacademy z.s. is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
     "copyright": "© {year} MedStudyacademy z.s. All rights reserved."
@@ -156,7 +160,7 @@
   },
   "homeCta": {
     "title": "Ready for the next step?",
-    "subtitle": "Take a free short quiz or contact us — we help with integration and education in the Czech Republic.",
+    "subtitle": "Take a free orientation quiz or contact us — our nonprofit team helps with integration and education in the Czech Republic at no cost.",
     "primary": "Take the free quiz",
     "secondary": "Contact us"
   },
@@ -175,13 +179,13 @@
     "ctaButton": "Get Consultation"
   },
   "StartScreen": {
-    "title": "Choose your dream profession and university in the Czech Republic — in 5 minutes",
-    "description": "Answer a few simple questions and get a selection of specialties and universities that suit you best. Over 1000 applicants have already found their path with our AI test.",
-    "button": "Start Test",
-    "footer": "AI and our consultants have already helped hundreds of students enroll on a budget in the Czech Republic.",
+    "title": "Find your study path in the Czech Republic — free orientation quiz",
+    "description": "Answer a few simple questions and get free guidance on study options that may fit you. MedStudyacademy z.s. helps foreigners and families with education and integration at no cost.",
+    "button": "Start free quiz",
+    "footer": "A free nonprofit service of MedStudyacademy z.s. — education and integration support in the Czech Republic.",
     "feature1": "Free",
     "feature2": "Only 5 minutes",
-    "feature3": "Expert recommendations"
+    "feature3": "Personal guidance"
   },
   "RoleSelection": {
     "title": "Who is taking the test now?",
@@ -240,8 +244,8 @@
     "emoji": "🎉",
     "title": "Thank you!",
     "message1": "Your personalized recommendations are on their way! Check the email you provided.",
-    "message2": "While you wait, you can explore our programs on  ",
-    "linkText": "the main website"
+    "message2": "While you wait, you can learn more about our free programmes:",
+    "linkText": "educational programmes"
   },
   "QuizScreen": {
     "placeholder": "Your answer...",

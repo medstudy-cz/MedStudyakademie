@@ -1,14 +1,12 @@
 "use client";
 import React, { useEffect } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { trackEvent } from "@/features/quiz/utils/analytics";
 import { sendEventToServer } from "@/features/quiz/utils/sendEvent";
 
 export function ThankYouScreen() {
   const t = useTranslations("ThankYouScreen");
-  const locale = useLocale() || "ua";
-  const localeForSiteUrl = locale === "ua" ? "uk" : locale;
-  const fullProgramsUrl = `https://medstudy.cz/${localeForSiteUrl}/products/fullprograms`;
 
   useEffect(() => {
     const payload = { source: "thank_you_page" };
@@ -24,15 +22,14 @@ export function ThankYouScreen() {
         <br />
         <br />
         {t("message2")}{" "}
-        <a
-          href={fullProgramsUrl}
+        <Link
+          href="/activities/education"
           className="font-bold underline text-[#153060] hover:text-[#153060]/80 transition-colors"
         >
           {t("linkText")}
-        </a>.
-
+        </Link>
+        .
       </p>
     </div>
-
   );
 }
