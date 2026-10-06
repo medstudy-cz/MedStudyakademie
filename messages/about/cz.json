@@ -1,0 +1,62 @@
+{
+  "metaTitle": "O nás a poslání | Medstudy Academy, z. s.",
+  "metaDescription": "Poslání, programy a neziskový status spolku Medstudy Academy, z. s. (IČO 06441807) — bezplatné vzdělávání a integrační podpora v České republice.",
+  "title": "O nás a poslání",
+  "lead": "Medstudy Academy, z. s. je registrovaný neziskový spolek v České republice. Pomáháme cizincům, zdravotníkům a rodinám s integrací prostřednictvím bezplatného vzdělávání, poradenství a komunitní podpory.",
+  "missionTitle": "Naše poslání",
+  "mission": "Poskytovat praktickou a bezplatnou podporu lidem, kteří se integrují do české společnosti — zejména cizincům, zdravotníkům a rodinám — prostřednictvím vzdělávání, orientace a komunitních programů. Oficiální rozhodnutí o vízech, přijetí ke studiu a odborných oprávněních vždy náleží příslušným orgánům; naší rolí je neziskové poradenství a podpora.",
+  "whoTitle": "Kdo jsme",
+  "whoParagraphs": [
+    "Jsme Medstudy Academy, z. s. (veřejně také MedStudyacademy z.s.), neziskový spolek založený proto, aby pomáhal lidem ve složité životní situaci najít cestu v České republice.",
+    "Náš tým tvoří odborníci a dobrovolníci, kteří znají přestěhování z vlastní zkušenosti. Pracujeme s uchazeči o studium, zdravotníky a rodinami, které potřebují jazykovou, dokumentovou a každodenní orientaci.",
+    "Veškeré vzdělávací programy, poradenství a kulturní aktivity poskytujeme příjemcům pomoci zdarma."
+  ],
+  "whatTitle": "Co děláme",
+  "whatIntro": "Hlavní oblasti naší činnosti jsou podrobněji popsány na samostatných stránkách:",
+  "whatItems": [
+    {
+      "title": "Vzdělávací programy",
+      "description": "Kurzy češtiny, přípravné předměty a adaptační moduly pro cizince.",
+      "href": "/activities/education"
+    },
+    {
+      "title": "Podpora zdravotníků",
+      "description": "Orientace lékařů, zubařů a sester v procesu aprobace a integrace.",
+      "href": "/activities/healthcare"
+    },
+    {
+      "title": "Sociální a kulturní aktivity",
+      "description": "Komunitní setkání, která snižují izolaci a podporují sounáležitost.",
+      "href": "/activities/events"
+    },
+    {
+      "title": "Poradenství",
+      "description": "Individuální rady k dokumentům, legalizaci, zaměstnání a adaptaci.",
+      "href": "/activities/consulting"
+    },
+    {
+      "title": "Spolupráce a projekty",
+      "description": "Spolupráce se státními institucemi, univerzitami a dalšími NNO.",
+      "href": "/activities/partnership"
+    },
+    {
+      "title": "Další podpora",
+      "description": "Pomoc s hledáním bydlení, dokumenty a setkáními s odborníky, pokud jsou dostupná.",
+      "href": "/activities/support"
+    }
+  ],
+  "audienceTitle": "Komu pomáháme",
+  "audienceItems": [
+    "Uchazeči o studium plánující české vysoké školy",
+    "Zdravotníci usilující o řádný výkon povolání v Česku",
+    "Cizinci a rodiny adaptující se na školu, jazyk a každodenní život"
+  ],
+  "legalTitle": "Právní identita",
+  "legalIntro": "Níže uvedené údaje odpovídají naší registraci jako českého spolku:",
+  "legalNameLabel": "Obchodní firma",
+  "legalAddressLabel": "Adresa sídla",
+  "legalIcoLabel": "IČO",
+  "transparencyLink": "Financování a transparentnost",
+  "contactCta": "Kontaktujte nás",
+  "homeCta": "Zpět na úvod"
+}

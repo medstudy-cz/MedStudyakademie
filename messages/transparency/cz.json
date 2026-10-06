@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Financování a transparentnost | Medstudy Academy, z. s.",
+  "metaDescription": "Jak je financován neziskový spolek Medstudy Academy, z. s. (IČO 06441807), co neprodáváme a jak budeme zveřejňovat finanční přehledy.",
+  "title": "Financování a transparentnost",
+  "lead": "Medstudy Academy, z. s. je český neziskový spolek. Tato stránka vysvětluje, jak finančně fungujeme a jak naše činnost slouží poslání.",
+  "sections": [
+    {
+      "heading": "Neziskový status",
+      "paragraphs": [
+        "Obchodní firma: Medstudy Academy, z. s. IČO: 06441807. Sídlo: Školní 57, Tuchoměřice, Praha-západ, Středočeský kraj, Česká republika.",
+        "Nejsme komerční vzdělávací agentura. Vzdělávací programy, poradenství a komunitní podporu poskytujeme příjemcům pomoci zdarma v rámci neziskového poslání."
+      ]
+    },
+    {
+      "heading": "Jak nás financujeme",
+      "paragraphs": [
+        "Aktuálně fungujeme díky dobrovolnické práci a příspěvkům partnerů a podporovatelů, které pokrývají provozní náklady (nástroje, komunikace, materiály a související výdaje).",
+        "Podali jsme žádosti o externí neziskovou podporu, včetně programů přes Goodstack a TechSoup. Pokud budou schváleny, prostředky použijeme výhradně na bezplatné vzdělávací a integrační programy.",
+        "Jakákoli omezená komerční činnost související s posláním — pokud ji později zavedeme — bude na tomto webu jasně popsána a výnosy budou směřovat do neziskových programů."
+      ]
+    },
+    {
+      "heading": "Co neprodáváme",
+      "paragraphs": [
+        "Neprodáváme placené „garance“ přijetí na VŠ, víz, bydlení ani odborných oprávnění.",
+        "Na tomto webu neprovozujeme komerční e-shop a neumísťujeme Google AdSense ani affiliate reklamní sítě.",
+        "Oficiální rozhodnutí vždy náleží univerzitám, ministerstvům a imigračním orgánům. Naší rolí je bezplatná orientace a nezisková podpora."
+      ]
+    },
+    {
+      "heading": "Výroční zprávy a finanční přehledy",
+      "paragraphs": [
+        "Jako relativně mladá organizace budeme na této stránce zveřejňovat souhrnné finanční informace a výroční zprávy, jakmile budou k dispozici v souladu s praxí českých spolků.",
+        "Do té doby pište dotazy k financování na medstudyacademy.cz@gmail.com nebo přes kontaktní formulář."
+      ]
+    }
+  ],
+  "aboutLink": "O nás a poslání",
+  "contactCta": "Kontaktujte nás",
+  "homeCta": "Zpět na úvod"
+}

@@ -1,0 +1,62 @@
+{
+  "metaTitle": "About us & mission | Medstudy Academy, z. s.",
+  "metaDescription": "Mission, programmes and nonprofit status of Medstudy Academy, z. s. (IČO 06441807) — free education and integration support in the Czech Republic.",
+  "title": "About us & mission",
+  "lead": "Medstudy Academy, z. s. is a registered nonprofit association (spolek) in the Czech Republic. We help foreigners, healthcare workers and families integrate through free education, counselling and community support.",
+  "missionTitle": "Our mission",
+  "mission": "To provide practical, free support for people who are integrating into Czech society — especially foreigners, healthcare professionals and families — through education, orientation and community programmes. Official decisions on visas, admissions and professional licences always remain with the competent authorities; our role is nonprofit guidance and support.",
+  "whoTitle": "Who we are",
+  "whoParagraphs": [
+    "We are Medstudy Academy, z. s. (also presented publicly as MedStudyacademy z.s.), a nonprofit association founded to help people in difficult life situations find a path in the Czech Republic.",
+    "Our team includes professionals and volunteers who know relocation from personal experience. We work with university applicants, healthcare workers and families who need language, document and everyday orientation.",
+    "All educational programmes, counselling and cultural activities we offer to beneficiaries are provided free of charge."
+  ],
+  "whatTitle": "What we do",
+  "whatIntro": "Our main programme areas are described in more detail on dedicated pages:",
+  "whatItems": [
+    {
+      "title": "Educational programmes",
+      "description": "Czech language courses, subject preparation and adaptation modules for foreigners.",
+      "href": "/activities/education"
+    },
+    {
+      "title": "Support for healthcare workers",
+      "description": "Orientation for doctors, dentists and nurses on approval and integration steps.",
+      "href": "/activities/healthcare"
+    },
+    {
+      "title": "Social and cultural activities",
+      "description": "Community meetings that reduce isolation and support belonging.",
+      "href": "/activities/events"
+    },
+    {
+      "title": "Counselling",
+      "description": "Individual advice on documents, legalisation, employment and adaptation.",
+      "href": "/activities/consulting"
+    },
+    {
+      "title": "Partnerships and projects",
+      "description": "Cooperation with public institutions, universities and other NGOs.",
+      "href": "/activities/partnership"
+    },
+    {
+      "title": "Additional support",
+      "description": "Help with housing searches, paperwork and specialist meetings when available.",
+      "href": "/activities/support"
+    }
+  ],
+  "audienceTitle": "Who we serve",
+  "audienceItems": [
+    "University applicants planning Czech higher education",
+    "Healthcare workers seeking lawful practice in Czechia",
+    "Foreigners and families adapting to school, language and everyday life"
+  ],
+  "legalTitle": "Legal identity",
+  "legalIntro": "The information below matches our registration as a Czech association (spolek):",
+  "legalNameLabel": "Registered name",
+  "legalAddressLabel": "Registered address",
+  "legalIcoLabel": "Company ID (IČO)",
+  "transparencyLink": "Funding & transparency",
+  "contactCta": "Contact us",
+  "homeCta": "Back to homepage"
+}

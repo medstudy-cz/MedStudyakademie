@@ -12,7 +12,7 @@ import { smoothEase } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: { pathname: "/", hash: "about" }, key: "about" as const },
+  { href: "/about", key: "about" as const },
   { href: { pathname: "/", hash: "activities" }, key: "activities" as const },
   { href: { pathname: "/", hash: "audience" }, key: "audience" as const },
   { href: "/blog", key: "blog" as const },

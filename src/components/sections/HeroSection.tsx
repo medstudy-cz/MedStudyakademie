@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { LEGAL_COMPANY_NAME } from "@/lib/legal";
 import { cn } from "@/lib/utils";
 
 export async function HeroSection() {
@@ -18,7 +19,7 @@ export async function HeroSection() {
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-8 lg:gap-12">
           <div className="max-w-xl md:max-w-none">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
-              MedStudyacademy z.s.
+              {LEGAL_COMPANY_NAME}
             </p>
             <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {t("title")}
@@ -29,10 +30,10 @@ export async function HeroSection() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                href="/quiz"
+                href="/about"
                 className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
               >
-                {t("ctaQuiz")}
+                {t("ctaAbout")}
               </Link>
               <a
                 href="#activities"
@@ -53,6 +54,11 @@ export async function HeroSection() {
                 {t("ctaContact")}
               </a>
             </div>
+            <p className="mt-4 text-sm text-slate-500">
+              <Link href="/quiz" className="font-medium text-primary hover:underline">
+                {t("ctaQuiz")}
+              </Link>
+            </p>
           </div>
 
           <div className="relative hidden w-full md:block">

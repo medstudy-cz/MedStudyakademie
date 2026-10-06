@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-2 text-sm text-slate-600">
             <p className="text-base font-semibold text-slate-900">
-              {t("orgName")}
+              {LEGAL_COMPANY_NAME}
             </p>
             <p>{t("orgType")}</p>
             <p>{t("country")}</p>
@@ -50,6 +50,18 @@ export function Footer() {
 
           <div className="flex flex-col gap-3 text-sm md:items-start lg:items-end">
             <Link
+              href="/about"
+              className="font-medium text-primary hover:underline"
+            >
+              {t("about")}
+            </Link>
+            <Link
+              href="/transparency"
+              className="font-medium text-primary hover:underline"
+            >
+              {t("transparency")}
+            </Link>
+            <Link
               href="/blog"
               className="font-medium text-primary hover:underline"
             >
@@ -69,7 +81,7 @@ export function Footer() {
         </p>
 
         <p className="mt-6 text-center text-xs text-slate-500">
-          {t("copyright", { year })}
+          © {year} {LEGAL_COMPANY_NAME}. {t("rightsReserved")}
         </p>
       </div>
     </footer>

@@ -22,6 +22,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     });
     routes.push({
+      url: `${SITE_URL}/${locale}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.95,
+    });
+    routes.push({
+      url: `${SITE_URL}/${locale}/transparency`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+    routes.push({
       url: `${SITE_URL}/${locale}/privacy`,
       lastModified: new Date(),
       changeFrequency: "yearly",

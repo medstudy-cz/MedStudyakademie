@@ -14,10 +14,11 @@
   },
   "hero": {
     "title": "Integration. Education. Support.",
-    "subtitle": "MedStudyacademy z.s. is a nonprofit association helping foreigners, healthcare workers and families integrate into Czech society. Education, counselling and community support — free of charge.",
+    "subtitle": "Medstudy Academy, z. s. is a nonprofit association helping foreigners, healthcare workers and families integrate into Czech society. Education, counselling and community support — free of charge.",
+    "ctaAbout": "Our mission",
     "ctaServices": "What we do",
     "ctaContact": "Contact us",
-    "ctaQuiz": "Free orientation quiz"
+    "ctaQuiz": "Optional free orientation quiz"
   },
   "about": {
     "title": "Who we are",
@@ -67,19 +68,19 @@
     "items": [
       {
         "value": "1000+",
-        "label": "Successful students"
+        "label": "People supported with free educational guidance"
       },
       {
         "value": "2094",
         "label": "Ukrainian healthcare workers in the Czech Republic since 2022"
       },
       {
-        "value": "9 months",
-        "label": "From zero to B2"
+        "value": "Free",
+        "label": "Services for beneficiaries — no paid guarantees"
       },
       {
         "value": "3",
-        "label": "Languages of support"
+        "label": "Languages of nonprofit support"
       }
     ]
   },
@@ -146,17 +147,19 @@
     }
   },
   "footer": {
-    "orgName": "MedStudyacademy z.s.",
+    "orgName": "Medstudy Academy, z. s.",
     "orgType": "Spolek (nonprofit association)",
     "country": "Czech Republic",
     "legalNote": "Activities are carried out in accordance with Czech law and ethical standards.",
     "legalCompanyName": "Registered name",
     "legalAddress": "Registered address",
     "legalIco": "Company ID (IČO)",
+    "about": "About us & mission",
+    "transparency": "Funding & transparency",
     "blog": "Blog",
     "privacy": "Privacy policy",
-    "googleWorkspaceVerification": "MedStudyacademy z.s. is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
-    "copyright": "© {year} MedStudyacademy z.s. All rights reserved."
+    "googleWorkspaceVerification": "Medstudy Academy, z. s. (IČO 06441807) is a registered nonprofit association in the Czech Republic providing free educational and integration services to foreigners and healthcare workers.",
+    "rightsReserved": "All rights reserved."
   },
   "localeLabels": {
     "cz": "Čeština",
@@ -165,10 +168,11 @@
     "en": "English"
   },
   "homeCta": {
-    "title": "Ready for the next step?",
-    "subtitle": "Take a free orientation quiz or contact us — our nonprofit team helps with integration and education in the Czech Republic at no cost.",
-    "primary": "Take the free quiz",
-    "secondary": "Contact us"
+    "title": "Need free nonprofit support?",
+    "subtitle": "Contact our team or read about our mission — Medstudy Academy, z. s. helps with integration and education in the Czech Republic at no cost.",
+    "primary": "Contact us",
+    "secondary": "Our mission",
+    "quiz": "Free orientation quiz"
   },
   "blog": {
     "title": "Blog & Helpful Articles",

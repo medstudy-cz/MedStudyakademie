@@ -14,10 +14,11 @@
   },
   "hero": {
     "title": "Integrace. Vzdělávání. Podpora.",
-    "subtitle": "MedStudyacademy z.s. je neziskový spolek, který pomáhá cizincům, zdravotníkům a rodinám integrovat se do české společnosti. Vzdělávání, poradenství a komunitní podpora — zdarma.",
+    "subtitle": "Medstudy Academy, z. s. je neziskový spolek, který pomáhá cizincům, zdravotníkům a rodinám integrovat se do české společnosti. Vzdělávání, poradenství a komunitní podpora — zdarma.",
+    "ctaAbout": "Naše poslání",
     "ctaServices": "Co děláme",
     "ctaContact": "Kontaktujte nás",
-    "ctaQuiz": "Bezplatný orientační test"
+    "ctaQuiz": "Volitelný bezplatný orientační test"
   },
   "about": {
     "title": "Kdo jsme?",
@@ -67,19 +68,19 @@
     "items": [
       {
         "value": "1000+",
-        "label": "Úspěšných studentů"
+        "label": "Lidí s bezplatnou vzdělávací podporou"
       },
       {
         "value": "2094",
         "label": "Ukrajinských zdravotníků v ČR od roku 2022"
       },
       {
-        "value": "9 měsíců",
-        "label": "Od nuly do B2"
+        "value": "Zdarma",
+        "label": "Služby pro příjemce pomoci — bez placených garancí"
       },
       {
         "value": "3",
-        "label": "Jazyky podpory"
+        "label": "Jazyky neziskové podpory"
       }
     ]
   },
@@ -146,17 +147,19 @@
     }
   },
   "footer": {
-    "orgName": "MedStudyacademy z.s.",
+    "orgName": "Medstudy Academy, z. s.",
     "orgType": "Spolek (neziskové sdružení)",
     "country": "Česká republika",
     "legalNote": "Činnost probíhá v souladu s právními předpisy ČR a etickými standardy.",
     "legalCompanyName": "Obchodní firma",
     "legalAddress": "Adresa sídla",
     "legalIco": "IČO",
+    "about": "O nás a poslání",
+    "transparency": "Financování a transparentnost",
     "blog": "Blog",
     "privacy": "Zásady ochrany osobních údajů",
-    "googleWorkspaceVerification": "MedStudyacademy z.s. je registrovaný neziskový spolek v České republice poskytující bezplatné vzdělávací a integrační služby cizincům a zdravotníkům.",
-    "copyright": "© {year} MedStudyacademy z.s. Všechna práva vyhrazena."
+    "googleWorkspaceVerification": "Medstudy Academy, z. s. (IČO 06441807) je registrovaný neziskový spolek v České republice poskytující bezplatné vzdělávací a integrační služby cizincům a zdravotníkům.",
+    "rightsReserved": "Všechna práva vyhrazena."
   },
   "localeLabels": {
     "cz": "Čeština",
@@ -165,10 +168,11 @@
     "en": "English"
   },
   "homeCta": {
-    "title": "Připraveni na další krok?",
-    "subtitle": "Absolvujte bezplatný orientační test nebo nám napište — náš neziskový tým pomáhá s integrací a vzděláváním v Česku zdarma.",
-    "primary": "Absolvovat bezplatný test",
-    "secondary": "Kontaktujte nás"
+    "title": "Potřebujete bezplatnou neziskovou podporu?",
+    "subtitle": "Napište našemu týmu nebo si přečtěte o našem poslání — Medstudy Academy, z. s. pomáhá s integrací a vzděláváním v Česku zdarma.",
+    "primary": "Kontaktujte nás",
+    "secondary": "Naše poslání",
+    "quiz": "Bezplatný orientační test"
   },
   "blog": {
     "title": "Blog a užitečné články",

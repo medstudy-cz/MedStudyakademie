@@ -15,6 +15,12 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const privacyPage = (
     await import(`../../messages/privacy/${locale}.json`)
   ).default;
+  const aboutPage = (
+    await import(`../../messages/about/${locale}.json`)
+  ).default;
+  const transparencyPage = (
+    await import(`../../messages/transparency/${locale}.json`)
+  ).default;
 
   return {
     locale,
@@ -22,6 +28,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...base,
       activityPages,
       privacyPage,
+      aboutPage,
+      transparencyPage,
     },
   };
 });

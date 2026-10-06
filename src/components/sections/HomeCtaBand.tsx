@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-/** Mid-page primary CTA band — quiz + contact, no client JS. */
+/** Mid-page CTA band — contact first, quiz secondary. */
 export async function HomeCtaBand() {
   const t = await getTranslations("homeCta");
 
@@ -18,21 +18,30 @@ export async function HomeCtaBand() {
             {t("subtitle")}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/quiz"
+            <a
+              href="#contact"
               className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
             >
               {t("primary")}
-            </Link>
-            <a
-              href="#contact"
+            </a>
+            <Link
+              href="/about"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "w-full sm:w-auto",
               )}
             >
               {t("secondary")}
-            </a>
+            </Link>
+            <Link
+              href="/quiz"
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "w-full sm:w-auto",
+              )}
+            >
+              {t("quiz")}
+            </Link>
           </div>
         </div>
       </div>
