@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "@/features/quiz/integrations/email";
 
 const ADMIN_EMAIL =
-  process.env.QUIZ_ADMIN_EMAIL?.trim() || "medstudyacademy.cz@gmail.com";
+  process.env.QUIZ_ADMIN_EMAIL?.trim() || "adm.cur.medstudy@gmail.com";
 
 export async function POST(req: NextRequest) {
   try {
