@@ -54,11 +54,6 @@ export async function HeroSection() {
                 {t("ctaContact")}
               </a>
             </div>
-            <p className="mt-4 text-sm text-slate-500">
-              <Link href="/quiz" className="font-medium text-primary hover:underline">
-                {t("ctaQuiz")}
-              </Link>
-            </p>
           </div>
 
           <div className="relative hidden w-full md:block">

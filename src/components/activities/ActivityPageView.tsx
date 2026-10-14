@@ -46,6 +46,19 @@ type EventCard = {
 };
 type StoryCard = { name: string; role: string; quote: string };
 type MetaRow = { label: string; value: string };
+type PracticalInfo = {
+  title: string;
+  placeLabel: string;
+  place: string;
+  timeLabel: string;
+  time: string;
+  formatLabel: string;
+  format: string;
+  costLabel: string;
+  cost: string;
+  joinLabel: string;
+  join: string;
+};
 
 type ActivityPageViewProps = {
   slug: ActivitySlug;
@@ -118,6 +131,9 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
   const messengerCta = page.has("messengerCta")
     ? (page.raw("messengerCta") as { title: string; text: string; cta: string })
     : null;
+  const practical = t.has("practical")
+    ? (t.raw("practical") as PracticalInfo)
+    : null;
 
   return (
     <article>
@@ -169,6 +185,39 @@ export function ActivityPageView({ slug }: ActivityPageViewProps) {
           </motion.div>
         </div>
       </section>
+
+      {practical && (
+        <section className="border-b border-slate-100 bg-white py-10 sm:py-12">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+              {practical.title}
+            </h2>
+            <dl className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(
+                [
+                  [practical.placeLabel, practical.place],
+                  [practical.timeLabel, practical.time],
+                  [practical.formatLabel, practical.format],
+                  [practical.costLabel, practical.cost],
+                  [practical.joinLabel, practical.join],
+                ] as const
+              ).map(([label, value]) => (
+                <div
+                  key={label}
+                  className="rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4"
+                >
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    {label}
+                  </dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-slate-800">
+                    {value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      )}
 
       {purpose && (
         <SectionShell>

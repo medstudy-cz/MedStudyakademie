@@ -45,6 +45,9 @@ export function ActivitiesSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <SectionHeading title={t("title")} />
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-600">
+            {t("note")}
+          </p>
         </ScrollReveal>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">

@@ -1,5 +1,18 @@
 {
   "back": "Back to “What we do”",
+  "practical": {
+    "title": "How to join",
+    "placeLabel": "Place",
+    "place": "Prague",
+    "timeLabel": "When",
+    "time": "Throughout the academic year. We agree a group time after you send the form.",
+    "formatLabel": "Format",
+    "format": "In person in Prague and online",
+    "costLabel": "Cost",
+    "cost": "Free",
+    "joinLabel": "How to apply",
+    "join": "Fill in the form on this page. We will reply and arrange a group or a consultation."
+  },
   "education": {
     "metaTitle": "Educational programmes | MedStudyacademy",
     "metaDescription": "Free Czech language courses, subject intensives and adaptation modules for foreigners integrating in Czechia — provided by nonprofit MedStudyacademy z.s.",
@@ -94,7 +107,7 @@
     "hero": {
       "title": "Medical qualification recognition and a career as a doctor, nurse or dentist in Czechia",
       "subtitle": "We guide you through every approval step — from diploma recognition to practice in Czech healthcare facilities.",
-      "cta": "Assess my chances"
+      "cta": "Request free support"
     },
     "timeline": {
       "title": "Approval path step by step",
@@ -117,8 +130,8 @@
       "title": "What support includes",
       "items": [
         {
-          "title": "Document package",
-          "description": "Preparing and checking the full set for recognition and approval."
+          "title": "Document preparation",
+          "description": "Help preparing and checking documents for recognition and approval. This is not a paid package."
         },
         {
           "title": "Legal guidance",
@@ -150,8 +163,8 @@
         }
       ]
     },
-    "formTitle": "Get an approval consultation",
-    "formSubject": "Approval consultation"
+    "formTitle": "Request free approval support",
+    "formSubject": "Request free approval support"
   },
   "events": {
     "metaTitle": "Social and cultural activities | MedStudyacademy",
@@ -180,27 +193,27 @@
       ]
     },
     "events": {
-      "title": "Upcoming events",
+      "title": "Meetings during the academic year",
       "items": [
         {
           "title": "Conversation club B1+",
-          "date": "Every Wednesday",
-          "time": "18:00",
-          "location": "Prague / online",
+          "date": "Throughout the academic year",
+          "time": "Time arranged after you write",
+          "location": "Prague and online",
           "cta": "Register"
         },
         {
           "title": "Tour: Old Town",
-          "date": "Weekends",
-          "time": "11:00",
-          "location": "Prague centre",
+          "date": "Throughout the academic year",
+          "time": "Time arranged after you write",
+          "location": "Prague, in person",
           "cta": "Register"
         },
         {
           "title": "Creative family meetup",
-          "date": "Once a month",
-          "time": "15:00",
-          "location": "Prague",
+          "date": "Throughout the academic year",
+          "time": "Time arranged after you write",
+          "location": "Prague and online",
           "cta": "Register"
         }
       ]
@@ -243,7 +256,7 @@
     "hero": {
       "title": "Personal expert consultations on life, study and work in Czechia",
       "subtitle": "Qualified individual help with bureaucratic, legal, visa and career questions.",
-      "cta": "Book a consultation"
+      "cta": "Request a free consultation"
     },
     "directions": {
       "title": "Consultation areas",
@@ -278,13 +291,13 @@
           "value": "About 45 minutes — enough to work through your request"
         },
         {
-          "label": "Booking",
-          "value": "Choose a topic and time — a coordinator will confirm the slot"
+          "label": "How to apply",
+          "value": "Consultations are free throughout the academic year, in person in Prague or online. Send the form and we will agree a time."
         }
       ]
     },
-    "formTitle": "Book a consultation",
-    "formSubject": "Consultation booking"
+    "formTitle": "Request a free consultation",
+    "formSubject": "Request a free consultation"
   },
   "partnership": {
     "metaTitle": "Partnerships and projects | MedStudyacademy",

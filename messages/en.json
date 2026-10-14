@@ -36,6 +36,7 @@
   },
   "activities": {
     "title": "What we do",
+    "note": "All programmes are free. Place: Prague. Format: in person and online. Groups run throughout the academic year — request a place with the form on the programme page.",
     "items": [
       {
         "title": "Educational programmes",
@@ -65,22 +66,23 @@
     "learnMore": "Learn more"
   },
   "stats": {
+    "context": "The figure 2,094 refers to Ukrainian healthcare workers in the Czech Republic since 2022 as a whole. It is not the number of people supported by Medstudy Academy, z. s.",
     "items": [
       {
-        "value": "1000+",
-        "label": "People supported with free educational guidance"
-      },
-      {
-        "value": "2094",
-        "label": "Ukrainian healthcare workers in the Czech Republic since 2022"
-      },
-      {
         "value": "Free",
-        "label": "Services for beneficiaries — no paid guarantees"
+        "label": "Education, counselling and community support"
       },
       {
-        "value": "3",
-        "label": "Languages of nonprofit support"
+        "value": "Prague",
+        "label": "In-person classes and meetings in Prague"
+      },
+      {
+        "value": "Online",
+        "label": "The same programmes at a distance"
+      },
+      {
+        "value": "Academic year",
+        "label": "Groups run throughout the school year"
       }
     ]
   },

@@ -1,5 +1,18 @@
 {
   "back": "Zpět na sekci „Co děláme“",
+  "practical": {
+    "title": "Jak se zapojit",
+    "placeLabel": "Místo",
+    "place": "Praha",
+    "timeLabel": "Kdy",
+    "time": "Po celý školní rok. Konkrétní termín skupiny domluvíme po odeslání formuláře.",
+    "formatLabel": "Formát",
+    "format": "Prezenčně v Praze a online",
+    "costLabel": "Cena",
+    "cost": "Zdarma",
+    "joinLabel": "Jak se přihlásit",
+    "join": "Vyplňte formulář na této stránce. Ozveme se a domluvíme skupinu nebo konzultaci."
+  },
   "education": {
     "metaTitle": "Vzdělávací programy | MedStudyacademy",
     "metaDescription": "Bezplatné kurzy češtiny, intenzivy odborných předmětů a adaptační moduly pro cizince v ČR — neziskový spolek MedStudyacademy z.s.",
@@ -94,7 +107,7 @@
     "hero": {
       "title": "Legalizace lékařského vzdělání a kariéra lékaře, sestry nebo stomatologa v Česku",
       "subtitle": "Provázíme vás každým krokem aprobace — od uznání diplomu po praxi v českých zdravotnických zařízeních.",
-      "cta": "Posoudit šance"
+      "cta": "Požádat o bezplatnou podporu"
     },
     "timeline": {
       "title": "Krok za krokem k aprobaci",
@@ -117,8 +130,8 @@
       "title": "Co zahrnuje doprovod",
       "items": [
         {
-          "title": "Balíček dokumentů",
-          "description": "Příprava a kontrola kompletní dokumentace pro nostrifikaci a aprobaci."
+          "title": "Příprava dokumentů",
+          "description": "Pomoc s přípravou a kontrolou dokumentace pro nostrifikaci a aprobaci. Nejde o placený balíček."
         },
         {
           "title": "Právní doprovod",
@@ -150,7 +163,7 @@
         }
       ]
     },
-    "formTitle": "Konzultace k aprobaci",
+    "formTitle": "Žádost o bezplatnou podporu k aprobaci",
     "formSubject": "Konzultace k aprobaci"
   },
   "events": {
@@ -180,27 +193,27 @@
       ]
     },
     "events": {
-      "title": "Nejbližší akce",
+      "title": "Setkání během školního roku",
       "items": [
         {
           "title": "Klub konverzace B1+",
-          "date": "Každou středu",
-          "time": "18:00",
-          "location": "Praha / online",
+          "date": "Po celý školní rok",
+          "time": "Termín po domluvě",
+          "location": "Praha a online",
           "cta": "Registrovat se"
         },
         {
           "title": "Výlet: Staré Město",
-          "date": "O víkendech",
-          "time": "11:00",
-          "location": "Praha, centrum",
+          "date": "Po celý školní rok",
+          "time": "Termín po domluvě",
+          "location": "Praha, prezenčně",
           "cta": "Registrovat se"
         },
         {
           "title": "Tvůrčí setkání pro rodiny",
-          "date": "Jednou měsíčně",
-          "time": "15:00",
-          "location": "Praha",
+          "date": "Po celý školní rok",
+          "time": "Termín po domluvě",
+          "location": "Praha a online",
           "cta": "Registrovat se"
         }
       ]
@@ -243,7 +256,7 @@
     "hero": {
       "title": "Osobní konzultace expertů k životu, studiu a práci v Česku",
       "subtitle": "Kvalifikovaná individuální pomoc v byrokratických, právních, vízových a kariérních otázkách.",
-      "cta": "Objednat konzultaci"
+      "cta": "Požádat o bezplatnou konzultaci"
     },
     "directions": {
       "title": "Oblasti poradenství",
@@ -278,13 +291,13 @@
           "value": "Přibližně 45 minut — dostatek času na váš požadavek"
         },
         {
-          "label": "Rezervace",
-          "value": "Vyberte téma a čas — kurátor termín potvrdí"
+          "label": "Jak se přihlásit",
+          "value": "Konzultace jsou zdarma po celý školní rok, prezenčně v Praze nebo online. Pošlete formulář a domluvíme termín."
         }
       ]
     },
-    "formTitle": "Objednávka konzultace",
-    "formSubject": "Objednávka konzultace"
+    "formTitle": "Žádost o bezplatnou konzultaci",
+    "formSubject": "Žádost o bezplatnou konzultaci"
   },
   "partnership": {
     "metaTitle": "Partnerství a projekty | MedStudyacademy",

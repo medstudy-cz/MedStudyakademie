@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { locales } from "@/i18n/routing";
 import { ACTIVITY_SLUGS } from "@/lib/activity-slugs";
-import { SITE_URL } from "@/lib/site";
+import { absoluteUrl, publicLocalePath } from "@/lib/site";
 import { sanityFetch } from "@/sanity/lib/client";
 import { ALL_BLOG_SLUGS_QUERY } from "@/sanity/lib/queries";
 
@@ -10,31 +10,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   locales.forEach((locale) => {
     routes.push({
-      url: `${SITE_URL}/${locale}`,
+      url: absoluteUrl(publicLocalePath(locale)),
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
     });
     routes.push({
-      url: `${SITE_URL}/${locale}/blog`,
+      url: absoluteUrl(publicLocalePath(locale, "/blog")),
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     });
     routes.push({
-      url: `${SITE_URL}/${locale}/about`,
+      url: absoluteUrl(publicLocalePath(locale, "/about")),
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.95,
     });
     routes.push({
-      url: `${SITE_URL}/${locale}/transparency`,
+      url: absoluteUrl(publicLocalePath(locale, "/transparency")),
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,
     });
     routes.push({
-      url: `${SITE_URL}/${locale}/privacy`,
+      url: absoluteUrl(publicLocalePath(locale, "/privacy")),
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.3,
@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     ACTIVITY_SLUGS.forEach((slug) => {
       routes.push({
-        url: `${SITE_URL}/${locale}/activities/${slug}`,
+        url: absoluteUrl(publicLocalePath(locale, `/activities/${slug}`)),
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.8,
@@ -58,7 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     (posts || []).forEach((post) => {
       routes.push({
-        url: `${SITE_URL}/${post.locale}/blog/${post.slug}`,
+        url: absoluteUrl(publicLocalePath(post.locale, `/blog/${post.slug}`)),
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.8,

@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { QuizProvider } from "@/features/quiz/context/QuizContext";
 
 /**
- * Slug из URL: /{locale}/quiz/[quizSlug].
- * /{locale}/quiz → дефолтный квиз (env или первый active в Sanity).
+ * Slug из URL: /quiz/[quizSlug] (чешский без префикса) или /{locale}/quiz/[quizSlug].
+ * Без slug — дефолтный квиз.
  */
 export function QuizProviderFromRoute({
   children,
@@ -14,9 +14,11 @@ export function QuizProviderFromRoute({
 }) {
   const pathname = usePathname() || "";
   const segments = pathname.split("/").filter(Boolean);
-  // [locale, "quiz"] | [locale, "quiz", slug]
+  const quizIndex = segments.indexOf("quiz");
   const sanitySlug =
-    segments[1] === "quiz" && segments[2] ? segments[2] : undefined;
+    quizIndex >= 0 && segments[quizIndex + 1]
+      ? segments[quizIndex + 1]
+      : undefined;
   const providerKey = sanitySlug ?? "__default__";
 
   return (

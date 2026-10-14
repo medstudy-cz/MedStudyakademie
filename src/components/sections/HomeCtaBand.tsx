@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-/** Mid-page CTA band — contact first, quiz secondary. */
+/** Mid-page CTA — mission and contact, without the quiz funnel. */
 export async function HomeCtaBand() {
   const t = await getTranslations("homeCta");
 
@@ -32,15 +32,6 @@ export async function HomeCtaBand() {
               )}
             >
               {t("secondary")}
-            </Link>
-            <Link
-              href="/quiz"
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "w-full sm:w-auto",
-              )}
-            >
-              {t("quiz")}
             </Link>
           </div>
         </div>

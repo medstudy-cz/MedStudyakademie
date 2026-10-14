@@ -36,6 +36,7 @@
   },
   "activities": {
     "title": "Co děláme",
+    "note": "Všechny programy jsou zdarma. Místo: Praha. Formát: prezenčně i online. Skupiny běží po celý školní rok — o místo požádáte formulářem na stránce programu.",
     "items": [
       {
         "title": "Vzdělávací programy",
@@ -65,22 +66,23 @@
     "learnMore": "Více informací"
   },
   "stats": {
+    "context": "Číslo 2 094 se týká ukrajinských zdravotníků v České republice od roku 2022 jako celku. Není to počet lidí, kterým pomohla Medstudy Academy, z. s.",
     "items": [
       {
-        "value": "1000+",
-        "label": "Lidí s bezplatnou vzdělávací podporou"
-      },
-      {
-        "value": "2094",
-        "label": "Ukrajinských zdravotníků v ČR od roku 2022"
-      },
-      {
         "value": "Zdarma",
-        "label": "Služby pro příjemce pomoci — bez placených garancí"
+        "label": "Vzdělávání, poradenství a komunitní podpora"
       },
       {
-        "value": "3",
-        "label": "Jazyky neziskové podpory"
+        "value": "Praha",
+        "label": "Prezenční výuka a setkání v Praze"
+      },
+      {
+        "value": "Online",
+        "label": "Stejné programy i na dálku"
+      },
+      {
+        "value": "Školní rok",
+        "label": "Skupiny běží po celý akademický rok"
       }
     ]
   },

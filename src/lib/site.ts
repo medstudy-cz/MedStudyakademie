@@ -1,4 +1,4 @@
-import { locales, type Locale } from "@/i18n/routing";
+import { locales, routing, type Locale } from "@/i18n/routing";
 
 /** Production site origin used for canonical, hreflang, sitemap, robots. */
 export const SITE_URL = (
@@ -28,37 +28,52 @@ export function absoluteUrl(path = "/"): string {
   return `${SITE_URL}${normalized}`;
 }
 
+function pathSuffix(pathAfterLocale = ""): string {
+  if (!pathAfterLocale || pathAfterLocale === "/") {
+    return "";
+  }
+  return pathAfterLocale.startsWith("/")
+    ? pathAfterLocale
+    : `/${pathAfterLocale}`;
+}
+
+/**
+ * Public URL path. The default locale (Czech) has no prefix, so `/` and
+ * `/about` are the canonical addresses. Other locales stay prefixed.
+ */
+export function publicLocalePath(locale: string, pathAfterLocale = ""): string {
+  const suffix = pathSuffix(pathAfterLocale);
+  if (locale === routing.defaultLocale) {
+    return suffix || "/";
+  }
+  return `/${locale}${suffix}`;
+}
+
 /**
  * Path after the locale segment, e.g. "", "/blog", "/blog/my-post", "/privacy".
  */
 export function languageAlternates(
   pathAfterLocale = "",
 ): Record<string, string> {
-  const suffix =
-    !pathAfterLocale || pathAfterLocale === "/"
-      ? ""
-      : pathAfterLocale.startsWith("/")
-        ? pathAfterLocale
-        : `/${pathAfterLocale}`;
+  const suffix = pathSuffix(pathAfterLocale);
 
   const languages: Record<string, string> = {};
   for (const locale of locales) {
-    languages[LOCALE_TO_HREFLANG[locale]] = absoluteUrl(`/${locale}${suffix}`);
+    languages[LOCALE_TO_HREFLANG[locale]] = absoluteUrl(
+      publicLocalePath(locale, suffix),
+    );
   }
-  languages["x-default"] = absoluteUrl(`/cz${suffix}`);
+  languages["x-default"] = absoluteUrl(
+    publicLocalePath(routing.defaultLocale, suffix),
+  );
   return languages;
 }
 
 export function pageAlternates(locale: string, pathAfterLocale = "") {
-  const suffix =
-    !pathAfterLocale || pathAfterLocale === "/"
-      ? ""
-      : pathAfterLocale.startsWith("/")
-        ? pathAfterLocale
-        : `/${pathAfterLocale}`;
+  const suffix = pathSuffix(pathAfterLocale);
 
   return {
-    canonical: absoluteUrl(`/${locale}${suffix}`),
+    canonical: absoluteUrl(publicLocalePath(locale, suffix)),
     languages: languageAlternates(suffix),
   };
 }

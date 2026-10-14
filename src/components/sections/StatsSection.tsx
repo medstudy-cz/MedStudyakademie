@@ -24,6 +24,9 @@ export async function StatsSection() {
             </li>
           ))}
         </ul>
+        <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-sky-100">
+          {t("context")}
+        </p>
       </div>
     </section>
   );
